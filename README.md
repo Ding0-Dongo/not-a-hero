@@ -7,7 +7,7 @@ Programmers:
   Ethan (eboyl004@ucr.edu)
   Hao (hmai015@ucr.edu)
   Amina (apena080@ucr.edu)
-  Lay (???)
+  Lay (rlayc001@ucr.edu)
   
 To Do:
 
