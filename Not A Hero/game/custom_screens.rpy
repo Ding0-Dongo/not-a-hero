@@ -1,7 +1,7 @@
 ## Screen with Stats Button
 screen NormingtonCityMap:
     imagebutton:
-        xalign 1.0
+        xalign 0.0
         yalign 0.0
         xoffset -30
         yoffset 30
@@ -18,7 +18,7 @@ label call_mapUI:
     call screen MapUI
 
 screen MapUI:
-    add "images/normingtonMap.png"
+    # add "images/normingtonMap.png"
 
     imagebutton:
         xpos 618
