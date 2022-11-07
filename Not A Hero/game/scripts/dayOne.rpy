@@ -3,7 +3,19 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+# define e = Character("Eileen")
+### ^ ok so these. these are character definitions, I've gone and chucked them all
+### into definitions.rpy
+### ALTERNATIVELY, we can define a character as:
+### define e = Character('Eluna', color='#ff94c1', image = "eluna")
+### name, color (of like their little text box), character sprite
+
+
+#ok so you may be wondering why there are so many green text
+#these are comments; I've left them in just in case y'all needed some guides
+#renpy pre-generated for you
+#if you decide you no longer need these comments, simply remove them.
+
 
 
 # The game starts here.
@@ -14,22 +26,38 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    # scene bg room
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    # show eileen happy
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    # e "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    # e "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
+    e "H-Hey..."
+
+    e "So I heard you were going to be my... android?"
+
+    e "Or not since I'm talking to a camera... aha ahaaa..."
+
+    e "..."
+
+    e "*introverted noises*"
+
     show screen NormingtonCityMap
 
+    "this is normington city."
+
+    return
+
+label testingMap:
+    "woah this works"
     return
