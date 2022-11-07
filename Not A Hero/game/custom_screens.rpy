@@ -3,8 +3,8 @@ screen NormingtonCityMap:
     imagebutton:
         xalign 0.0
         yalign 0.0
-        xoffset -30
-        yoffset 30
+        xoffset 0
+        yoffset 0
         idle "images/normingtonMap.png"
         action Jump ("call_mapUI")
         # You may also use the code below depending on your needs.

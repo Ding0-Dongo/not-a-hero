@@ -70,8 +70,11 @@ label start:
 
     "this is normington city."
 
-    return
-
 label testingMap:
+    hide screen NormingtonCityMap
     "woah this works"
+    jump goodEnd
+
+label goodEnd:
+    "good end"
     return
