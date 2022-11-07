@@ -56,6 +56,8 @@ label start:
 
     e "*introverted noises*"
 
+    e "pls stop talking to me aaaaaaaaa-"
+
     show screen NormingtonCityMap
 
     "this is normington city."
