@@ -23,8 +23,8 @@ screen MapUI:
     imagebutton:
         xpos 618
         ypos 570
-        idle "images/normingtonMap.png"
-        hover "images/normingtonMap.png"
+        idle "images/potato.png"
+        hover "images/potato.png"
         action Jump("testingMap")
 
         
