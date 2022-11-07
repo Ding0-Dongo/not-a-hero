@@ -44,7 +44,7 @@ label start:
 
     scene whiteRoom
 
-    show ellis
+    show ellis with fade
 
     e "H-Hey..."
 
@@ -57,6 +57,14 @@ label start:
     e "*introverted noises*"
 
     e "pls stop talking to me aaaaaaaaa-"
+
+    show potato
+
+    e "DSKLAJFLKS;AJFL"
+
+    scene whiteRoom
+
+    e "w-where did everyone go?"
 
     show screen NormingtonCityMap
 
