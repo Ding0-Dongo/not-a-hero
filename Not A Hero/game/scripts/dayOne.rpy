@@ -42,6 +42,10 @@ label start:
 
     # This ends the game.
 
+    scene whiteRoom
+
+    show ellis
+
     e "H-Hey..."
 
     e "So I heard you were going to be my... android?"
