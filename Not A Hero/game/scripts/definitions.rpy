@@ -11,6 +11,8 @@ image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
 ##### SPECIAL CHARACTER SPRITES #####
 image ellis = "images/characters/ellis_neutral.png"
 image potato = "images/potato.png"
+image potato1 = "images/potato1.png"
+image potato2 = "images/potato2.png"
 image ellisTerrified = "images/characters/ellis_terrified.png"
 
 ##### AUDIO #####

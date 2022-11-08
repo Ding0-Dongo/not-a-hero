@@ -23,8 +23,15 @@ screen MapUI:
     imagebutton:
         xpos 618
         ypos 570
-        idle "images/potato.png"
-        hover "images/potato.png"
+        idle "images/potato1.png"
+        hover "images/potato1.png"
         action Jump("testingMap")
+
+    imagebutton:
+        xpos 10
+        ypos 10
+        idle "images/potato2.png"
+        hover "images/potato2.png"
+        action Jump("testingMap2")
 
         

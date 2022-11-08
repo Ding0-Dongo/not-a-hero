@@ -75,6 +75,11 @@ label testingMap:
     "woah this works"
     jump goodEnd
 
+label testingMap2:
+    hide screen NormingtonCityMap
+    "ok so the second one works too"
+    jump goodEnd
+
 label goodEnd:
     "good end"
     return
