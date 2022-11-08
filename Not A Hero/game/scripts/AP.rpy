@@ -4,3 +4,4 @@
 default strength = 0
 default stamina = 0
 default speed = 0
+default day = 1;
