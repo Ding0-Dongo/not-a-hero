@@ -42,6 +42,21 @@ label start:
 
     # This ends the game.
 
+
+    # Just putting this here because I am dumb and want to test a tutorial.
+
+    menu:
+
+        "Go to tutorial.":
+            jump tutorial
+
+        "Skip tutorial":
+            jump testStart
+    
+    ### Added label testStart to jump to at the end of the tutorial. 
+
+    label testStart:
+
     scene whiteRoom
 
     show ellis with fade
