@@ -8,3 +8,4 @@ default stress = 10
 default social = 10
 default standing = "civilian"
 default day = 1
+default energy = 10
