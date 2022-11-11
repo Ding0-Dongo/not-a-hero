@@ -51,9 +51,17 @@ label start:
             jump tutorial
 
         "Skip tutorial":
-            jump testStart
+            jump meetTheTeamStart
     
     ### Added label testStart to jump to at the end of the tutorial. 
+
+    label meetTheTeamStart:
+    menu: 
+        "test Meet the Team story quest":
+            call meetTheTeam 
+            jump testStart
+        "no":
+            jump testStart
 
     label testStart:
 

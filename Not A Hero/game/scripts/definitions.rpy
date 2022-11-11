@@ -3,10 +3,17 @@
 ##### CHARACTERS #####
 define e = Character("Ellis", color="#037bfc", image="ellis")
     # uh word of note, don't use the color name like 'blue' instead use its color code
+define j = Character("Josephine", color="#b1b144", image="josephine")
+define d = Character("Desmond", color="#975050", image="desmond")
+define D = Character("DELTA", color="#42526b", image="delta")
+define P = Character("PHI", color="#e07808", image="phi")
+define A = Character("ALPHA", color="#510505", image="alpha")
 
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image normingtonAcademy = "images/normingtonAcademy.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
+image city = "images/normingtonCity.png"
+image hq = "images/hq.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
 image ellis = "images/characters/ellis_neutral.png"
