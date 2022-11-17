@@ -73,7 +73,7 @@ label start:
 
     show screen StatUI
 
-    show ellis with fade
+    #show ellis with fade
 
     e "H-Hey..."
 
