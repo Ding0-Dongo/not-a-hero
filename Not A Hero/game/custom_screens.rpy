@@ -35,6 +35,43 @@ screen MapUI:
         action Jump("testingMap2")
 
 
+
+#Main Menu Powerpoint Slides
+image main_menu_animated:
+    "images/Untitled_Artwork 7.png"
+    linear 1 alpha 1.0
+    pause 3.2
+    linear 1 alpha 0.0
+    "images/Untitled_Artwork 6.png"
+    linear 1 alpha 1.0
+    pause 3.2
+    linear 1 alpha 0.0
+    "images/Untitled_Artwork 5.png"
+    linear 1 alpha 1.0
+    pause 3.2
+    linear 1 alpha 0.0
+    "images/Untitled_Artwork 4.png"
+    linear 1 alpha 1.0
+    pause 3.2
+    linear 1 alpha 0.0
+    "images/Untitled_Artwork 3.png"
+    linear 1 alpha 1.0
+    pause 3.2
+    linear 1 alpha 0.0
+    "images/Untitled_Artwork 2.png"
+    linear 1 alpha 1.0
+    pause 3.2
+    linear 1 alpha 0.0
+    "images/Untitled_Artwork 1.png"
+    linear 1 alpha 1.0
+    pause 3.2
+    linear 1 alpha 0.0
+    "images/Untitled_Artwork.png"
+    linear 1 alpha 1.0
+    pause 3.2
+    linear 1 alpha 0.0
+    repeat
+
 # This is for displaying all the stats and bars.
 
 screen StatUI:
@@ -60,4 +97,5 @@ screen StatUI:
     text "STMN: [stamina]" size 28 xalign 0.1 yalign 0.13
     text "SPD: [speed]" size 28 xalign 0.025 yalign 0.18
     text "Social: [social]/10" size 28 xalign 0.1 yalign 0.18
+
         

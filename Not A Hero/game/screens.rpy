@@ -287,48 +287,93 @@ style quick_button_text:
 
 screen navigation():
 
+
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+
+        if renpy.get_screen("main_menu"):
+            xalign 0.5
+            #yalign 0.95
+            yalign 0.5
+            spacing gui.navigation_spacing
+            
+        else:
+            xoffset 60
+            yalign 0.5
+            spacing 50
+        
+
+        #xpos gui.navigation_xpos
+       
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start"):
+                hover_sound "audio/hover.mp3"
+                activate_sound "audio/buttonsound.mp3"           
+                action Start()
+    
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("History"):
+                hover_sound "audio/hover.mp3"
+                activate_sound "audio/buttonsound.mp3"            
+                action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save"):
+                hover_sound "audio/hover.mp3"
+                activate_sound "audio/buttonsound.mp3" 
+                action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load"): 
+                hover_sound "audio/hover.mp3"
+                activate_sound "audio/buttonsound.mp3" 
+                action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Preferences"): 
+            hover_sound "audio/hover.mp3"
+            activate_sound "audio/buttonsound.mp3"
+            action ShowMenu("preferences")
 
         if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton _("End Replay"):
+                hover_sound "audio/hover.mp3"
+                activate_sound "audio/buttonsound.mp3" 
+                action EndReplay(confirm=True)
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Main Menu"): 
+                hover_sound "audio/hover.mp3"
+                activate_sound "audio/buttonsound.mp3" 
+                action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("About"):
+            hover_sound "audio/hover.mp3"
+            activate_sound "audio/buttonsound.mp3" 
+            action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Help"):
+                hover_sound "audio/hover.mp3"
+                activate_sound "audio/buttonsound.mp3" 
+                action ShowMenu("help")
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit"): 
+                hover_sound "audio/hover.mp3"
+                activate_sound "audio/buttonsound.mp3" 
+                action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -340,6 +385,9 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    outlines[(absolute(3), "#000000", absolute(0), absolute(0))]
+    xalign 0.5
+    
 
 
 ## Main Menu screen ############################################################
@@ -385,7 +433,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -471,6 +519,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     textbutton _("Return"):
         style "return_button"
+        hover_sound "audio/hover.mp3"
+        activate_sound "audio/buttonsound.mp3"
 
         action Return()
 
