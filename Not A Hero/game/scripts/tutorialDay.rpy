@@ -32,4 +32,6 @@ label tutorial:
 
     "Back to day one."
 
+    hide screen StatUI
+
     jump testStart

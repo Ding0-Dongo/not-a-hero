@@ -71,6 +71,8 @@ label start:
 
     scene whiteRoom
 
+    show screen StatUI
+
     show ellis with fade
 
     e "H-Hey..."
