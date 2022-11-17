@@ -65,7 +65,13 @@ label start:
 
     label testStart:
 
+    # Resetting energy and stress after tutorial. Might need to do this at the beginning of every day?
+    $ energy = 10
+    $ stress = 0
+
     scene whiteRoom
+
+    show screen StatUI
 
     show ellis with fade
 

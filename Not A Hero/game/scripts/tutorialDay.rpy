@@ -14,6 +14,24 @@ label tutorial:
 
     "Uh oh."
 
+    show screen StatUI
+
+    "Hopefully you should see some sort of stat UI"
+
+    ". . ."
+
+    $ energy -= 3
+
+    "Get energy drained"
+
+    "See that?"
+
+    $ stress += 1
+
+    "Now become stressed"
+
     "Back to day one."
+
+    hide screen StatUI
 
     jump testStart

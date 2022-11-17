@@ -8,7 +8,9 @@ default stress = 0
 default social = 0
 default standing = "civilian"
 default day = 0
+
 default energy = 10
+default energyMax = 10
 
 default energyDrink = 1
 default energyDrinkPlus = 3
