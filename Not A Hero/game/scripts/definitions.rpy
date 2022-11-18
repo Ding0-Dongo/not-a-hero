@@ -34,6 +34,7 @@ image blackScreen = "#000000"
 
 ##### SPECIAL CHARACTER SPRITES #####
 image ellis Neutral = "Ellis/ellisNeutral.png"
+image ellis Terrified = "Ellis/ellisTerrified.png"
 image potato = "images/potato.png"
 image potato1 = "images/potato1.png"
 image potato2 = "images/potato2.png"

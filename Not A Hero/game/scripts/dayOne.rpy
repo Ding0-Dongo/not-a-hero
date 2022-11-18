@@ -77,9 +77,9 @@ label start:
 
     e Neutral "H-Hey..."
 
-    e "So I heard you were going to be my... android?"
+    e Terrified "So I heard you were going to be my... android?"
 
-    e "Or not since I'm talking to a camera... aha ahaaa..."
+    e Neutral "Or not since I'm talking to a camera... aha ahaaa..."
 
     e "..."
 
