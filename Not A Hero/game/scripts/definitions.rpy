@@ -8,6 +8,22 @@ define d = Character("Desmond", color="#975050", image="desmond")
 define D = Character("DELTA", color="#42526b", image="delta")
 define P = Character("PHI", color="#e07808", image="phi")
 define A = Character("ALPHA", color="#510505", image="alpha")
+define s = Character("Shifty", color="#91835d", image="shifty")
+
+#help old lady commission
+define cat = Character("Cat", color="#f5ebd7")
+define oldLady = Character("Old Lady", color="#298f79")
+
+#help kids commission
+define kid1 = Character("Johnnathaeighn", color="#81e39f")
+define kid2 = Character("Joughseph", color="#90a6fc")
+define kid3 = Character("Emily", color="#f069c7")
+
+#graffi-no commission
+define gangster = Character("Your typical street thug")
+define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather")
+
+
 
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image normingtonAcademy = "images/normingtonAcademy.png"
