@@ -30,6 +30,7 @@ image normingtonAcademy = "images/normingtonAcademy.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
 image city = "images/normingtonCity.png"
 image hq = "images/hq.png"
+image blackScreen = "#000000"
 
 ##### SPECIAL CHARACTER SPRITES #####
 image ellis = "images/characters/ellis_neutral.png"

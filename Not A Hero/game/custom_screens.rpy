@@ -72,8 +72,8 @@ image main_menu_animated:
     linear 1 alpha 0.0
     repeat
 
-# This is for displaying all the stats and bars.
 
+# This is for displaying all the stats and bars.
 screen StatUI:
     bar:
         value energy
@@ -98,4 +98,61 @@ screen StatUI:
     text "SPD: [speed]" size 28 xalign 0.025 yalign 0.18
     text "Social: [social]/10" size 28 xalign 0.1 yalign 0.18
 
-        
+### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
+# This label is called whenever someone chooses to increase their strength
+label TrainStrength:
+    if energy - 2 < 0:
+        "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif strength == 10:
+        show blackScreen with fade
+        "Wow! Your strength cannot be trained further!"
+        hide blackScreen with fade
+    else:
+        show blackScreen with fade
+        "It's weightlifting time!"
+        "*Clang, clang*"
+        "*Huff, huff*"
+        "STRENGTH UP"
+        $ strength += 1
+        $ energy -= 2
+        hide blackScreen with fade
+    jump trainingScreen
+
+# This label is called whenever someone chooses to increase their stamina
+label TrainStamina:
+    if energy - 2 < 0:
+        "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif stamina == 10:
+        show blackScreen with fade
+        "Wow! Your stamina cannot be trained further!"
+        hide blackScreen with fade
+    else:
+        show blackScreen with fade
+        "It's jumprope time!"
+        "*Tap tap tap*"
+        "Phew!"
+        "STAMINA UP"
+        $ stamina += 1
+        $ energy -= 2
+        hide blackScreen with fade
+    jump trainingScreen
+
+# This label is called whenever someone chooses to increase their speed
+label TrainSpeed:
+    if energy - 2 < 0:
+        "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif speed == 10:
+        show blackScreen with fade
+        "Wow! Your stamina cannot be trained further!"
+        hide blackScreen with fade
+    else:
+        show blackScreen with fade
+        "It's treadmill time!"
+        "*Stomp stomp stomp*"
+        "*Pant, pant*"
+        "SPEED UP"
+        $ speed += 1
+        $ energy -= 2
+        hide blackScreen with fade
+    jump trainingScreen
+
