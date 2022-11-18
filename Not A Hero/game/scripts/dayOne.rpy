@@ -73,9 +73,9 @@ label start:
 
     show screen StatUI
 
-    #show ellis with fade
+    show ellis Neutral with fade
 
-    e "H-Hey..."
+    e Neutral "H-Hey..."
 
     e "So I heard you were going to be my... android?"
 
