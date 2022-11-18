@@ -33,11 +33,10 @@ image hq = "images/hq.png"
 image blackScreen = "#000000"
 
 ##### SPECIAL CHARACTER SPRITES #####
-image ellis = "images/characters/ellis_neutral.png"
+image ellis Neutral = "Ellis/ellisNeutral.png"
 image potato = "images/potato.png"
 image potato1 = "images/potato1.png"
 image potato2 = "images/potato2.png"
-image ellisTerrified = "images/characters/ellis_terrified.png"
 
 ##### AUDIO #####
 define RUNELLISRUN = "audio/ellisdeathscene.wav"
