@@ -58,5 +58,6 @@ label tutorial:
     $ strength = 1
     $ stamina = 1
     $ speed = 1
+    $ energyMax = 10
 
     jump testStart

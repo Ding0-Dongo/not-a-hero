@@ -77,7 +77,7 @@ image main_menu_animated:
 screen StatUI:
     bar:
         value energy
-        range 10
+        range energyMax
         xysize(400, 50)
         xalign 0.01
         yalign 0.01
@@ -91,7 +91,7 @@ screen StatUI:
         left_bar "#d32d2daa"
         right_bar "#b2b27299"
 
-    text "ENERGY: [energy]/10" size 28 xalign 0.03 yalign 0.02
+    text "ENERGY: [energy]/[energyMax]" size 28 xalign 0.03 yalign 0.02
     text "STRESS: [stress]/5" size 28 xalign 0.03 yalign 0.08
     text "STR: [strength]" size 28 xalign 0.025 yalign 0.13
     text "STMN: [stamina]" size 28 xalign 0.1 yalign 0.13
@@ -113,7 +113,7 @@ label TrainStrength:
         "*Clang, clang*"
         "*Huff, huff*"
         "STRENGTH UP"
-        $ strength += 1
+        $ strength += 1 + (speed - 1)
         $ energy -= 2
         hide blackScreen with fade
     jump trainingScreen
@@ -132,14 +132,15 @@ label TrainStamina:
         "*Tap tap tap*"
         "Phew!"
         "STAMINA UP"
-        $ stamina += 1
+        $ stamina += 1 + (speed - 1)
         $ energy -= 2
+        $ energyMax += stamina
         hide blackScreen with fade
     jump trainingScreen
 
 # This label is called whenever someone chooses to increase their speed
 label TrainSpeed:
-    if energy - 2 < 0:
+    if energy - 4 < 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
     elif speed == 10:
         show blackScreen with fade
@@ -152,7 +153,7 @@ label TrainSpeed:
         "*Pant, pant*"
         "SPEED UP"
         $ speed += 1
-        $ energy -= 2
+        $ energy -= 4
         hide blackScreen with fade
     jump trainingScreen
 
