@@ -6,6 +6,7 @@ default stamina = 1
 default speed = 1
 default stress = 0
 default social = 0
+default socialLevel = 1
 default standing = "civilian"
 default day = 0
 
