@@ -30,24 +30,37 @@ label tutorial:
 
     "Now become stressed."
 
+    "Okay: let's max out the stress bar"
+
+    $ stress += 4
+
+    hide screen StatUI
+
+    show screen StatUI with hpunch
+
+    if stress == 5:
+        call StressMax
+
     "Alright, now to try some training."
 
 
-    label trainingScreen:
+label trainingScreen:
 
-    menu:
-        "Train Strength":
-            call TrainStrength
+menu:
+    "Train Strength":
+        jump TrainStrength
 
-        "Train Stamina":
-            call TrainStamina
+    "Train Stamina":
+        jump TrainStamina
 
-        "Train Speed":
-            call TrainSpeed
+    "Train Speed":
+        jump TrainSpeed
 
-        "End Training":
-            pass
+    "End Training":
+        pass
+
     
+label endTutorial:
 
     "Alright!"
 

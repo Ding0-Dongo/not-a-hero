@@ -157,3 +157,18 @@ label TrainSpeed:
         hide blackScreen with fade
     jump trainingScreen
 
+### Adding a label that should be called when the player reaches the max value of the stress bar
+### This should have it displayed that the player is too stressed and return them to the 'default' area, wherever it gets decided that is.
+### When days are implemented, this should have the player skip the day they failed on.
+label StressMax:
+    show blackScreen with fade
+    pause(1)
+    hide blackScreen with fade
+    "ERROR: STRESS LEVELS TOO HIGH"
+    show blackScreen with fade
+    pause(1)
+    "ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR--"
+    ". . ."
+    pause(0.75)
+    "--Instert Return to Menu--"
+    hide blackScreen with fade
