@@ -95,6 +95,7 @@ label start:
 
     e "w-where did everyone go?"
 
+
     show screen NormingtonCityMap
 
     "this is normington city."
@@ -107,7 +108,9 @@ label testingMap:
 label testingMap2:
     hide screen NormingtonCityMap
     "ok so the second one works too"
-    jump goodEnd
+    "time to visit shifty"
+
+    call shiftyShop
 
 label goodEnd:
     "good end"

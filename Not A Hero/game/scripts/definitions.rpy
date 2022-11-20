@@ -28,6 +28,7 @@ define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather")
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image normingtonAcademy = "images/normingtonAcademy.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
+image shopRoom = "shopbackground.jpg"
 image city = "images/normingtonCity.png"
 image hq = "images/hq.png"
 image blackScreen = "#000000"
@@ -38,6 +39,7 @@ image ellis Terrified = "Ellis/ellisTerrified.png"
 image potato = "images/potato.png"
 image potato1 = "images/potato1.png"
 image potato2 = "images/potato2.png"
+image shifty = "images/copyrightedshifty.png"
 
 ##### AUDIO #####
 define RUNELLISRUN = "audio/ellisdeathscene.wav"
