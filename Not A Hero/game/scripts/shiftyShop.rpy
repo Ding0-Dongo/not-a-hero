@@ -34,5 +34,4 @@ label shopMenu:
             jump shopMenu
         "im done shopping": 
             s "come back soon :)"
-            
-            show screen NormingtonCityMap
+            call testStart
