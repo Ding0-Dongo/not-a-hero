@@ -24,10 +24,15 @@ label shopMenu:
             $ energy += energyDrink
             s "enjoy the soder"
             jump shopMenu 
-        "some stupid other drink":
-            s "well this won't help ya much but here ya go"
-            $ energy += 1
+        "better drink":
+            s "drink up my boy"
+            $ energy += energyDrinkPlus
+            jump shopMenu
+        "the best drink":
+            s "disney please dont sue :("
+            $ energy += energyDrinkMax
             jump shopMenu
         "im done shopping": 
             s "come back soon :)"
-            call goodEnd
+            
+            show screen NormingtonCityMap
