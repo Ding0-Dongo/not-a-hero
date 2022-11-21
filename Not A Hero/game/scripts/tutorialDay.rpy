@@ -14,6 +14,10 @@ label tutorial:
 
     "Hopefully you should see some sort of stat UI."
 
+    "Get money!"
+
+    $ money += 5
+
     ". . ."
 
     $ energy -= 2

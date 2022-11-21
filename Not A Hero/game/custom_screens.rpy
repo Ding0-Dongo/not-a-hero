@@ -97,6 +97,7 @@ screen StatUI:
     text "STMN: [stamina]" size 28 xalign 0.1 yalign 0.13
     text "SPD: [speed]" size 28 xalign 0.025 yalign 0.18
     text "Social Level [socialLevel]: [social]/[socialMax]" size 28 xalign 0.1 yalign 0.18
+    text "$[money]" size 65 xalign 0.98 yalign 0.025 color "#23b84d"
 
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
 # This label is called whenever someone chooses to increase their strength
