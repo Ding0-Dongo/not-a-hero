@@ -22,6 +22,14 @@ label tutorial:
 
     "See that?"
 
+    "Gain some social points!"
+
+    $ social += 10
+    if social == socialMax:
+        call SocialLevelUp
+
+    "Did the level go up?"
+
     $ stress += 1
 
     hide screen StatUI
@@ -72,5 +80,9 @@ label endTutorial:
     $ stamina = 1
     $ speed = 1
     $ energyMax = 10
+    $ social = 0
+    $ socialLevel = 1
+    $ tempSocialLevel = 0
+    $ socialMax = 10
 
     jump testStart

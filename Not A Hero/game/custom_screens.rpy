@@ -96,7 +96,7 @@ screen StatUI:
     text "STR: [strength]" size 28 xalign 0.025 yalign 0.13
     text "STMN: [stamina]" size 28 xalign 0.1 yalign 0.13
     text "SPD: [speed]" size 28 xalign 0.025 yalign 0.18
-    text "Social: [social]/10" size 28 xalign 0.1 yalign 0.18
+    text "Social Level [socialLevel]: [social]/[socialMax]" size 28 xalign 0.1 yalign 0.18
 
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
 # This label is called whenever someone chooses to increase their strength
@@ -172,3 +172,15 @@ label StressMax:
     pause(0.75)
     "--Instert Return to Menu--"
     hide blackScreen with fade
+    return
+
+
+    # Label that gets called when the social bar is filled
+    label SocialLevelUp:
+        $ tempSocialLevel = socialLevel
+        $ socialLevel += 1
+        "- - Social Level Up! ([tempSocialLevel] --> [socialLevel]) - -"
+        $ social = 0
+        $ socialMax += 2
+        return
+
