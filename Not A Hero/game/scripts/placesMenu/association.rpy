@@ -1,7 +1,7 @@
 label association:
     if day==1:
         menu:
-            Meet your TEAM:
+            "Meet your TEAM":
                 call meetTheTeam
-            Socialize:
+            "Socialize":
                 call socialize

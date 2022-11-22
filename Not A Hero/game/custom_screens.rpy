@@ -231,3 +231,18 @@ label StressMax:
         $ socialMax += 2
         return
 
+#this here screen's for flashing the title screen
+screen titleScreenFlash:
+    image "images/places/NAHH.png"
+
+label splashscreen:
+    scene blackScreen
+    with Pause(1)
+
+    show text "Not A Studio Presents..." with dissolve
+    with Pause(2)
+
+    hide text with dissolve
+    with Pause(1)
+
+    return

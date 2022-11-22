@@ -41,3 +41,18 @@ label dayZero:
     e "It's... it's just..."
     e "I'm an introvert! I'm not a hero!"
     #hide text box and flash title screen
+    window hide
+    #ok so how this' gonna go down is that we flash the title screen, then present the option to the player of whether
+    #or not they want to see the tutorial
+    #if they don't, we immediately yeet them into day 1
+    show screen titleScreenFlash
+    with Pause(3)
+    show blackScreen
+    hide screen titleScreenFlash
+
+    menu:
+        "Begrudgingly play the Normington Association of Hero's Training Tape":
+            #it'd be cool if we added like a vhs sound effect here
+            jump tutorial
+        "Chuck that in the trash":
+            jump dayOne

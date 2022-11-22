@@ -52,6 +52,9 @@ label start:
 
         "Skip tutorial":
             jump meetTheTeamStart
+
+        "Actually start The Game":
+            jump dayZero
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
