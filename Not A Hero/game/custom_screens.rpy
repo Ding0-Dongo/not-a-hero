@@ -15,24 +15,70 @@ screen NormingtonCityMap:
 # If you want to navigate using the map, it's prefered to use "call".
 # When in skip mode (tab key on keyboard), this prevents the game to be skipped.
 label call_mapUI:
-    call screen MapUI
+    if day==0:
+        call screen MapUI0
+    elif day==1:
+        call screen MapUI1
+    elif day==2:
+        call screen MapUI2
+    elif day==3:
+        call screen MapUI3
+    elif day==4:
+        call screen MapUI4
+    elif day==5:
+        call screen MapUI5
+    elif day==6:
+        call screen MapUI6
+    else:
+        call screen MapUI7
 
-screen MapUI:
+screen MapUI0:
     # add "images/normingtonMap.png"
 
-    imagebutton:
-        xpos 618
-        ypos 570
-        idle "images/potato1.png"
-        hover "images/potato1.png"
-        action Jump("testingMap")
+    # imagebutton:
+    #     xpos 618
+    #     ypos 570
+    #     idle "images/potato1.png"
+    #     hover "images/potato1.png"
+    #     action Jump("testingMap")
 
+    # imagebutton:
+    #     xpos 10
+    #     ypos 10
+    #     idle "images/potato2.png"
+    #     hover "images/potato2.png"
+    #     action Jump("testingMap2")
     imagebutton:
+        #This will be for volunteering (library)
         xpos 10
-        ypos 10
-        idle "images/potato2.png"
-        hover "images/potato2.png"
-        action Jump("testingMap2")
+        ypos 100
+        idle "images/places/NormingtonCityLibrary.png"
+        hover "images/places/NormingtonCityLibrary.png"
+        action Call("lib")
+
+screen MapUI1:
+    imagebutton:
+        #library
+        xpos 10
+        ypos 100
+        idle "images/places/NormingtonCityLibrary.png"
+        hover "images/places/NormingtonCityLibrary.png"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 30
+        ypos 30
+        idle "images/places/NormingtonCityHills.png"
+        hover "images/places/NormingtonCityHills.png"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 100
+        ypos 100
+        idle "images/places/NAHH.png"
+        hover "images/places/NAHH.png"
+        action Call("association")
+
 
 
 
@@ -185,3 +231,18 @@ label StressMax:
         $ socialMax += 2
         return
 
+#this here screen's for flashing the title screen
+screen titleScreenFlash:
+    image "images/places/NAHH.png"
+
+label splashscreen:
+    scene blackScreen
+    with Pause(1)
+
+    show text "Not A Studio Presents..." with dissolve
+    with Pause(2)
+
+    hide text with dissolve
+    with Pause(1)
+
+    return

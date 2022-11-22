@@ -6,6 +6,8 @@ label tutorial:
 
     scene bg room
 
+    show dummy Neutral
+
     "Howdy there."
 
     "If you're seeing this then this is where the tutorial goes."
@@ -18,15 +20,21 @@ label tutorial:
 
     $ money += 5
 
+    show dummy Happy
+
     ". . ."
 
     $ energy -= 2
 
     "Get energy drained."
 
+    show dummy Sad
+
     "See that?"
 
     "Gain some social points!"
+
+    show dummy Happy
 
     $ social += 10
     if social == socialMax:
@@ -42,6 +50,8 @@ label tutorial:
 
     "Now become stressed."
 
+    show dummy Sad
+
     "Okay: let's max out the stress bar"
 
     $ stress += 4
@@ -50,10 +60,14 @@ label tutorial:
 
     show screen StatUI with hpunch
 
+    show dummy Angry
+
     if stress == 5:
         call StressMax
 
     "Alright, now to try some training."
+
+    show dummy Neutral
 
 
 label trainingScreen:
@@ -76,7 +90,14 @@ label endTutorial:
 
     "Alright!"
 
-    "Resetting your stats and sending you to day one!"
+    show dummy Neutral
+
+    #"Resetting your stats and sending you to day one!"
+    "Aaaaaaaaaaand that should be all you need to know to do some good in the world!"
+
+    "And always remember:"
+
+    "{i}Even the darkest night will end and the sun will rise."
 
     hide screen StatUI
 
