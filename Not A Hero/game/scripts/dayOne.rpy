@@ -62,6 +62,8 @@ label start:
             jump testStart
         "no":
             jump testStart
+        "Test Day Zero Main Story":
+            jump dayZero
 
     label testStart:
 
