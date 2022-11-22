@@ -40,6 +40,10 @@ image potato = "images/potato.png"
 image potato1 = "images/potato1.png"
 image potato2 = "images/potato2.png"
 image shifty = "images/copyrightedshifty.png"
+image test1 = "images/TEST-SPRITE.png"
+image test2 = "images/TEST-SPRITE2.png"
+image test3 = "images/TEST-SPRITE3.png"
+image test4 = "images/TEST-SPRITE4.png"
 
 ##### AUDIO #####
 define RUNELLISRUN = "audio/ellisdeathscene.wav"
