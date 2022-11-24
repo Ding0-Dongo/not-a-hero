@@ -17,7 +17,7 @@ define oldLady = Character("Old Lady", color="#298f79")
 #help kids commission
 define kid1 = Character("Johnnathaeighn", color="#81e39f")
 define kid2 = Character("Joughseph", color="#90a6fc")
-define kid3 = Character("Emily", color="#f069c7")
+define kid3 = Character("Rose", color="#f069c7")
 
 #graffi-no commission
 define gangster = Character("Your typical street thug")
