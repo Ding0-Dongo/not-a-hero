@@ -52,6 +52,9 @@ label start:
 
         "Skip tutorial":
             jump meetTheTeamStart
+
+        "Actually start The Game":
+            jump dayZero
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
@@ -62,24 +65,26 @@ label start:
             jump testStart
         "no":
             jump testStart
+        "Test Day Zero Main Story":
+            jump dayZero
 
     label testStart:
 
     # Resetting energy and stress after tutorial. Might need to do this at the beginning of every day?
-    $ energy = 10
+    $ energy = energyMax
     $ stress = 0
 
     scene whiteRoom
 
     show screen StatUI
 
-    show ellis with fade
+    show ellis Neutral with fade
 
-    e "H-Hey..."
+    e Neutral "H-Hey..."
 
-    e "So I heard you were going to be my... android?"
+    e Terrified "So I heard you were going to be my... android?"
 
-    e "Or not since I'm talking to a camera... aha ahaaa..."
+    e Neutral "Or not since I'm talking to a camera... aha ahaaa..."
 
     e "..."
 
@@ -95,13 +100,11 @@ label start:
 
     e "w-where did everyone go?"
 
-<<<<<<< Updated upstream
+
     show screen NormingtonCityMap
-=======
 
     #show screen NormingtonCityMap
     show city
->>>>>>> Stashed changes
 
     "this is normington city."
 
@@ -124,13 +127,17 @@ label testingMap:
 label testingMap2:
     #hide screen NormingtonCityMap
     "ok so the second one works too"
-<<<<<<< Updated upstream
     jump goodEnd
-=======
     "time to visit shifty"
     call shiftyShop
->>>>>>> Stashed changes
 
 #label goodEnd:
     #"good end"
     #return
+    "time to visit shifty"
+
+    call shiftyShop
+
+label goodEnd:
+    "good end"
+    return

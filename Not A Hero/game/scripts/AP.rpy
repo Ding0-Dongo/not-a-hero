@@ -6,6 +6,10 @@ default stamina = 1
 default speed = 1
 default stress = 0
 default social = 0
+default socialMax = 10
+default tempSocialLevel = 0
+default socialLevel = 1
+default money = 0
 default standing = "civilian"
 default day = 0
 
@@ -15,3 +19,11 @@ default energyMax = 10
 default energyDrink = 1
 default energyDrinkPlus = 3
 default energyDrinkMax = 5
+
+default commission1Done = False #delivery (clinic)
+default commission2Done = False #delivery (TEAM)
+default commission3Done = False #graffi-no
+default commission4Done = False #help Kids
+default commission5Done = False #help Granny
+default commission6Done = False #PSA (TEAM)
+default commission7Done = False #Thiefstopper
