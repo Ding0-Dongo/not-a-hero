@@ -47,7 +47,7 @@ label dayZero:
     #if they don't, we immediately yeet them into day 1
     show screen titleScreenFlash
     with Pause(3)
-    show blackScreen
+    show blackScreen with fade
     hide screen titleScreenFlash
 
     menu:

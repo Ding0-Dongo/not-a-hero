@@ -57,4 +57,5 @@ label graffiNo:
                 e "Well then."
         "After dealing with whatever else that remained, DELTA and Ellis spent the next half hour scrubbing off some quite amazingly sprayed graffiti."
         $ money += 10
+        $ commission3Done = True
         return
