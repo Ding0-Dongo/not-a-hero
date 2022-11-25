@@ -28,10 +28,12 @@ define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather")
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image normingtonAcademy = "images/normingtonAcademy.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
-image shopRoom = "shopbackground.jpg"
 image city = "images/normingtonCity.png"
 image hq = "images/hq.png"
+image shopRoom = "shopbackground.jpg"
+image city = "images/normingtonMap.png"
 image blackScreen = "#000000"
+image alleyway = "images/alleyway.jpg"
 
 ##### SPECIAL CHARACTER SPRITES #####
 image ellis Neutral = "Ellis/ellisNeutral.png"
@@ -50,4 +52,16 @@ image test3 = "images/TEST-SPRITE3.png"
 image test4 = "images/TEST-SPRITE4.png"
 
 ##### AUDIO #####
+define MainMusic = "audio/Not_A_Hero_general_loop.mp3"
 define RUNELLISRUN = "audio/ellisdeathscene.wav"
+define TackleAudio = "audio/tackle.mp3"
+define ChaseMusic = "audio/chasemusic.mp3"
+define ScreamAudio = "audio/womenscream.mp3"
+define RunConcreteAudio = "audio/runconcrete.mp3"
+define SirenAudio = "audio/policesiren.mp3"
+define PhoneAudio = "audio/phoneringing.mp3"
+define Cheer = "audio/crowdcheer.mp3"
+define AwardMusic = "audio/awardmusic.mp3"
+define AchievementAudio = "audio/achievement.mp3"
+define GaspAudio = "audio/gasp.mp3"
+define ChaChingAudio = "audio/chaching.mp3"

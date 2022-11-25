@@ -103,16 +103,37 @@ label start:
 
     show screen NormingtonCityMap
 
+    #show screen NormingtonCityMap
+    show city
+
     "this is normington city."
 
+    "what would you like to do?"
+
+    menu:
+        "Visit Normington City":
+            hide screen StatUI
+            jump testingMap
+        "Visit Shifty Shop":
+            jump shiftyShop
+
 label testingMap:
-    hide screen NormingtonCityMap
-    "woah this works"
-    jump goodEnd
+    #hide screen NormingtonCityMap
+    #"whoah this works"
+    #jump goodEnd
+    jump call_mapUI
+    return
 
 label testingMap2:
-    hide screen NormingtonCityMap
+    #hide screen NormingtonCityMap
     "ok so the second one works too"
+    jump goodEnd
+    "time to visit shifty"
+    call shiftyShop
+
+#label goodEnd:
+    #"good end"
+    #return
     "time to visit shifty"
 
     call shiftyShop

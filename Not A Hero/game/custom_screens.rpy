@@ -49,13 +49,26 @@ screen MapUI0:
     #     hover "images/potato2.png"
     #     action Jump("testingMap2")
     imagebutton:
+        xpos 618
+        ypos 570
+        idle "images/potato1.png"
+        hover "images/potato1.png"
+        action Jump("testingMap")
+    imagebutton:
         #This will be for volunteering (library)
         xpos 10
         ypos 100
         idle "images/places/NormingtonCityLibrary.png"
         hover "images/places/NormingtonCityLibrary.png"
         action Call("lib")
-
+    imagebutton:
+        #delete this before demo just testing day 6 purse snatch quest #######
+        xpos 1000
+        ypos 100
+        idle "images/apurse.jpeg"
+        hover "images/apurse.jpeg"
+        action Jump ("action_purse")
+        
 screen MapUI1:
     imagebutton:
         #library
