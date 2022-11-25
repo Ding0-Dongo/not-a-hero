@@ -20,10 +20,10 @@ default energyDrink = 1
 default energyDrinkPlus = 3
 default energyDrinkMax = 5
 
-default commission1Done = False
-default commission2Done = False
-default commission3Done = False
-default commission4Done = False
-default commission5Done = False
-default commission6Done = False
-default commission7Done = False
+default commission1Done = False #delivery (clinic)
+default commission2Done = False #delivery (TEAM)
+default commission3Done = False #graffi-no
+default commission4Done = False #help Kids
+default commission5Done = False #help Granny
+default commission6Done = False #PSA (TEAM)
+default commission7Done = False #Thiefstopper

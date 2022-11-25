@@ -84,6 +84,8 @@ screen MapUI1:
 
 #Main Menu Powerpoint Slides
 image main_menu_animated:
+    pause 0.3
+    linear 1 alpha 0.0
     "images/Untitled_Artwork 7.png"
     linear 1 alpha 1.0
     pause 3.2
@@ -243,6 +245,6 @@ label splashscreen:
     with Pause(2)
 
     hide text with dissolve
-    with Pause(1)
+    with Pause(2)
 
     return
