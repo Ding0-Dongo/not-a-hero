@@ -95,20 +95,42 @@ label start:
 
     e "w-where did everyone go?"
 
+<<<<<<< Updated upstream
     show screen NormingtonCityMap
+=======
+
+    #show screen NormingtonCityMap
+    show city
+>>>>>>> Stashed changes
 
     "this is normington city."
 
+    "what would you like to do?"
+
+    menu:
+        "Visit Normington City":
+            hide screen StatUI
+            jump testingMap
+        "Visit Shifty Shop":
+            jump shiftyShop
+
 label testingMap:
-    hide screen NormingtonCityMap
-    "woah this works"
-    jump goodEnd
+    #hide screen NormingtonCityMap
+    #"whoah this works"
+    #jump goodEnd
+    jump call_mapUI
+    return
 
 label testingMap2:
-    hide screen NormingtonCityMap
+    #hide screen NormingtonCityMap
     "ok so the second one works too"
+<<<<<<< Updated upstream
     jump goodEnd
+=======
+    "time to visit shifty"
+    call shiftyShop
+>>>>>>> Stashed changes
 
-label goodEnd:
-    "good end"
-    return
+#label goodEnd:
+    #"good end"
+    #return
