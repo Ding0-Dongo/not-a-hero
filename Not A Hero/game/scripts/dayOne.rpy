@@ -55,6 +55,9 @@ label start:
 
         "Actually start The Game":
             jump dayZero
+
+        "Go make an Accident":
+            jump theAccident
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
