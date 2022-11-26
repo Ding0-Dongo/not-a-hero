@@ -119,6 +119,9 @@ label start:
             jump testingMap
         "Visit Shifty Shop":
             jump shiftyShop
+        "PurseSnatch Quest (delete this before demo)":
+            hide screen NormingtonCityMap
+            jump Pursenapper
 
 label testingMap:
     #hide screen NormingtonCityMap
@@ -137,9 +140,9 @@ label testingMap2:
 #label goodEnd:
     #"good end"
     #return
-    "time to visit shifty"
+    #"time to visit shifty"
 
-    call shiftyShop
+    #call shiftyShop
 
 label goodEnd:
     "good end"

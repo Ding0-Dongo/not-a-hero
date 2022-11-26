@@ -20,10 +20,12 @@ label Purse_options:
             jump OhWell_Option
         "Tackle him (Requires 5 Strength)":
             jump TackleHim_Option
-        "Chase him (Requires 5 Strength)":
+        "Chase him (Requires 5 Speed)":
             jump ChaseHim_Option
         "Add 5 Strength":
             jump FiveStrength_Option
+        "Add 5 Speed":
+            jump FiveSpeed_Option
 
 label OhWell_Option:
     "(Before Ellis realizes what's happening, the thief's already disappeared around the street corner.)"
@@ -84,8 +86,8 @@ label TackleHim_Option:
             jump testingMap
 
 label ChaseHim_Option:
-        if strength < 5:
-            "Elis needs a strength of 5 to chase him!"
+        if speed < 5:
+            "Elis needs a speed of 5 to chase him!"
             jump Purse_options
         else:
             stop sound
@@ -136,4 +138,8 @@ label ChaseHim_Option:
 
 label FiveStrength_Option:
     $ strength += 5
+    jump Purse_options
+
+label FiveSpeed_Option:
+    $ speed += 5
     jump Purse_options

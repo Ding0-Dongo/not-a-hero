@@ -61,13 +61,7 @@ screen MapUI0:
         idle "images/places/NormingtonCityLibrary.png"
         hover "images/places/NormingtonCityLibrary.png"
         action Call("lib")
-    imagebutton:
-        #delete this before demo just testing day 6 purse snatch quest #######
-        xpos 1000
-        ypos 100
-        idle "images/apurse.jpeg"
-        hover "images/apurse.jpeg"
-        action Jump ("action_purse")
+        
         
 screen MapUI1:
     imagebutton:
