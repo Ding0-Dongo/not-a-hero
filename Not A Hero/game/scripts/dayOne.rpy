@@ -119,6 +119,9 @@ label start:
         "PurseSnatch Quest (delete this before demo)":
             hide screen NormingtonCityMap
             jump Pursenapper
+        "Visit Normington Coffee":
+            hide screen NormingtonCityMap
+            jump NormingtonCoffee
 
 label testingMap:
     #hide screen NormingtonCityMap

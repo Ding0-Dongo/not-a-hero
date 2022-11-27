@@ -9,6 +9,7 @@ define D = Character("DELTA", color="#42526b", image="delta")
 define P = Character("PHI", color="#e07808", image="phi")
 define A = Character("ALPHA", color="#510505", image="alpha")
 define s = Character("Shifty", color="#91835d", image="shifty")
+define sc = Character("Shifty Barista", color = "#036635", image="shifty")
 
 #help old lady commission
 define cat = Character("Cat", color="#f5ebd7")
@@ -34,6 +35,7 @@ image shopRoom = "shopbackground.jpg"
 image city = "images/normingtonMap.png"
 image blackScreen = "#000000"
 image alleyway = "images/alleyway.jpg"
+image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
 
 ##### SPECIAL CHARACTER SPRITES #####
 image ellis Neutral = "Ellis/ellisNeutral.png"
@@ -65,3 +67,6 @@ define AwardMusic = "audio/awardmusic.mp3"
 define AchievementAudio = "audio/achievement.mp3"
 define GaspAudio = "audio/gasp.mp3"
 define ChaChingAudio = "audio/chaching.mp3"
+define CoffeeShopMusic = "audio/coffeeshop.mp3"
+define PourDrinkAudio = "audio/drinkpour.mp3"
+define CafeChatterAudio = "audio/cafechatter.mp3"
