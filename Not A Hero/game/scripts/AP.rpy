@@ -19,6 +19,8 @@ default energyMax = 10
 default energyDrink = 1
 default energyDrinkPlus = 3
 default energyDrinkMax = 5
+default coffee = 2
+default coffeeamount = 0
 
 default commission1Done = False #delivery (clinic)
 default commission2Done = False #delivery (TEAM)
