@@ -58,6 +58,8 @@ label start:
 
         "Go make an Accident":
             jump theAccident
+        "Visit Shifty":
+            jump shiftyShop
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
