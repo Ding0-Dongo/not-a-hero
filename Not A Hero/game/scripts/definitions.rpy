@@ -36,6 +36,7 @@ image city = "images/normingtonMap.png"
 image blackScreen = "#000000"
 image alleyway = "images/alleyway.jpg"
 image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
+image plaza = "images/plaza_PLACEHOLDER.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
 image ellis Neutral = "Ellis/ellisNeutral.png"
