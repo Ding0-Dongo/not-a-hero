@@ -2,10 +2,13 @@ default entryLines=["Hm? Oh, it's you again...","Yes, yes, buy something!","Shif
 default boughtLines=["Buy another. You never know when you might need it.","No refunds, no exchanges!","I'll give you a discount if you buy in bulk next time.(He won't.)","You want a bag for that?","Ah, you've got taste!","Good eye for quality you've got there.","Great choice."]
 
 label shiftyShop:
+    #remove before demo
     $ energy = 3
+    $ dollars = 10
+
     stop music
     play sound ShopBellRingAudio
-    play music ShopBackgroundMusic
+    play music ShopBackgroundMusic volume 0.5
 
     scene shopRoom
 
@@ -51,17 +54,40 @@ label shopMenu:
 
     menu: 
         "1 Energy Drink":
-            $ energy += energyDrink
-            s "[boughtItemPhrase]"
-            jump shopMenu 
+            if energy < 10 and dollars >= 5:
+                $ energy += energyDrink
+                $ dollars -= 5
+                s "[boughtItemPhrase]"
+                jump shopMenu
+            elif energy == 10:
+                s "Don't go biting more than you can chew bud."
+                jump shopMenu 
+            elif dollars < 5:
+                s "Hey, hey! Hands off what you can't afford, pal!"
+                jump shopMenu
         "1 Energy Drink Plus":
-            s "[boughtItemPhrase]"
-            $ energy += energyDrinkPlus
-            jump shopMenu
+            if energy < 8 and dollars >= 10: 
+                s "[boughtItemPhrase]"
+                $ energy += energyDrinkPlus
+                $ dollars -= 10
+                jump shopMenu
+            elif energy >=8:
+                s "Don't go biting more than you can chew bud."
+                jump shopMenu
+            elif dollars < 10:
+                s "Hey, hey! Hands off what you can't afford, pal!"
+                jump shopMenu
         "1 Energy Drink Max":
-            s "[boughtItemPhrase]"
-            $ energy += energyDrinkMax
-            jump shopMenu
+            if energy < 6 and dollars >= 15:
+                s "[boughtItemPhrase]"
+                $ energy += energyDrinkMax
+                jump shopMenu
+            elif energy >= 6:
+                s "Don't go biting more than you can chew bud."
+                jump shopMenu
+            elif dollars < 15:
+                s "Hey, hey! Hands off what you can't afford, pal!"
+                jump shopMenu
         "I've gotta go!": 
             s "Come back soon!"
             stop music

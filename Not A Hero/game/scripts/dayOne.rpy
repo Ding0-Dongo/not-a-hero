@@ -119,7 +119,7 @@ label start:
         "Visit Normington City":
             hide screen StatUI
             jump testingMap
-        "Visit Shifty Shop":
+        "Visit Shifty Shop (DELETE LATER)":
             jump shiftyShop
         "PurseSnatch Quest (delete this before demo)":
             hide screen NormingtonCityMap
