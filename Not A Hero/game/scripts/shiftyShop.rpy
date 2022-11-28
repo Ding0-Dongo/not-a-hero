@@ -3,6 +3,10 @@ default boughtLines=["Buy another. You never know when you might need it.","No r
 
 label shiftyShop:
     $ energy = 3
+    stop music
+    play sound ShopBellRingAudio
+    play music ShopBackgroundMusic
+
     scene shopRoom
 
     show screen StatUI
@@ -10,6 +14,7 @@ label shiftyShop:
     show shifty with fade
 
     $ shiftyGreeting = renpy.random.choice(entryLines)
+
 
     s "[shiftyGreeting]"
 
@@ -59,4 +64,6 @@ label shopMenu:
             jump shopMenu
         "I've gotta go!": 
             s "Come back soon!"
+            stop music
+            play music MainMusic
             call testStart
