@@ -29,3 +29,4 @@ default commission4Done = False #help Kids
 default commission5Done = False #help Granny
 default commission6Done = False #PSA (TEAM)
 default commission7Done = False #Thiefstopper
+default commission8Done = False #josephine's apology

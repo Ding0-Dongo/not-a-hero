@@ -60,6 +60,8 @@ label start:
             jump theAccident
         "Visit Shifty":
             jump shiftyShop
+        "Test 'Talk Things Out'":
+            call talkThingsOut
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
