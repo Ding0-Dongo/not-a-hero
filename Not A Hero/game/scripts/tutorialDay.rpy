@@ -10,7 +10,14 @@ label tutorial:
 
     "Howdy there."
 
-    "If you're seeing this then this is where the tutorial goes."
+    #"If you're seeing this then this is where the tutorial goes."
+    "Are you prepared to become a HERO?"
+
+    ". . ."
+
+    "Great!"
+
+    "These are the basics every justice-serving, crime-fighting, do-gooder should know!"
 
     show screen StatUI
 
