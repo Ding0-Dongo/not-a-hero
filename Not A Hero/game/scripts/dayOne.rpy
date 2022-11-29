@@ -61,7 +61,13 @@ label start:
         "Visit Shifty":
             jump shiftyShop
         "Test 'Talk Things Out'":
-            call talkThingsOut
+            jump talkThingsOut
+        "Relax - rest":
+            jump rest
+        "Relax - read a book":
+            jump readBook
+        "Relax - take a walk":
+            jump takeWalk
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
