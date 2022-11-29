@@ -354,3 +354,6 @@ label meetTheTeamPartTwo:
 
     "Reward: x1 Energy Drink (+[energyDrink] energy)"
     $ energy += energyDrink
+
+    $ story1Done = True
+    return

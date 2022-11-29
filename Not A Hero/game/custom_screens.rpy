@@ -29,8 +29,6 @@ label call_mapUI:
         call screen MapUI5
     elif day==6:
         call screen MapUI6
-    else:
-        call screen MapUI7
 
 screen MapUI0:
     # add "images/normingtonMap.png"
@@ -86,7 +84,239 @@ screen MapUI1:
         hover "images/places/NAHH.png"
         action Call("association")
 
+screen MapUI2:
+    imagebutton:
+        #park
+        xpos 250
+        ypos 250
+        idle "images/places/NormingtonCityPark.png"
+        hover "images/places/NormingtonCityPark.png"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 10
+        ypos 100
+        idle "images/places/NormingtonCityLibrary.png"
+        hover "images/places/NormingtonCityLibrary.png"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 30
+        ypos 30
+        idle "images/places/NormingtonCityHills.png"
+        hover "images/places/NormingtonCityHills.png"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 100
+        ypos 100
+        idle "images/places/NAHH.png"
+        hover "images/places/NAHH.png"
+        action Call("association")
 
+screen MapUI3:
+    imagebutton:
+        #park
+        xpos 250
+        ypos 250
+        idle "images/places/NormingtonCityPark.png"
+        hover "images/places/NormingtonCityPark.png"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 10
+        ypos 100
+        idle "images/places/NormingtonCityLibrary.png"
+        hover "images/places/NormingtonCityLibrary.png"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 30
+        ypos 30
+        idle "images/places/NormingtonCityHills.png"
+        hover "images/places/NormingtonCityHills.png"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 100
+        ypos 100
+        idle "images/places/NAHH.png"
+        hover "images/places/NAHH.png"
+        action Call("association")
+    imagebutton:
+        #downtown
+        xpos 500
+        ypos 400
+        idle "images/places/DowntownNormington.png"
+        hover "images/places/DowntownNormington.png"
+        action Call("downtown")
+
+screen MapUI4:
+    imagebutton:
+        #park
+        xpos 250
+        ypos 250
+        idle "images/places/NormingtonCityPark.png"
+        hover "images/places/NormingtonCityPark.png"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 10
+        ypos 100
+        idle "images/places/NormingtonCityLibrary.png"
+        hover "images/places/NormingtonCityLibrary.png"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 30
+        ypos 30
+        idle "images/places/NormingtonCityHills.png"
+        hover "images/places/NormingtonCityHills.png"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 100
+        ypos 100
+        idle "images/places/NAHH.png"
+        hover "images/places/NAHH.png"
+        action Call("association")
+    imagebutton:
+        #downtown
+        xpos 500
+        ypos 400
+        idle "images/places/DowntownNormington.png"
+        hover "images/places/DowntownNormington.png"
+        action Call("downtown")
+    imagebutton:
+        #plaza
+        xpos 200
+        ypos 200
+        idle "images/places/NormingtonCityPlaza.png"
+        hover "images/places/NormingtonCityPlaza.png"
+        action Call("plaza")
+
+screen MapUI5:
+    imagebutton:
+        #park
+        xpos 250
+        ypos 250
+        idle "images/places/NormingtonCityPark.png"
+        hover "images/places/NormingtonCityPark.png"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 10
+        ypos 100
+        idle "images/places/NormingtonCityLibrary.png"
+        hover "images/places/NormingtonCityLibrary.png"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 30
+        ypos 30
+        idle "images/places/NormingtonCityHills.png"
+        hover "images/places/NormingtonCityHills.png"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 100
+        ypos 100
+        idle "images/places/NAHH.png"
+        hover "images/places/NAHH.png"
+        action Call("association")
+    imagebutton:
+        #downtown
+        xpos 500
+        ypos 400
+        idle "images/places/DowntownNormington.png"
+        hover "images/places/DowntownNormington.png"
+        action Call("downtown")
+    imagebutton:
+        #plaza
+        xpos 200
+        ypos 200
+        idle "images/places/NormingtonCityPlaza.png"
+        hover "images/places/NormingtonCityPlaza.png"
+        action Call("plaza")
+    imagebutton:
+        #elementary
+        xpos 30
+        ypos 30
+        idle "images/places/NormingtonCityElementary.png"
+        hover "images/places/NormingtonCityElementary.png"
+        action Call("elementary")
+    imagebutton:
+        #coffee
+        xpos 70
+        ypos 240
+        idle "images/places/NormingtonCityCoffee.png"
+        hover "images/places/NormingtonCityCoffee.png"
+        action Call("coffee")
+
+screen MapUI6:
+    imagebutton:
+        #park
+        xpos 250
+        ypos 250
+        idle "images/places/NormingtonCityPark.png"
+        hover "images/places/NormingtonCityPark.png"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 10
+        ypos 100
+        idle "images/places/NormingtonCityLibrary.png"
+        hover "images/places/NormingtonCityLibrary.png"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 30
+        ypos 30
+        idle "images/places/NormingtonCityHills.png"
+        hover "images/places/NormingtonCityHills.png"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 100
+        ypos 100
+        idle "images/places/NAHH.png"
+        hover "images/places/NAHH.png"
+        action Call("association")
+    imagebutton:
+        #downtown
+        xpos 500
+        ypos 400
+        idle "images/places/DowntownNormington.png"
+        hover "images/places/DowntownNormington.png"
+        action Call("downtown")
+    imagebutton:
+        #plaza
+        xpos 200
+        ypos 200
+        idle "images/places/NormingtonCityPlaza.png"
+        hover "images/places/NormingtonCityPlaza.png"
+        action Call("plaza")
+    imagebutton:
+        #elementary
+        xpos 30
+        ypos 30
+        idle "images/places/NormingtonCityElementary.png"
+        hover "images/places/NormingtonCityElementary.png"
+        action Call("elementary")
+    imagebutton:
+        #coffee
+        xpos 70
+        ypos 240
+        idle "images/places/NormingtonCityCoffee.png"
+        hover "images/places/NormingtonCityCoffee.png"
+        action Call("coffee")
+    imagebutton:
+        #clinic
+        xpos 340
+        ypos 10
+        idle "images/places/NormingtonCityClinic.png"
+        hover "images/places/NormingtonCityClinic.png"
+        action Call("clinic")
 
 
 #Main Menu Powerpoint Slides

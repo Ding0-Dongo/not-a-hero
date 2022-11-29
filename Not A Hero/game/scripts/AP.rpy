@@ -30,3 +30,10 @@ default commission5Done = False #help Granny
 default commission6Done = False #PSA (TEAM)
 default commission7Done = False #Thiefstopper
 default commission8Done = False #josephine's apology
+
+default story1Done = False
+default story2Done = False
+default story3Done = False
+default story4Done = False
+default story5Done = False
+default story6Done = False

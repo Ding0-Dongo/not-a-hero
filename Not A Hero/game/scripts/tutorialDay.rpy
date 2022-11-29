@@ -98,6 +98,7 @@ label endTutorial:
     "And always remember:"
 
     "{i}Even the darkest night will end and the sun will rise."
+    #alternatively, any cool normington association quote will do just nicely here
 
     hide screen StatUI
 
