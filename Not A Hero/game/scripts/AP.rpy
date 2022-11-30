@@ -29,7 +29,9 @@ default commission4Done = False #help Kids
 default commission5Done = False #help Granny
 default commission6Done = False #PSA (TEAM)
 default commission7Done = False #Thiefstopper
-default commission8Done = False #josephine's apology
+
+default apologyDone = False #josephine's apology
+default bulliesDone = False #bullies!
 
 default story1Done = False
 default story2Done = False

@@ -62,6 +62,8 @@ label start:
             jump shiftyShop
         "Test 'Talk Things Out'":
             jump talkThingsOut
+        "Test 'Bullies'":
+            jump bullies
         "Relax - rest":
             jump rest
         "Relax - read a book":

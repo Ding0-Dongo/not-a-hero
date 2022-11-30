@@ -3,7 +3,7 @@ label lib:
     "As Ellis enters the library, the smells of cedar and academia immediately fills his lungs, taking him back to his middle school days."
     jump choicesLib
 
-label choicesLib
+label choicesLib:
     if day<3:
         call volunteeringLib
         return
