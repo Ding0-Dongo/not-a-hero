@@ -73,3 +73,53 @@ define PourDrinkAudio = "audio/drinkpour.mp3"
 define CafeChatterAudio = "audio/cafechatter.mp3"
 define audio.ShopBellRingAudio = "audio/shopdoorbell.mp3"
 define audio.ShopBackgroundMusic = "audio/shiftybackground.mp3"
+
+##### INACTIVE SPRITES #####
+image eNeutral_mask = AlphaMask("blackScreen", "Ellis/ellisNeutral.png")
+image e inactive = Composite(
+    (1000,1000),
+    (0,0), "Ellis/ellisNeutral.png",
+    (0,0), "eNeutral_mask"
+)
+
+image jNeutral_mask = AlphaMask("blackScreen", "Josephine/josephineNeutral.png")
+image j inactive = Composite(
+    (1000,1000),
+    (0,0), "Josephine/josephineNeutral.png",
+    (0,0), "eNeutral_mask"
+)
+
+image dNeutral_mask = AlphaMask("blackScreen", "Desmond/desmondNeutral.png")
+image d inactive = Composite(
+    (1000,1000),
+    (0,0), "Desmond/desmondNeutral.png",
+    (0,0), "dNeutral_mask"
+)
+
+image DNeutral_mask = AlphaMask("blackScreen", "Delta/deltaNeutral.png")
+image D inactive = Composite(
+    (1000,1000),
+    (0,0), "Delta/deltaNeutral.png",
+    (0,0), "DNeutral_mask"
+)
+
+image PNeutral_mask = AlphaMask("blackScreen", "Phi/phiNeutral.png")
+image P inactive = Composite(
+    (1000,1000),
+    (0,0), "Phi/phiNeutral.png",
+    (0,0), "PNeutral_mask"
+)
+
+image ANeutral_mask = AlphaMask("blackScreen", "Alpha/alphaNeutral.png")
+image A inactive = Composite(
+    (1000,1000),
+    (0,0), "Alpha/alphaNeutral.png",
+    (0,0), "ANeutral_mask"
+)
+
+image sNeutral_mask = AlphaMask("blackScreen", "Shifty/shiftyNeutral.png")
+image s inactive = Composite(
+    (1000,1000),
+    (0,0), "Shifty/shiftyNeutral.png",
+    (0,0), "sNeutral_mask"
+)
