@@ -21,8 +21,8 @@ define kid2 = Character("Joughseph", color="#90a6fc")
 define kid3 = Character("Rose", color="#f069c7")
 
 #graffi-no commission
-define gangster = Character("Your typical street thug")
-define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather")
+define gangster = Character("Your typical street thug", color="#eb8e15")
+define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather", color="#700725")
 
 #bullies story quest
 define kids = Character("Kids", color="#ffffff")
@@ -53,8 +53,8 @@ image hospitalExterior = "images/places/hospital exterior.png"
 ##### MAP STUFF
 
 image cityMap = "images/map.png"
-image mapIcon = "images/map icon.png"
-image mapIcon2 = "images/map icon 2.png"
+image mapIcon = "images/mapIcon.png"
+image mapIcon2 = "images/mapIcon2.png"
 
 ##### ELLIS
 image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
@@ -87,10 +87,10 @@ image potato = "images/potato.png"
 image potato1 = "images/potato1.png"
 image potato2 = "images/potato2.png"
 image shifty = "images/copyrightedshifty.png"
-image test1 = "images/TEST-SPRITE.png"
-image test2 = "images/TEST-SPRITE2.png"
-image test3 = "images/TEST-SPRITE3.png"
-image test4 = "images/TEST-SPRITE4.png"
+image test1 = "Dummy/dummyNeutral.png"
+image test2 = "Dummy/dummyAngry.png"
+image test3 = "Dummy/dummyHappy.png"
+image test4 = "Dummy/dummySad.png"
 
 ##### AUDIO #####
 define MainMusic = "audio/Not_A_Hero_general_loop.mp3"

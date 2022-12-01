@@ -56,8 +56,8 @@ screen MapUI0:
         #This will be for volunteering (library)
         xpos 10
         ypos 100
-        idle mapIcon
-        hover mapIcon
+        idle "mapIcon"
+        hover "mapIcon"
         action Call("lib")
         
         
@@ -66,22 +66,22 @@ screen MapUI1:
         #library
         xpos 10
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
         xpos 30
         ypos 30
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
         xpos 100
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("association")
 
 screen MapUI2:
@@ -89,29 +89,29 @@ screen MapUI2:
         #park
         xpos 250
         ypos 250
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
         xpos 10
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
         xpos 30
         ypos 30
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
         xpos 100
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("association")
 
 screen MapUI3:
@@ -119,36 +119,36 @@ screen MapUI3:
         #park
         xpos 250
         ypos 250
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
         xpos 10
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
         xpos 30
         ypos 30
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
         xpos 100
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("association")
     imagebutton:
         #downtown
         xpos 500
         ypos 400
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("downtown")
 
 screen MapUI4:
@@ -156,43 +156,43 @@ screen MapUI4:
         #park
         xpos 250
         ypos 250
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
         xpos 10
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
         xpos 30
         ypos 30
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
         xpos 100
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("association")
     imagebutton:
         #downtown
         xpos 500
         ypos 400
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("downtown")
     imagebutton:
         #plaza
         xpos 200
         ypos 200
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("plaza")
 
 screen MapUI5:
@@ -200,57 +200,57 @@ screen MapUI5:
         #park
         xpos 250
         ypos 250
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
         xpos 10
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
         xpos 30
         ypos 30
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
         xpos 100
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("association")
     imagebutton:
         #downtown
         xpos 500
         ypos 400
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("downtown")
     imagebutton:
         #plaza
         xpos 200
         ypos 200
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("plaza")
     imagebutton:
         #elementary
         xpos 30
         ypos 30
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("elementary")
     imagebutton:
         #coffee
         xpos 70
         ypos 240
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("coffee")
 
 screen MapUI6:
@@ -258,64 +258,64 @@ screen MapUI6:
         #park
         xpos 250
         ypos 250
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
         xpos 10
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
         xpos 30
         ypos 30
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
         xpos 100
         ypos 100
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("association")
     imagebutton:
         #downtown
         xpos 500
         ypos 400
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("downtown")
     imagebutton:
         #plaza
         xpos 200
         ypos 200
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("plaza")
     imagebutton:
         #elementary
         xpos 30
         ypos 30
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("elementary")
     imagebutton:
         #coffee
         xpos 70
         ypos 240
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("coffee")
     imagebutton:
         #clinic
         xpos 340
         ypos 10
-        idle mapIcon
-        hover mapIcon2
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("clinic")
 
 
