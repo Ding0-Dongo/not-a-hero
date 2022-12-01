@@ -470,6 +470,11 @@ label SocialLevelUp:
     $ socialMax += 2
     return
 
+#Putting a transform here for a standardized ellis position
+transform ellis_std:
+    zoom 0.45
+    yalign -1.5
+
 #this here screen's for flashing the title screen
 screen titleScreenFlash:
     image "images/places/NAHH.png"
