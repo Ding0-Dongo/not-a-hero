@@ -172,7 +172,7 @@ label ptStart:
 
     "Shifty's Shop unlocked!\nYou can go there and buy energy drinks."
 
-    jump start
+    return
 
 
 

@@ -664,7 +664,7 @@ label jshrCont3:
 
     "(Ellis was stressed out by the encounter)"
 
-    jump start
+    return
 
 ### I need more coffee...
 
