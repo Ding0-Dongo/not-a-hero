@@ -2,10 +2,6 @@ default entryLines=["Hm? Oh, it's you again...","Yes, yes, buy something!","Shif
 default boughtLines=["Buy another. You never know when you might need it.","No refunds, no exchanges!","I'll give you a discount if you buy in bulk next time.(He won't.)","You want a bag for that?","Ah, you've got taste!","Good eye for quality you've got there.","Great choice."]
 
 label shiftyShop:
-    #remove before demo
-    $ energy = 3
-    $ dollars = 10
-
     stop music
     play sound ShopBellRingAudio
     play music ShopBackgroundMusic volume 0.5
@@ -53,7 +49,7 @@ label shopMenu:
     $ boughtItemPhrase = renpy.random.choice(boughtLines)
 
     menu: 
-        "1 Energy Drink":
+        "1 Energy Drink - $5":
             if energy < 10 and dollars >= 5:
                 $ energy += energyDrink
                 $ dollars -= 5
@@ -65,7 +61,7 @@ label shopMenu:
             elif dollars < 5:
                 s "Hey, hey! Hands off what you can't afford, pal!"
                 jump shopMenu
-        "1 Energy Drink Plus":
+        "1 Energy Drink Plus - $10":
             if energy < 8 and dollars >= 10: 
                 s "[boughtItemPhrase]"
                 $ energy += energyDrinkPlus
@@ -77,7 +73,7 @@ label shopMenu:
             elif dollars < 10:
                 s "Hey, hey! Hands off what you can't afford, pal!"
                 jump shopMenu
-        "1 Energy Drink Max":
+        "1 Energy Drink Max - $15":
             if energy < 6 and dollars >= 15:
                 s "[boughtItemPhrase]"
                 $ energy += energyDrinkMax
@@ -92,4 +88,5 @@ label shopMenu:
             s "Come back soon!"
             stop music
             play music MainMusic
-            call testStart
+            hide screen StatUI
+            jump mapScreen
