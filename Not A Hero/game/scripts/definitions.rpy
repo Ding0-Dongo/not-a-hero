@@ -31,6 +31,9 @@ define miscChild = Character("A Kid", color="#ffffff")
 define bulliedChild = Character("Kid Who Borrowed a Pencil", color="#ffffff")
 define bully = Character("Kid Looking For a Pencil", color="#ffffff")
 
+#petty thievery story quest (not including shifty)
+define woman = Character("Woman", color="#b85858")
+
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image schoolExterior = "images/places/school exterior.png"
 image schoolInterior = "images/places/school interior.png."
