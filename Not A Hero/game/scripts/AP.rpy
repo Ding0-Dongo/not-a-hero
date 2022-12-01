@@ -19,6 +19,8 @@ default energyMax = 10
 default energyDrink = 1
 default energyDrinkPlus = 3
 default energyDrinkMax = 5
+default coffee = 2
+default coffeeamount = 0
 
 default commission1Done = False #delivery (clinic)
 default commission2Done = False #delivery (TEAM)
@@ -27,3 +29,13 @@ default commission4Done = False #help Kids
 default commission5Done = False #help Granny
 default commission6Done = False #PSA (TEAM)
 default commission7Done = False #Thiefstopper
+
+default apologyDone = False #josephine's apology
+default bulliesDone = False #bullies!
+
+default story1Done = False
+default story2Done = False
+default story3Done = False
+default story4Done = False
+default story5Done = False
+default story6Done = False

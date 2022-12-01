@@ -9,6 +9,7 @@ define D = Character("DELTA", color="#42526b", image="delta")
 define P = Character("PHI", color="#e07808", image="phi")
 define A = Character("ALPHA", color="#510505", image="alpha")
 define s = Character("Shifty", color="#91835d", image="shifty")
+define sc = Character("Shifty Barista", color = "#036635", image="shifty")
 
 #help old lady commission
 define cat = Character("Cat", color="#f5ebd7")
@@ -23,19 +24,54 @@ define kid3 = Character("Rose", color="#f069c7")
 define gangster = Character("Your typical street thug")
 define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather")
 
-
+#bullies story quest
+define kids = Character("Kids", color="#ffffff")
+define teacher = Character("Teacher", color="#ffffff")
+define miscChild = Character("A Kid", color="#ffffff")
+define bulliedChild = Character("Kid Who Borrowed a Pencil", color="#ffffff")
+define bully = Character("Kid Looking For a Pencil", color="#ffffff")
 
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
-image normingtonAcademy = "images/normingtonAcademy.png"
+image schoolExterior = "images/places/school exterior.png"
+image schoolInterior = "images/places/school interior.png."
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
 image city = "images/normingtonCity.png"
 image hq = "images/hq.png"
 image shopRoom = "shopbackground.jpg"
 image city = "images/normingtonMap.png"
 image blackScreen = "#000000"
-image alleyway = "images/alleyway.jpg"
+image alleyway = "images/places/dark shady alley.png"
+image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
+image plaza = "images/places/plaza.png"
+image park = "images/places/park.png"
+image hospitalInterior = "images/places/hospital interior.png"
+image hospitalExterior = "images/places/hospital exterior.png"
+
+##### MAP STUFF
+
+image cityMap = "images/map.png"
+image mapIcon = "images/map icon.png"
+image mapIcon2 = "images/map icon 2.png"
+
+##### ELLIS
+image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
+image ellisAnnoyed = "images/Ellis/Norm.Pensive.png"
+image ellisAnnoyed2 = "images/Ellis/Scraf.Spite.png"
+image ellisThinking = "images/Ellis/tilt.thinking.png"
+image ellisThinking2 = "images/Ellis/Scraf.Concentrating.png"
+image ellisNervous = "images/Ellis/Scarf.Nervy.png"
+image ellisSad = "images/Ellis/Norm.Unsure.png"
+image ellisSad2 = "images/Ellis/Scraf.Regrert.png"
+image ellisSurprised = "images/Ellis/Surprised.png"
+image ellisAsk = "images/Ellis/Tilt.ask.png"
+image ellisCry = "images/Ellis/Tilt.Cry2.png"
+image ellisCry2 = "images/Ellis/Tilt.Cry.png"
+image ellisObjection = "images/Ellis/Up.Assertive.png"
+image ellisHappy = "images/Ellis/Up.Confident.png"
+image ellisCringe = "images/Ellis/Up.Cringe.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
+# you mean test character sprites, right....? RIGHT??? -ruth
 image ellis Neutral = "Ellis/ellisNeutral.png"
 image ellis Terrified = "Ellis/ellisTerrified.png"
 image dummy Neutral = "Dummy/dummyNeutral.png"
@@ -65,3 +101,58 @@ define AwardMusic = "audio/awardmusic.mp3"
 define AchievementAudio = "audio/achievement.mp3"
 define GaspAudio = "audio/gasp.mp3"
 define ChaChingAudio = "audio/chaching.mp3"
+define CoffeeShopMusic = "audio/coffeeshop.mp3"
+define PourDrinkAudio = "audio/drinkpour.mp3"
+define CafeChatterAudio = "audio/cafechatter.mp3"
+define audio.ShopBellRingAudio = "audio/shopdoorbell.mp3"
+define audio.ShopBackgroundMusic = "audio/shiftybackground.mp3"
+
+##### INACTIVE SPRITES #####
+image eNeutral_mask = AlphaMask("blackScreen", "Ellis/ellisNeutral.png")
+image e inactive = Composite(
+    (1000,1000),
+    (0,0), "Ellis/ellisNeutral.png",
+    (0,0), "eNeutral_mask"
+)
+
+image jNeutral_mask = AlphaMask("blackScreen", "Josephine/josephineNeutral.png")
+image j inactive = Composite(
+    (1000,1000),
+    (0,0), "Josephine/josephineNeutral.png",
+    (0,0), "eNeutral_mask"
+)
+
+image dNeutral_mask = AlphaMask("blackScreen", "Desmond/desmondNeutral.png")
+image d inactive = Composite(
+    (1000,1000),
+    (0,0), "Desmond/desmondNeutral.png",
+    (0,0), "dNeutral_mask"
+)
+
+image DNeutral_mask = AlphaMask("blackScreen", "Delta/deltaNeutral.png")
+image D inactive = Composite(
+    (1000,1000),
+    (0,0), "Delta/deltaNeutral.png",
+    (0,0), "DNeutral_mask"
+)
+
+image PNeutral_mask = AlphaMask("blackScreen", "Phi/phiNeutral.png")
+image P inactive = Composite(
+    (1000,1000),
+    (0,0), "Phi/phiNeutral.png",
+    (0,0), "PNeutral_mask"
+)
+
+image ANeutral_mask = AlphaMask("blackScreen", "Alpha/alphaNeutral.png")
+image A inactive = Composite(
+    (1000,1000),
+    (0,0), "Alpha/alphaNeutral.png",
+    (0,0), "ANeutral_mask"
+)
+
+image sNeutral_mask = AlphaMask("blackScreen", "Shifty/shiftyNeutral.png")
+image s inactive = Composite(
+    (1000,1000),
+    (0,0), "Shifty/shiftyNeutral.png",
+    (0,0), "sNeutral_mask"
+)

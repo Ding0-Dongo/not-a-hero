@@ -55,6 +55,21 @@ label start:
 
         "Actually start The Game":
             jump dayZero
+
+        "Go make an Accident":
+            jump theAccident
+        "Visit Shifty":
+            jump shiftyShop
+        "Test 'Talk Things Out'":
+            jump talkThingsOut
+        "Test 'Bullies'":
+            jump bullies
+        "Relax - rest":
+            jump rest
+        "Relax - read a book":
+            jump readBook
+        "Relax - take a walk":
+            jump takeWalk
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
@@ -114,8 +129,14 @@ label start:
         "Visit Normington City":
             hide screen StatUI
             jump testingMap
-        "Visit Shifty Shop":
+        "Visit Shifty Shop (DELETE LATER)":
             jump shiftyShop
+        "PurseSnatch Quest (delete this before demo)":
+            hide screen NormingtonCityMap
+            jump Pursenapper
+        "Visit Normington Coffee":
+            hide screen NormingtonCityMap
+            jump NormingtonCoffee
 
 label testingMap:
     #hide screen NormingtonCityMap
@@ -134,9 +155,9 @@ label testingMap2:
 #label goodEnd:
     #"good end"
     #return
-    "time to visit shifty"
+    #"time to visit shifty"
 
-    call shiftyShop
+    #call shiftyShop
 
 label goodEnd:
     "good end"

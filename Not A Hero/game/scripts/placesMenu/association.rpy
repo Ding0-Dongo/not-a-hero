@@ -1,7 +1,11 @@
 label association:
-    if day==1:
+    if day<6:
+        call socialize
+        return
+    else:
         menu:
-            "Meet your TEAM":
-                call meetTheTeam
+            "Talk Things Out":
+                call talkThingsOut
             "Socialize":
                 call socialize
+        return
