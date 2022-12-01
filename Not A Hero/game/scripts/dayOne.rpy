@@ -70,7 +70,7 @@ label start:
             jump readBook
         "Relax - take a walk":
             jump takeWalk
-        "Test 'Petty Thievery":
+        "Test 'Petty Thievery'":
             jump ptStart
     
     ### Added label testStart to jump to at the end of the tutorial. 

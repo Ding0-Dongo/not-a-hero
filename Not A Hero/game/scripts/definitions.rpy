@@ -75,6 +75,7 @@ image ellisCringe = "images/Ellis/Up.Cringe.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
 # you mean test character sprites, right....? RIGHT??? -ruth
+### the potato is important to the plot...
 image ellis Neutral = "Ellis/ellisNeutral.png"
 image ellis Terrified = "Ellis/ellisTerrified.png"
 image dummy Neutral = "Dummy/dummyNeutral.png"
