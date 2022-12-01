@@ -4,7 +4,7 @@
 
 label tutorial:
 
-    scene bg room
+    scene whiteRoom
 
     show dummy Neutral
 

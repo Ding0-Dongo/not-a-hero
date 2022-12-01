@@ -6,7 +6,7 @@ label plaza:
 label choicesPlaza:
     if day<3:
         return
-    else if day<4:
+    elif day<4:
         menu:
             "Fundraising":
                 call fundraising
@@ -16,10 +16,10 @@ label choicesPlaza:
             "Fundraising":
                 call fundraising
                 return
-            "Josephine's First Aid Lesson"
+            "Josephine's First Aid Lesson":
                 call josephineFirstAid
                 return
-            "PSA"
+            "PSA":
                 call psaTeam
                 return
         return

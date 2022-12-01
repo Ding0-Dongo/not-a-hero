@@ -161,3 +161,6 @@ image s inactive = Composite(
     (0,0), "Shifty/shiftyNeutral.png",
     (0,0), "sNeutral_mask"
 )
+
+##### Title Screen (shown once) #####
+image titleScreen = "images/titlescreen.png"

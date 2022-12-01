@@ -6,7 +6,7 @@ label downtown:
 label choicesDowntown:
     if day<3:
         return
-    else if day==3:
+    elif day==3:
         menu:
             "Desmond's Delivery Run":
                 call desmondDeliveryRun
@@ -14,7 +14,7 @@ label choicesDowntown:
             "Delivery":
                 call deliveryRun
                 return
-    else if day==4:
+    elif day==4:
         menu:
             "Desmond's Delivery Run":
                 call desmondDeliveryRun

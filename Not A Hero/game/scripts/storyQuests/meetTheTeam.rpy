@@ -356,4 +356,6 @@ label meetTheTeamPartTwo:
     $ energy += energyDrink
 
     $ story1Done = True
-    return
+    $ day+= 1
+
+    jump mapScreen

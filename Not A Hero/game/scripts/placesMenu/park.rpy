@@ -6,7 +6,7 @@ label park:
 label choicesPark:
     if day<2:
         return
-    else if day<5:
+    elif day<5:
         menu:
             "Josephine's Hangout Request":
                 call josephineHangoutReq

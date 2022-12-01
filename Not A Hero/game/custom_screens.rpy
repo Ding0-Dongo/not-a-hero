@@ -475,10 +475,6 @@ transform ellis_std:
     zoom 0.45
     yalign -1.5
 
-#this here screen's for flashing the title screen
-screen titleScreenFlash:
-    image mapIcon
-
 label splashscreen:
     scene blackScreen
     with Pause(1)
