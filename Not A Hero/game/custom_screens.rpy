@@ -5,7 +5,7 @@ screen NormingtonCityMap:
         yalign 0.0
         xoffset 0
         yoffset 0
-        idle "images/normingtonMap.png"
+        idle "cityMap"
         action Jump ("call_mapUI")
         # You may also use the code below depending on your needs.
         # action ShowMenu("mapUI")
@@ -64,89 +64,110 @@ screen MapUI0:
 screen MapUI1:
     imagebutton:
         #library
-        xpos 10
-        ypos 100
+        xpos 1400
+        ypos 200
         idle "mapIcon"
         hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
-        xpos 30
-        ypos 30
+        xpos 1600
+        ypos 800
         idle "mapIcon"
         hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
-        xpos 100
-        ypos 100
+        xpos 1300
+        ypos 750
         idle "mapIcon"
         hover "mapIcon2"
         action Call("association")
+    imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
 
 screen MapUI2:
     imagebutton:
         #park
-        xpos 250
-        ypos 250
+        xpos 1000
+        ypos 470
         idle "mapIcon"
         hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
-        xpos 10
-        ypos 100
+        xpos 1400
+        ypos 200
         idle "mapIcon"
         hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
-        xpos 30
-        ypos 30
+        xpos 1600
+        ypos 800
         idle "mapIcon"
         hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
-        xpos 100
-        ypos 100
+        xpos 1300
+        ypos 750
         idle "mapIcon"
         hover "mapIcon2"
         action Call("association")
+    imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
 
 screen MapUI3:
     imagebutton:
         #park
-        xpos 250
-        ypos 250
+        xpos 1000
+        ypos 470
         idle "mapIcon"
         hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
-        xpos 10
-        ypos 100
+        xpos 1400
+        ypos 200
         idle "mapIcon"
         hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
-        xpos 30
-        ypos 30
+        xpos 1600
+        ypos 800
         idle "mapIcon"
         hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
-        xpos 100
-        ypos 100
+        xpos 1300
+        ypos 750
         idle "mapIcon"
         hover "mapIcon2"
         action Call("association")
     imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    imagebutton:
         #downtown
-        xpos 500
-        ypos 400
+        xpos 1500
+        ypos 600
         idle "mapIcon"
         hover "mapIcon2"
         action Call("downtown")
@@ -154,43 +175,50 @@ screen MapUI3:
 screen MapUI4:
     imagebutton:
         #park
-        xpos 250
-        ypos 250
+        xpos 1000
+        ypos 470
         idle "mapIcon"
         hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
-        xpos 10
-        ypos 100
+        xpos 1400
+        ypos 200
         idle "mapIcon"
         hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
-        xpos 30
-        ypos 30
+        xpos 1600
+        ypos 800
         idle "mapIcon"
         hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
-        xpos 100
-        ypos 100
+        xpos 1300
+        ypos 750
         idle "mapIcon"
         hover "mapIcon2"
         action Call("association")
     imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    imagebutton:
         #downtown
-        xpos 500
-        ypos 400
+        xpos 1500
+        ypos 600
         idle "mapIcon"
         hover "mapIcon2"
         action Call("downtown")
     imagebutton:
         #plaza
-        xpos 200
-        ypos 200
+        xpos 1600
+        ypos 400
         idle "mapIcon"
         hover "mapIcon2"
         action Call("plaza")
@@ -198,56 +226,63 @@ screen MapUI4:
 screen MapUI5:
     imagebutton:
         #park
-        xpos 250
-        ypos 250
+        xpos 1000
+        ypos 470
         idle "mapIcon"
         hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
-        xpos 10
-        ypos 100
+        xpos 1400
+        ypos 200
         idle "mapIcon"
         hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
-        xpos 30
-        ypos 30
+        xpos 1600
+        ypos 800
         idle "mapIcon"
         hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
-        xpos 100
-        ypos 100
+        xpos 1300
+        ypos 750
         idle "mapIcon"
         hover "mapIcon2"
         action Call("association")
     imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    imagebutton:
         #downtown
-        xpos 500
-        ypos 400
+        xpos 1500
+        ypos 600
         idle "mapIcon"
         hover "mapIcon2"
         action Call("downtown")
     imagebutton:
         #plaza
-        xpos 200
-        ypos 200
+        xpos 1600
+        ypos 400
         idle "mapIcon"
         hover "mapIcon2"
         action Call("plaza")
     imagebutton:
         #elementary
-        xpos 30
-        ypos 30
+        xpos 850
+        ypos 100
         idle "mapIcon"
         hover "mapIcon2"
         action Call("elementary")
     imagebutton:
         #coffee
-        xpos 70
+        xpos 400
         ypos 240
         idle "mapIcon"
         hover "mapIcon2"
@@ -256,64 +291,71 @@ screen MapUI5:
 screen MapUI6:
     imagebutton:
         #park
-        xpos 250
-        ypos 250
+        xpos 1000
+        ypos 470
         idle "mapIcon"
         hover "mapIcon2"
         action Call("park")
     imagebutton:
         #library
-        xpos 10
-        ypos 100
+        xpos 1400
+        ypos 200
         idle "mapIcon"
         hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
-        xpos 30
-        ypos 30
+        xpos 1600
+        ypos 800
         idle "mapIcon"
         hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
-        xpos 100
-        ypos 100
+        xpos 1300
+        ypos 750
         idle "mapIcon"
         hover "mapIcon2"
         action Call("association")
     imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    imagebutton:
         #downtown
-        xpos 500
-        ypos 400
+        xpos 1500
+        ypos 600
         idle "mapIcon"
         hover "mapIcon2"
         action Call("downtown")
     imagebutton:
         #plaza
-        xpos 200
-        ypos 200
+        xpos 1600
+        ypos 400
         idle "mapIcon"
         hover "mapIcon2"
         action Call("plaza")
     imagebutton:
         #elementary
-        xpos 30
-        ypos 30
+        xpos 850
+        ypos 100
         idle "mapIcon"
         hover "mapIcon2"
         action Call("elementary")
     imagebutton:
         #coffee
-        xpos 70
+        xpos 400
         ypos 240
         idle "mapIcon"
         hover "mapIcon2"
         action Call("coffee")
     imagebutton:
         #clinic
-        xpos 340
-        ypos 10
+        xpos 240
+        ypos 800
         idle "mapIcon"
         hover "mapIcon2"
         action Call("clinic")
@@ -392,7 +434,7 @@ screen continueNextDay:
         idle "nextDayButton"
         hover "nextDayButton"
         action Call("continueToTheNextDay")
-    text "Continue to next day." size 28 color "#FFFFFF"
+    text "Continue to next day." size 28 xalign 0.95 yalign 0.96 color "#FFFFFF"
 
 
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!

@@ -56,7 +56,7 @@ image hospitalExterior = "images/places/hospital exterior.png"
 
 ##### MAP STUFF
 
-image cityMap = "images/map.png"
+image cityMap = "images/map.jpg"
 image mapIcon = "images/mapIcon.png"
 image mapIcon2 = "images/mapIcon2.png"
 image nextDayButton = "images/nextDayButton.png"
