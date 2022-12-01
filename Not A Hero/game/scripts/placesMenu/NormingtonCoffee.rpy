@@ -19,7 +19,11 @@ label CoffeeMenu:
     sc "What can I get for you today?"
     menu:
         #add josephine second hangout request here
+            #no cuz like we're gonna force the player to do that first
         #add coffee with friends here
+        "Get Coffee with Friends":
+            call coffeeWithFriends
+            return
         "One Coffee":
             if coffeeamount < 2:
                 sc "Very good! That will be $15 please."
