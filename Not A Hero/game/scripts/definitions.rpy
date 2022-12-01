@@ -69,12 +69,14 @@ image ellisSurprised = "images/Ellis/Surprised.png"
 image ellisAsk = "images/Ellis/Tilt.ask.png"
 image ellisCry = "images/Ellis/Tilt.Cry2.png"
 image ellisCry2 = "images/Ellis/Tilt.Cry.png"
+image ellisWince = "images/Ellis/Norm.Wince.png"
 image ellisObjection = "images/Ellis/Up.Assertive.png"
 image ellisHappy = "images/Ellis/Up.Confident.png"
 image ellisCringe = "images/Ellis/Up.Cringe.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
 # you mean test character sprites, right....? RIGHT??? -ruth
+### the potato is important to the plot...
 image ellis Neutral = "Ellis/ellisNeutral.png"
 image ellis Terrified = "Ellis/ellisTerrified.png"
 image dummy Neutral = "Dummy/dummyNeutral.png"

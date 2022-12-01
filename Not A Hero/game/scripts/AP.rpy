@@ -32,6 +32,7 @@ default commission7Done = False #Thiefstopper
 
 default apologyDone = False #josephine's apology
 default bulliesDone = False #bullies!
+default deliveryRunDone = False #desmond's delivery run
 
 default story1Done = False
 default story2Done = False
