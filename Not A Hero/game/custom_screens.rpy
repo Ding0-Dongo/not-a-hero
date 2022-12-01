@@ -461,14 +461,14 @@ label StressMax:
     return
 
 
-    # Label that gets called when the social bar is filled
-    label SocialLevelUp:
-        $ tempSocialLevel = socialLevel
-        $ socialLevel += 1
-        "- - Social Level Up! ([tempSocialLevel] --> [socialLevel]) - -"
-        $ social = 0
-        $ socialMax += 2
-        return
+# Label that gets called when the social bar is filled
+label SocialLevelUp:
+    $ tempSocialLevel = socialLevel
+    $ socialLevel += 1
+    "- - Social Level Up! ([tempSocialLevel] --> [socialLevel]) - -"
+    $ social = 0
+    $ socialMax += 2
+    return
 
 #this here screen's for flashing the title screen
 screen titleScreenFlash:

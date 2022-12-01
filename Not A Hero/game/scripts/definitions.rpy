@@ -31,6 +31,9 @@ define miscChild = Character("A Kid", color="#ffffff")
 define bulliedChild = Character("Kid Who Borrowed a Pencil", color="#ffffff")
 define bully = Character("Kid Looking For a Pencil", color="#ffffff")
 
+#petty thievery story quest (not including shifty)
+define woman = Character("Woman", color="#b85858")
+
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image schoolExterior = "images/places/school exterior.png"
 image schoolInterior = "images/places/school interior.png."
@@ -73,6 +76,7 @@ image ellisCringe = "images/Ellis/Up.Cringe.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
 # you mean test character sprites, right....? RIGHT??? -ruth
+### the potato is important to the plot...
 image ellis Neutral = "Ellis/ellisNeutral.png"
 image ellis Terrified = "Ellis/ellisTerrified.png"
 image dummy Neutral = "Dummy/dummyNeutral.png"
