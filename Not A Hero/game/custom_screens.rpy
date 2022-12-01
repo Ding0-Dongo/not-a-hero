@@ -286,7 +286,7 @@ screen MapUI5:
         ypos 240
         idle "mapIcon"
         hover "mapIcon2"
-        action Call("coffee")
+        action Call("NormingtonCoffee")
 
 screen MapUI6:
     imagebutton:
@@ -351,7 +351,7 @@ screen MapUI6:
         ypos 240
         idle "mapIcon"
         hover "mapIcon2"
-        action Call("coffee")
+        action Call("NormingtonCoffee")
     imagebutton:
         #clinic
         xpos 240

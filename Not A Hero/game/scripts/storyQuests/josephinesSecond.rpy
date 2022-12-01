@@ -45,7 +45,7 @@ label jshrStart:
 
     j "Even heroes need to take breaks sometimes!"
 
-    if josephineHangout == True:
+    if josephineHangoutDone == True:
         jump jhrYes
     else:
         jump jhrNo
@@ -123,7 +123,7 @@ label jshrCont:
 
     "The trio pauses at the intersection. Desmond presses the button for the walk signal."
 
-    if josephineHangout == True:
+    if josephineHangoutDone == True:
         jump jhrYes2
     else:
         jump jhrNo2
