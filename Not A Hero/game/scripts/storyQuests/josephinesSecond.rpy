@@ -233,7 +233,13 @@ label jshrCont2:
 
     j " I don't think it's worse, but it's just... different!"
 
+    stop music
+
     scene coffeeshop_inside with fade
+
+    play music CoffeeShopMusic volume 0.5
+
+    play sound CafeChatterAudio volume 0.4
 
     show ellisNeutral at ellis_std:
         xalign 0.75
@@ -382,6 +388,10 @@ label jshrStandUp:
         xalign 0.75
 
     e "S-sorry, I've just... I've never been here before. I just need another minute, sorry."
+
+    $ social += 3
+    if social >= socialMax:
+        call SocialLevelUp
 
     hide ellisObjection
 
@@ -640,7 +650,13 @@ label jshrCont3:
 
     j "Puts a hand to her mouth* I have to go talk to him."
 
+    stop sound
+
+    stop music
+
     show blackScreen with fade
+
+    play music MainMusic
 
     hide StatUI
 
@@ -648,11 +664,11 @@ label jshrCont3:
 
     "(Ellis was stressed out by the encounter)"
 
-### It is 1:30 in the morning and I am dead inside
-
-#How did this take so long
+    jump start
 
 ### I need more coffee...
+
+### The new Desmond model looks sick tho I'll put that in here later today
     
 
 
