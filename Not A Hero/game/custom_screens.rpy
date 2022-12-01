@@ -384,6 +384,17 @@ screen StatUI:
     text "Social Level [socialLevel]: [social]/[socialMax]" size 28 xalign 0.1 yalign 0.18
     text "$[money]" size 65 xalign 0.98 yalign 0.025 color "#23b84d"
 
+# helo ethan you seem to be good at making these so Imma just plop down my "continue to next day" button here
+screen continueNextDay:
+    imagebutton:
+        xpos 1500
+        ypos 1000
+        idle "nextDayButton"
+        hover "nextDayButton"
+        action Call("continueToTheNextDay")
+    text "Continue to next day." size 28 color "#FFFFFF"
+
+
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
 # This label is called whenever someone chooses to increase their strength
 label TrainStrength:

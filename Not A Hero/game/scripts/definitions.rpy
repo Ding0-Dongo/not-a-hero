@@ -59,6 +59,7 @@ image hospitalExterior = "images/places/hospital exterior.png"
 image cityMap = "images/map.png"
 image mapIcon = "images/mapIcon.png"
 image mapIcon2 = "images/mapIcon2.png"
+image nextDayButton = "images/nextDayButton.png"
 
 ##### ELLIS
 image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
