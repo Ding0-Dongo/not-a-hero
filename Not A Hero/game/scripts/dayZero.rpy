@@ -55,4 +55,4 @@ label dayZero:
             #it'd be cool if we added like a vhs sound effect here
             jump tutorial
         "Chuck that in the trash":
-            jump dayOne
+            jump meetTheTeam

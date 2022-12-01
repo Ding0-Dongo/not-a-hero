@@ -118,4 +118,4 @@ label endTutorial:
     $ tempSocialLevel = 0
     $ socialMax = 10
 
-    jump testStart
+    jump meetTheTeam

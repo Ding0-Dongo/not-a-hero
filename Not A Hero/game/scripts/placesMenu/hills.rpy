@@ -14,6 +14,6 @@ label choicesHill:
             "Volunteer at the Senior Center":
                 call volunteeringSC
             "Rest":
-                call restHills
+                call rest
         return
     return
