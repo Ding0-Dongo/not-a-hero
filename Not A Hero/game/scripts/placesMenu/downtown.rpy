@@ -1,47 +1,49 @@
 label downtown:
+    hide screen NormingtonCityMap
+    hide screen continueNextDay
     scene normingtonDowntown
     "The hustle and bustle of the busy roads and the crowded sidewalks frightens Ellis. Not bueno."
     jump choicesDowntown
 
 label choicesDowntown:
     if day<3:
-        return
+        jump mapScreen
     elif day==3:
         menu:
             "Desmond's Delivery Run":
                 call desmondDeliveryRun
-                return
+                jump mapScreen
             "Delivery":
                 call deliveryRun
-                return
+                jump mapScreen
     elif day==4:
         menu:
             "Desmond's Delivery Run":
                 call desmondDeliveryRun
-                return
+                jump mapScreen
             "Delivery":
                 call deliveryRun
-                return
+                jump mapScreen
             "Volunteer":
                 call volunteerShelter
-                return
+                jump mapScreen
     else:
         menu:
             "Desmond's Delivery Run":
                 call desmondDeliveryRun
-                return
+                jump mapScreen
             "Delivery":
                 call deliveryRun
-                return
+                jump mapScreen
             "Volunteer":
                 call volunteerShelter
-                return
+                jump mapScreen
             "Pursenapper":
                 call Pursenapper
-                return
+                jump mapScreen
             "Graffi-No":
                 call graffiNo
-                return
+                jump mapScreen
             "Thiefstopper":
                 call thiefStopper
-                return
+                jump mapScreen

@@ -1,4 +1,6 @@
 label gym:
+    hide screen NormingtonCityMap
+    hide screen continueNextDay
     menu:
         "Train Strength":
             jump TrainStrength
@@ -10,4 +12,4 @@ label gym:
             jump TrainSpeed
 
         "End Training":
-            pass
+            jump mapScreen

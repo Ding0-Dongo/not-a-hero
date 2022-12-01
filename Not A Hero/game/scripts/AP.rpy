@@ -42,3 +42,5 @@ default story3Done = False
 default story4Done = False
 default story5Done = False
 default story6Done = False
+
+default introMapDialogue = True

@@ -110,7 +110,7 @@ label comm4GoodEnd:
     return
 
 label comm4BadEnd:
-    "S-Sorry! I-Uh-Um-What I mean to say is- uh- TOILET!"
+    e "S-Sorry! I-Uh-Um-What I mean to say is- uh- TOILET!"
     "And with that, Ellis runs out of the park."
     #(reload scene)
     "Returning to the park after spending 20 minutes looking for a restroom but ultimately failing to do so and instead awkwardly standing around glancing at his phone every 4 minutes, Ellis sees the kids happy at play, no longer bothering the local duck population."

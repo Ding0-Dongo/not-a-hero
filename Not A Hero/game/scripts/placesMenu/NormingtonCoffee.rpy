@@ -1,4 +1,6 @@
 label NormingtonCoffee:
+    hide screen NormingtonCityMap
+    hide screen continueNextDay
     scene coffeeshop_inside
 
     show screen StatUI
@@ -23,7 +25,7 @@ label CoffeeMenu:
         #add coffee with friends here
         "Get Coffee with Friends":
             call coffeeWithFriends
-            return
+            jump mapScreen
         "One Coffee":
             if coffeeamount < 2:
                 sc "Very good! That will be $15 please."

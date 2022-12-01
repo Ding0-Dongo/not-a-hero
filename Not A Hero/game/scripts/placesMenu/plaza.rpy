@@ -1,25 +1,27 @@
 label plaza:
+    hide screen NormingtonCityMap
+    hide screen continueNextDay
     scene normingtonPlaza
     "Ellis sees some cool boards."
     jump choicesPlaza
 
 label choicesPlaza:
     if day<3:
-        return
+        jump mapScreen
     elif day<4:
         menu:
             "Fundraising":
                 call fundraising
-                return
+                jump mapScreen
     else:
         menu:
             "Fundraising":
                 call fundraising
-                return
+                jump mapScreen
             "Josephine's First Aid Lesson":
                 call josephineFirstAid
-                return
+                jump mapScreen
             "PSA":
                 call psaTeam
-                return
-        return
+                jump mapScreen
+        jump mapScreen

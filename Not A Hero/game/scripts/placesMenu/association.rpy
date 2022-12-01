@@ -1,11 +1,13 @@
 label association:
+    hide screen NormingtonCityMap
+    hide screen continueNextDay
     if day<6:
         call socialize
-        return
+        jump mapScreen
     else:
         menu:
             "Talk Things Out":
                 call talkThingsOut
             "Socialize":
                 call socialize
-        return
+        jump mapScreen

@@ -1,12 +1,14 @@
 label hill:
+    hide screen NormingtonCityMap
+    hide screen continueNextDay
     scene normingtonHills
     "The hills call out to Ellis in a warm, soothing breeze; the singular tree atop the hill fluttering and flowing like the undulating waves of a fresh, misty lake."
     jump choicesHill
 
 label choicesHill:
     if day<2:
-        call restHills
-        return
+        call rest
+        jump mapScreen
     else:
         menu:
             "Help Old Lady":
@@ -15,5 +17,5 @@ label choicesHill:
                 call volunteeringSC
             "Rest":
                 call rest
-        return
-    return
+        jump mapScreen
+    jump mapScreen
