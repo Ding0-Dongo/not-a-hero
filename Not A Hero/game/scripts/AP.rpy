@@ -34,6 +34,8 @@ default apologyDone = False #josephine's apology
 default bulliesDone = False #bullies!
 default deliveryRunDone = False #desmond's delivery run
 
+default josephineHangout = False #josephine's hangout request
+
 default story1Done = False
 default story2Done = False
 default story3Done = False

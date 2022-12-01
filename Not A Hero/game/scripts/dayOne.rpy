@@ -84,6 +84,8 @@ label start:
             jump takeWalk
         "Test 'Petty Thievery'":
             jump ptStart
+        "Test 'Josephine's Second...'":
+            jump jshrStart
     
     ### Added label testStart to jump to at the end of the tutorial. 
 

@@ -34,12 +34,16 @@ define bully = Character("Kid Looking For a Pencil", color="#ffffff")
 #petty thievery story quest (not including shifty)
 define woman = Character("Woman", color="#b85858")
 
+#josephine's second hangout request
+define barista = Character("Barista", color="#379752")
+define customer = Character("Impatient Customer", color="#bd3675")
+
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image schoolExterior = "images/places/school exterior.png"
 image schoolInterior = "images/places/school interior.png."
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
 image city = "images/normingtonCity.png"
-image hq = "images/hq.png"
+image hq = "images/places/hq interior.png"
 image shopRoom = "shopbackground.jpg"
 image city = "images/normingtonMap.png"
 image blackScreen = "#000000"
