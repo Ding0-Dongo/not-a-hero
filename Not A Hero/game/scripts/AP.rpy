@@ -10,7 +10,7 @@ default socialMax = 10
 default tempSocialLevel = 0
 default socialLevel = 1
 default money = 0
-default standing = "civilian"
+default standing = 1
 default day = 0
 
 default energy = 10
