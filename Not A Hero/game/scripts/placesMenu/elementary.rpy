@@ -9,5 +9,10 @@ label choicesElementary:
     if day<5:
         jump mapScreen
     else:
-        call mediation
+        menu:
+            "Mediation":
+                call mediation
+                jump mapScreen
+            "Nevermind":
+                jump mapScreen
         jump mapScreen

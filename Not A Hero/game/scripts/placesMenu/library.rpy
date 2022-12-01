@@ -7,13 +7,22 @@ label lib:
 
 label choicesLib:
     if day<3:
-        call volunteeringLib
+        menu:
+            "Volunteer at the Library":
+                call volunteeringLib
+                jump mapScreen
+            "Nevermind":
+                jump mapScreen
         jump mapScreen
     else:
         menu:
             "Volunteer at the Library":
                 call volunteeringLib
+                jump mapScreen
             "Read a book":
                 call readBook
+                jump mapScreen
+            "Nevermind":
+                jump mapScreen
         jump mapScreen
     jump mapScreen

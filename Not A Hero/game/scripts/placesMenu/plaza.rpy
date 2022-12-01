@@ -13,6 +13,8 @@ label choicesPlaza:
             "Fundraising":
                 call fundraising
                 jump mapScreen
+            "Nevermind":
+                jump mapScreen
     else:
         menu:
             "Fundraising":
@@ -23,5 +25,7 @@ label choicesPlaza:
                 jump mapScreen
             "PSA":
                 call psaTeam
+                jump mapScreen
+            "Nevermind":
                 jump mapScreen
         jump mapScreen
