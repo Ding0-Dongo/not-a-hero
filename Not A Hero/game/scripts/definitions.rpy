@@ -82,6 +82,7 @@ image ellisShy = "images/Ellis/Untitled_Artwork.png"
 image ellisObjection = "images/Ellis/Up.Assertive.png"
 image ellisHappy = "images/Ellis/Up.Confident.png"
 image ellisCringe = "images/Ellis/Up.Cringe.png"
+image ellisCringe2 = "images/Ellis/Up.Cringe2.png"
 
 ##### DESMOND
 image desNeutral = "images/Desmond/Des.Norm.png"
