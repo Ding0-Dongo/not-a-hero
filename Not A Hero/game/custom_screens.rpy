@@ -15,6 +15,7 @@ screen NormingtonCityMap:
 # If you want to navigate using the map, it's prefered to use "call".
 # When in skip mode (tab key on keyboard), this prevents the game to be skipped.
 label call_mapUI:
+    show screen StatUI
     if day==0:
         call screen MapUI0
     elif day==1:
@@ -90,6 +91,11 @@ screen MapUI1:
         idle "mapIcon"
         hover "mapIcon2"
         action Call("gym")
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
 
 screen MapUI2:
     imagebutton:
@@ -127,6 +133,12 @@ screen MapUI2:
         idle "mapIcon"
         hover "mapIcon2"
         action Call("gym")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
 
 screen MapUI3:
     imagebutton:
@@ -171,6 +183,13 @@ screen MapUI3:
         idle "mapIcon"
         hover "mapIcon2"
         action Call("downtown")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
+    text "Downtown" size 35 xalign 0.82 yalign 0.53 color "#000000"
 
 screen MapUI4:
     imagebutton:
@@ -222,6 +241,14 @@ screen MapUI4:
         idle "mapIcon"
         hover "mapIcon2"
         action Call("plaza")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
+    text "Downtown" size 35 xalign 0.82 yalign 0.53 color "#000000"
+    text "Plaza" size 35 xalign 0.87 yalign 0.34 color "#000000"
 
 screen MapUI5:
     imagebutton:
@@ -287,6 +314,16 @@ screen MapUI5:
         idle "mapIcon"
         hover "mapIcon2"
         action Call("NormingtonCoffee")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
+    text "Downtown" size 35 xalign 0.82 yalign 0.53 color "#000000"
+    text "Plaza" size 35 xalign 0.87 yalign 0.34 color "#000000"
+    text "Coffee" size 35 xalign 0.22 yalign 0.20 color "#000000"
+    text "Elementary" size 35 xalign 0.47 yalign 0.07 color "#000000"
 
 screen MapUI6:
     imagebutton:
@@ -359,6 +396,17 @@ screen MapUI6:
         idle "mapIcon"
         hover "mapIcon2"
         action Call("clinic")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
+    text "Downtown" size 35 xalign 0.82 yalign 0.53 color "#000000"
+    text "Plaza" size 35 xalign 0.87 yalign 0.34 color "#000000"
+    text "Coffee" size 35 xalign 0.22 yalign 0.20 color "#000000"
+    text "Elementary" size 35 xalign 0.47 yalign 0.07 color "#000000"
+    text "Clinic" size 35 xalign 0.14 yalign 0.72 color "#000000"
 
 
 #Main Menu Powerpoint Slides
