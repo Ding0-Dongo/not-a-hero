@@ -18,7 +18,7 @@ label mapScreen:
         "--Click anywhere to continue--"
 
 label continueToTheNextDay:
-    if day<7:
+    if day<6:
         $ day+= 1;
         if day==4:
             hide screen NormingtonCityMap
@@ -32,7 +32,7 @@ label continueToTheNextDay:
             jump mapScreen
         jump mapScreen
         return
-    elif day==7:
+    elif day==6:
         hide screen NormingtonCityMap
         hide screen continueNextDay
         jump theAccident

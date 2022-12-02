@@ -150,6 +150,8 @@ define PourDrinkAudio = "audio/drinkpour.mp3"
 define CafeChatterAudio = "audio/cafechatter.mp3"
 define audio.ShopBellRingAudio = "audio/shopdoorbell.mp3"
 define audio.ShopBackgroundMusic = "audio/shiftybackground.mp3"
+define endingAudio = "audio/Not A Hero - Theme (slowed down).mp3"
+define panicAudio = "audio/Not A Hero - The Accident (Intense Panic).mp3"
 
 ##### INACTIVE SPRITES #####
 image eNeutral_mask = AlphaMask("blackScreen", "Ellis/ellisNeutral.png")

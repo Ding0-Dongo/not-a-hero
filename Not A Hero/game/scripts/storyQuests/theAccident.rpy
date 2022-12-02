@@ -25,6 +25,8 @@ label theAccident:
     #Day 7
     #Scene: City
 
+    stop music
+
     scene schoolExterior with fade
     show ellisSurprised at ellis_std:
         xalign -1.8
@@ -35,6 +37,9 @@ label theAccident:
         linear 0.3 xalign 0.5
 
     "(As Ellis arrives on the scene, huge black plumes of smoke rise up in the air. The school is on fire.)"
+
+    play music panicAudio
+
     "(Numerous squad cars and ambulances are on the scene. Crying children and worried parents are being reunited in the parking lot.)"
     
     hide ellisSurprised
