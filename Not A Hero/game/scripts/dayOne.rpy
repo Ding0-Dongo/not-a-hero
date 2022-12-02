@@ -49,20 +49,39 @@ label start:
 
         "Go to tutorial.":
             jump tutorial
-
         "Skip tutorial":
             jump meetTheTeamStart
-
         "Actually start The Game":
             jump dayZero
-<<<<<<< Updated upstream
-=======
-
         "Go to Day 7":
             jump daySeven
-
         "Go make an Accident":
+            "criteria?"
+            menu:
+                "succeed 1st check":
+                    $ stamina = 7
+                "succeed 2nd check":
+                    $ stamina = 7
+                    $ speed = 7
+                "succeed all checks":
+                    $ stamina = 7
+                    $ speed = 7
+                    $ strength = 7
             jump theAccident
+        "Test ending":
+            "criteria?"
+            menu:
+                "fulfill standing":
+                    $ standing = 4
+                "fulfill social":
+                    $ social = 4
+                "fulfill both":
+                    $ standing = 4
+                    $ social = 4
+                "neither":
+                    $ standing = 1
+                    $ social = 1
+            jump theEnding
         "Tests Your Quests Here":
             menu:
                 "Test 'Talk Things Out'":
@@ -77,6 +96,18 @@ label start:
                     jump jhrStart
                 "Test 'Pursenapper'":
                     jump Pursenapper
+                "help some kids":
+                    "pass stat checks?"
+                    menu:
+                        "yea":
+                            $ strength = 10
+                            $ speed = 10
+                            $ stamina = 10
+                        "nah":
+                            $ strength = 1
+                            $ speed = 1
+                            $ stamina = 1
+                    jump helpKids
         "Test Your Maps Here":
             menu:
                 "MapUI0":
@@ -114,8 +145,6 @@ label start:
                 "Park":
                     $ day = 3
                     jump park
-
->>>>>>> Stashed changes
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
@@ -175,7 +204,7 @@ label start:
         "Visit Normington City":
             hide screen StatUI
             jump testingMap
-        "Visit Shifty Shop":
+        "Visit Shifty Shop (DELETE LATER)":
             jump shiftyShop
         "PurseSnatch Quest (delete this before demo)":
             hide screen NormingtonCityMap

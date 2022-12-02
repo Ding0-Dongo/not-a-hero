@@ -1,7 +1,30 @@
 label association:
-    if day==1:
+    hide screen NormingtonCityMap
+    hide screen continueNextDay
+    if day<6:
         menu:
-            "Meet your TEAM":
-                call meetTheTeam
             "Socialize":
                 call socialize
+                jump mapScreen
+            "Nevermind":
+                jump mapScreen
+        jump mapScreen
+    else:
+        if talkThingsOutDone == False:
+            menu:
+                "Talk Things Out":
+                    call talkThingsOut
+                    jump mapScreen
+                "Socialize":
+                    call socialize
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Socialize":
+                    call socialize
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        jump mapScreen

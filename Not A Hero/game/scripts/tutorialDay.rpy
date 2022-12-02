@@ -4,13 +4,20 @@
 
 label tutorial:
 
-    scene bg room
+    scene whiteRoom
 
     show dummy Neutral
 
     "Howdy there."
 
-    "If you're seeing this then this is where the tutorial goes."
+    #"If you're seeing this then this is where the tutorial goes."
+    "Are you prepared to become a HERO?"
+
+    ". . ."
+
+    "Great!"
+
+    "These are the basics every justice-serving, crime-fighting, do-gooder should know!"
 
     show screen StatUI
 
@@ -98,6 +105,7 @@ label endTutorial:
     "And always remember:"
 
     "{i}Even the darkest night will end and the sun will rise."
+    #alternatively, any cool normington association quote will do just nicely here
 
     hide screen StatUI
 
@@ -109,5 +117,6 @@ label endTutorial:
     $ socialLevel = 1
     $ tempSocialLevel = 0
     $ socialMax = 10
+    $ stress = 0
 
-    jump testStart
+    jump meetTheTeam

@@ -30,6 +30,17 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Made with love from:
+
+Project Lead - Ruth | aidylene
+
+Programmers - Hao | ASIANPOTATO, Michael | Dingo Dongo, Amina | DramaDecadence, Ethan | FireGate, lay
+
+Artists - Allison Lee | totallynotasian, Ani | bayaboi
+
+Composer - Corwin | HootPuff
+
+Thanks for playing!
 """)
 
 
@@ -150,7 +161,7 @@ define config.save_directory = "NotAHero-1666833464"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "images/shiftyThumbnail3.png"
 
 
 ## Build configuration #########################################################

@@ -1,19 +1,11 @@
 label NormingtonCoffee:
-<<<<<<< Updated upstream
-=======
-    image deltaNeutral = "images/Delta/delta neutral.png"
-    image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
-    image ellisHappy = "images/Ellis/Up.Confident.png"
-    image phiNeutral = "images/Phi/phi neutral.png"
-
     hide screen NormingtonCityMap
     hide screen continueNextDay
->>>>>>> Stashed changes
     scene coffeeshop_inside
 
     show screen StatUI
 
-    show shifty with fade
+    show shifty at shifty_std with fade
 
     play music CoffeeShopMusic
     play sound CafeChatterAudio volume 0.5
@@ -29,13 +21,11 @@ label CoffeeMenu:
     sc "What can I get for you today?"
     menu:
         #add josephine second hangout request here
+            #no cuz like we're gonna force the player to do that first
         #add coffee with friends here
-<<<<<<< Updated upstream
-=======
         "Get Coffee with Friends" if (day >= 3):
             call coffeeWithFriends
             jump mapScreen
->>>>>>> Stashed changes
         "One Coffee":
             if coffeeamount < 2:
                 sc "Very good! That will be $15 please."
@@ -66,7 +56,10 @@ label CoffeeMenu:
             jump CoffeeMenu
         #"Josephine's Second Hangout Request" if (day == 3)
         "That is all":
-            jump testStart
+            stop music
+            play music MainMusic
+            hide screen StatUI
+            jump mapScreen
 
 
                 

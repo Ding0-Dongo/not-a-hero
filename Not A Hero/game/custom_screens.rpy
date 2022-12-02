@@ -5,7 +5,7 @@ screen NormingtonCityMap:
         yalign 0.0
         xoffset 0
         yoffset 0
-        idle "images/normingtonMap.png"
+        idle "cityMap"
         action Jump ("call_mapUI")
         # You may also use the code below depending on your needs.
         # action ShowMenu("mapUI")
@@ -15,6 +15,7 @@ screen NormingtonCityMap:
 # If you want to navigate using the map, it's prefered to use "call".
 # When in skip mode (tab key on keyboard), this prevents the game to be skipped.
 label call_mapUI:
+    show screen StatUI
     if day==0:
         call screen MapUI0
     elif day==1:
@@ -29,8 +30,6 @@ label call_mapUI:
         call screen MapUI5
     elif day==6:
         call screen MapUI6
-    else:
-        call screen MapUI7
 
 screen MapUI0:
     # add "images/normingtonMap.png"
@@ -58,35 +57,356 @@ screen MapUI0:
         #This will be for volunteering (library)
         xpos 10
         ypos 100
-        idle "images/places/NormingtonCityLibrary.png"
-        hover "images/places/NormingtonCityLibrary.png"
+        idle "mapIcon"
+        hover "mapIcon"
         action Call("lib")
         
         
 screen MapUI1:
     imagebutton:
         #library
-        xpos 10
-        ypos 100
-        idle "images/places/NormingtonCityLibrary.png"
-        hover "images/places/NormingtonCityLibrary.png"
+        xpos 1400
+        ypos 200
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("lib")
     imagebutton:
         #hills
-        xpos 30
-        ypos 30
-        idle "images/places/NormingtonCityHills.png"
-        hover "images/places/NormingtonCityHills.png"
+        xpos 1600
+        ypos 800
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("hill")
     imagebutton:
         #NAHH
-        xpos 100
-        ypos 100
-        idle "images/places/NAHH.png"
-        hover "images/places/NAHH.png"
+        xpos 1300
+        ypos 750
+        idle "mapIcon"
+        hover "mapIcon2"
         action Call("association")
+    imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
 
+screen MapUI2:
+    imagebutton:
+        #park
+        xpos 1000
+        ypos 470
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 1400
+        ypos 200
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 1600
+        ypos 800
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 1300
+        ypos 750
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("association")
+    imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
 
+screen MapUI3:
+    imagebutton:
+        #park
+        xpos 1000
+        ypos 470
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 1400
+        ypos 200
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 1600
+        ypos 800
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 1300
+        ypos 750
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("association")
+    imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    imagebutton:
+        #downtown
+        xpos 1500
+        ypos 600
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("downtown")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
+    text "Downtown" size 35 xalign 0.82 yalign 0.53 color "#000000"
+
+screen MapUI4:
+    imagebutton:
+        #park
+        xpos 1000
+        ypos 470
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 1400
+        ypos 200
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 1600
+        ypos 800
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 1300
+        ypos 750
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("association")
+    imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    imagebutton:
+        #downtown
+        xpos 1500
+        ypos 600
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("downtown")
+    imagebutton:
+        #plaza
+        xpos 1600
+        ypos 400
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("plaza")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
+    text "Downtown" size 35 xalign 0.82 yalign 0.53 color "#000000"
+    text "Plaza" size 35 xalign 0.87 yalign 0.34 color "#000000"
+
+screen MapUI5:
+    imagebutton:
+        #park
+        xpos 1000
+        ypos 470
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 1400
+        ypos 200
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 1600
+        ypos 800
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 1300
+        ypos 750
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("association")
+    imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    imagebutton:
+        #downtown
+        xpos 1500
+        ypos 600
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("downtown")
+    imagebutton:
+        #plaza
+        xpos 1600
+        ypos 400
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("plaza")
+    imagebutton:
+        #elementary
+        xpos 850
+        ypos 100
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("elementary")
+    imagebutton:
+        #coffee
+        xpos 400
+        ypos 240
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("NormingtonCoffee")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
+    text "Downtown" size 35 xalign 0.82 yalign 0.53 color "#000000"
+    text "Plaza" size 35 xalign 0.87 yalign 0.34 color "#000000"
+    text "Coffee" size 35 xalign 0.22 yalign 0.20 color "#000000"
+    text "Elementary" size 35 xalign 0.47 yalign 0.07 color "#000000"
+
+screen MapUI6:
+    imagebutton:
+        #park
+        xpos 1000
+        ypos 470
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("park")
+    imagebutton:
+        #library
+        xpos 1400
+        ypos 200
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("lib")
+    imagebutton:
+        #hills
+        xpos 1600
+        ypos 800
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("hill")
+    imagebutton:
+        #NAHH
+        xpos 1300
+        ypos 750
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("association")
+    imagebutton:
+        #gym
+        xpos 800
+        ypos 500
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("gym")
+    imagebutton:
+        #downtown
+        xpos 1500
+        ypos 600
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("downtown")
+    imagebutton:
+        #plaza
+        xpos 1600
+        ypos 400
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("plaza")
+    imagebutton:
+        #elementary
+        xpos 850
+        ypos 100
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("elementary")
+    imagebutton:
+        #coffee
+        xpos 400
+        ypos 240
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("NormingtonCoffee")
+    imagebutton:
+        #clinic
+        xpos 240
+        ypos 800
+        idle "mapIcon"
+        hover "mapIcon2"
+        action Call("clinic")
+    text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
+    text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
+    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
+    text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
+    text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
+    text "Downtown" size 35 xalign 0.82 yalign 0.53 color "#000000"
+    text "Plaza" size 35 xalign 0.87 yalign 0.34 color "#000000"
+    text "Coffee" size 35 xalign 0.22 yalign 0.20 color "#000000"
+    text "Elementary" size 35 xalign 0.47 yalign 0.07 color "#000000"
+    text "Clinic" size 35 xalign 0.14 yalign 0.72 color "#000000"
 
 
 #Main Menu Powerpoint Slides
@@ -153,6 +473,17 @@ screen StatUI:
     text "SPD: [speed]" size 28 xalign 0.025 yalign 0.18
     text "Social Level [socialLevel]: [social]/[socialMax]" size 28 xalign 0.1 yalign 0.18
     text "$[money]" size 65 xalign 0.98 yalign 0.025 color "#23b84d"
+
+# helo ethan you seem to be good at making these so Imma just plop down my "continue to next day" button here
+screen continueNextDay:
+    imagebutton:
+        xpos 1500
+        ypos 1000
+        idle "nextDayButton"
+        hover "nextDayButton"
+        action Call("continueToTheNextDay")
+    text "Continue to next day." size 28 xalign 0.95 yalign 0.96 color "#FFFFFF"
+
 
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
 # This label is called whenever someone chooses to increase their strength
@@ -231,18 +562,42 @@ label StressMax:
     return
 
 
-    # Label that gets called when the social bar is filled
-    label SocialLevelUp:
-        $ tempSocialLevel = socialLevel
-        $ socialLevel += 1
-        "- - Social Level Up! ([tempSocialLevel] --> [socialLevel]) - -"
-        $ social = 0
-        $ socialMax += 2
-        return
+# Label that gets called when the social bar is filled
+label SocialLevelUp:
+    $ tempSocialLevel = socialLevel
+    $ socialLevel += 1
+    "- - Social Level Up! ([tempSocialLevel] --> [socialLevel]) - -"
+    $ social = 0
+    $ socialMax += 2
+    return
 
-#this here screen's for flashing the title screen
-screen titleScreenFlash:
-    image "images/places/NAHH.png"
+#Putting a transform here for a standardized ellis position
+#Desmond can use this too
+transform ellis_std:
+    zoom 0.45
+    yalign -1.5
+
+#Transform for josephine
+transform jo_std:
+    zoom 0.45
+    yalign 0.2
+
+#Transform for Shifty
+transform shifty_std:
+    zoom 0.60
+    xalign 0.6
+    yalign 0.2
+
+transform delta_std:
+    zoom 0.45
+    yalign -1.0
+
+transform alpha_std:
+    zoom 0.45
+
+transform phi_std:
+    zoom 0.45
+    yalign -0.8
 
 label splashscreen:
     scene blackScreen

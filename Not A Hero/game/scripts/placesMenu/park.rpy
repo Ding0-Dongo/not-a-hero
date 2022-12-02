@@ -1,7 +1,7 @@
 label park:
     hide screen NormingtonCityMap
     hide screen continueNextDay
-    scene park
+    scene normingtonPark
     stop music
     play music ParkMusic
     "The cool spring breeze blows over Ellis as the leaves rustle and grass whistles."
@@ -16,7 +16,7 @@ label choicesPark:
         if josephineHangoutDone == False:
             menu:
                 "Josephine's Hangout Request":
-                    call josephineHangoutReq                  
+                    call josephineHangoutReq
                     jump mapScreen
                 "Help Kids":
                     call helpKids
@@ -64,6 +64,4 @@ label choicesPark:
                     stop music
                     play music MainMusic
                     jump mapScreen
-        stop music
-        play music MainMusic
         jump mapScreen

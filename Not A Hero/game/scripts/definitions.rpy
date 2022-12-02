@@ -21,29 +21,40 @@ define kid2 = Character("Joughseph", color="#90a6fc")
 define kid3 = Character("Rose", color="#f069c7")
 
 #graffi-no commission
-define gangster = Character("Your typical street thug")
-define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather")
+define gangster = Character("Your typical street thug", color="#eb8e15")
+define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather", color="#700725")
 
+#bullies story quest
+define kids = Character("Kids", color="#ffffff")
+define teacher = Character("Teacher", color="#ffffff")
+define miscChild = Character("A Kid", color="#ffffff")
+define bulliedChild = Character("Kid Who Borrowed a Pencil", color="#ffffff")
+define bully = Character("Kid Looking For a Pencil", color="#ffffff")
 
+#petty thievery story quest (not including shifty)
+define woman = Character("Woman", color="#b85858")
+
+#josephine's second hangout request
+define barista = Character("Barista", color="#379752")
+define customer = Character("Impatient Customer", color="#bd3675")
 
 #coffee with friends check
 define coffeewithfriends_firstime = True
 
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
-image normingtonAcademy = "images/normingtonAcademy.png"
+image schoolExterior = "images/places/school exterior.png"
+image schoolInterior = "images/places/school interior.png."
+image classroom = "images/places/classroom interior.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
 image city = "images/normingtonCity.png"
-image hq = "images/hq.png"
-image shopRoom = "shopbackground.jpg"
+image hq = "images/places/hq interior.png"
 image city = "images/normingtonMap.png"
 image blackScreen = "#000000"
-image alleyway = "images/alleyway.jpg"
+image alleyway = "images/places/dark shady alley.png"
 image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
-<<<<<<< Updated upstream
-=======
 image plaza = "images/places/plaza.png"
 image park = "images/places/park.png"
-image hospitalInterior = "images/places/hospital interior.png"
+image hospitalInterior = "images/places/hospital.png"
 image hospitalExterior = "images/places/hospital exterior.png"
 image hospitalRoom = "images/places/hospital room.png"
 
@@ -56,6 +67,7 @@ image nextDayButton = "images/nextDayButton.png"
 
 ##### ELLIS
 image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
+image ellisScarfNeutral = "images/Ellis/Scraf.Neutral.png"
 image ellisAnnoyed = "images/Ellis/Norm.Pensive.png"
 image ellisAnnoyed2 = "images/Ellis/Scraf.Spite.png"
 image ellisThinking = "images/Ellis/tilt.thinking.png"
@@ -73,27 +85,47 @@ image ellisShy = "images/Ellis/Untitled_Artwork.png"
 image ellisObjection = "images/Ellis/Up.Assertive.png"
 image ellisHappy = "images/Ellis/Up.Confident.png"
 image ellisCringe = "images/Ellis/Up.Cringe.png"
+image ellisCringe2 = "images/Ellis/Up.Cringe2.png"
+image ellisStunned = "images/Ellis/Norm.Stunned.png"
 
 ##### DESMOND
 image desNeutral = "images/Desmond/Des.Norm.png"
 image desChuckle = "images/Desmond/Des.Chuckle.png"
 image desDrowsy = "images/Desmond/Des.Drowse.png"
+image desFrown = "images/Desmond/Des.Frown.png"
 
 ##### JOSEPHINE
 image joNeutral = "images/Josephine/josephine neutral.png"
+image joExclaim = "images/Josephine/josephine_exclaim.png"
+image joFrown = "images/Josephine/josephine_frown.png"
+image joFrown2 = "images/Josephine/josephine_sad_frown.png"
+image joClosed = "images/Josephine/josephine_eyes_closed.png"
+image joNervous = "images/Josephine/josephine_nervous.png"
 
 ##### DELTA
 image deltaNeutral = "images/Delta/delta neutral.png"
 image deltaNeutral = Transform("images/Delta/delta neutral.png", zoom=.4)
+image deltaNeutral2 = "images/Delta/Delta.Down.Default.png"
+image deltaAnnoyed = "images/Delta/Delta.Annoyed.png"
+image deltaInquire = "images/Delta/Delta.Inquire.png"
+image deltaWisdom = "images/Delta/Delta.Wisdom.png"
+image deltaSerious = "images/Delta/Delta.Serious.png"
+image deltaClosed = "images/Delta/Delta.Down.Close.png"
+image deltaSad = "images/Delta/Delta.Down.Sad.png"
+image deltaSad2 = "images/Delta/Delta.Down.Shame.png"
+image deltaThinking = "images/Delta/Delta.Down.Thinking.png"
+image deltaHappy = "images/Delta/Delta.Happy.png"
+image deltaTeasing = "images/Delta/Delta.Tease.png"
 
 ##### PHI
 image phiNeutral = "images/Phi/phi neutral.png"
 
 ##### ALPHA
 image alphaNeutral = "images/Alpha/alpha neutral.png"
->>>>>>> Stashed changes
 
 ##### SPECIAL CHARACTER SPRITES #####
+# you mean test character sprites, right....? RIGHT??? -ruth
+### the potato is important to the plot...
 image ellis Neutral = "Ellis/ellisNeutral.png"
 image ellis Terrified = "Ellis/ellisTerrified.png"
 image dummy Neutral = "Dummy/dummyNeutral.png"
@@ -103,11 +135,11 @@ image dummy Sad = "Dummy/dummySad.png"
 image potato = "images/potato.png"
 image potato1 = "images/potato1.png"
 image potato2 = "images/potato2.png"
-image shifty = "images/copyrightedshifty.png"
-image test1 = "images/TEST-SPRITE.png"
-image test2 = "images/TEST-SPRITE2.png"
-image test3 = "images/TEST-SPRITE3.png"
-image test4 = "images/TEST-SPRITE4.png"
+image shifty = "images/shifty.png"
+image test1 = "Dummy/dummyNeutral.png"
+image test2 = "Dummy/dummyAngry.png"
+image test3 = "Dummy/dummyHappy.png"
+image test4 = "Dummy/dummySad.png"
 
 ##### AUDIO #####
 define MainMusic = "audio/Not_A_Hero_general_loop.mp3"
@@ -125,13 +157,12 @@ define GaspAudio = "audio/gasp.mp3"
 define ChaChingAudio = "audio/chaching.mp3"
 define CoffeeShopMusic = "audio/coffeeshop.mp3"
 define PourDrinkAudio = "audio/drinkpour.mp3"
-<<<<<<< Updated upstream
-define CafeChatterAudio = "audio/cafechatter.mp3"
-=======
 define CafeChatterAudio = "audio/cafechatter.mp3"
 define audio.ShopBellRingAudio = "audio/shopdoorbell.mp3"
 define audio.ShopBackgroundMusic = "audio/shiftybackground.mp3"
 define ParkMusic = "audio/parkmusic.mp3"
+define endingAudio = "audio/Not A Hero - Theme (slowed down).mp3"
+define panicAudio = "audio/Not A Hero - The Accident (Intense Panic).mp3"
 
 ##### INACTIVE SPRITES #####
 image eNeutral_mask = AlphaMask("blackScreen", "Ellis/ellisNeutral.png")
@@ -184,5 +215,4 @@ image s inactive = Composite(
 )
 
 ##### Title Screen (shown once) #####
-image titleScreen = "images/titlescreen.png"
->>>>>>> Stashed changes
+image titleScreen = "images/NOTAHERO.png"

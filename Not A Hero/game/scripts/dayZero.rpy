@@ -45,14 +45,14 @@ label dayZero:
     #ok so how this' gonna go down is that we flash the title screen, then present the option to the player of whether
     #or not they want to see the tutorial
     #if they don't, we immediately yeet them into day 1
-    show screen titleScreenFlash
+    show titleScreen with fade
     with Pause(3)
     show blackScreen with fade
-    hide screen titleScreenFlash
+    #hide screen titleScreenFlash
 
     menu:
         "Begrudgingly play the Normington Association of Hero's Training Tape":
             #it'd be cool if we added like a vhs sound effect here
             jump tutorial
         "Chuck that in the trash":
-            jump dayOne
+            jump meetTheTeam

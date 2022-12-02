@@ -10,7 +10,7 @@ default socialMax = 10
 default tempSocialLevel = 0
 default socialLevel = 1
 default money = 0
-default standing = "civilian"
+default standing = 1
 default day = 0
 
 default energy = 10
@@ -29,3 +29,25 @@ default commission4Done = False #help Kids
 default commission5Done = False #help Granny
 default commission6Done = False #PSA (TEAM)
 default commission7Done = False #Thiefstopper
+
+default libraryVolunteerDone = False
+
+default apologyDone = False #josephine's apology
+default bulliesDone = False #bullies!
+default deliveryRunDone = False #desmond's delivery run
+
+default josephineHangoutDone = False #josephine's hangout request
+
+default josephineApologyDone = False
+default josephineFirstAidDone = False
+default pursenapperDone = False
+default talkThingsOutDone = False
+
+default story1Done = False
+default story2Done = False
+default story3Done = False
+default story4Done = False
+default story5Done = False
+default story6Done = False
+
+default introMapDialogue = True
