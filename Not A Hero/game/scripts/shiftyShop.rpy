@@ -10,7 +10,7 @@ label shiftyShop:
 
     show screen StatUI
 
-    show shifty with fade
+    show shifty at shifty_std with fade
 
     $ shiftyGreeting = renpy.random.choice(entryLines)
 

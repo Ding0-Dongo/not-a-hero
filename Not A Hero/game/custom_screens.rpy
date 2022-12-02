@@ -582,6 +582,13 @@ transform jo_std:
     zoom 0.45
     yalign 0.2
 
+#Transform for Shifty
+transform shifty_std:
+    zoom 0.60
+    xalign 0.6
+    yalign 0.2
+
+
 label splashscreen:
     scene blackScreen
     with Pause(1)
