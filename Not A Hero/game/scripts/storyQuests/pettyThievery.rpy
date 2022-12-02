@@ -68,8 +68,9 @@ label ptStart:
     #show SHIFTY THE MAIN MAN
 
     show shifty with moveinright:
+        zoom 0.40
         xalign 0.65
-        yalign 0.8
+        yalign 2.5
 
     e "Oh. Hello there."
 

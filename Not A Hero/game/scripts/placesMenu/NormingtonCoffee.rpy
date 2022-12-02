@@ -5,7 +5,7 @@ label NormingtonCoffee:
 
     show screen StatUI
 
-    show shifty with fade
+    show shifty at shifty_std with fade
 
     play music CoffeeShopMusic
     play sound CafeChatterAudio volume 0.5
