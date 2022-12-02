@@ -30,6 +30,8 @@ default commission5Done = False #help Granny
 default commission6Done = False #PSA (TEAM)
 default commission7Done = False #Thiefstopper
 
+default libraryVolunteerDone = False
+
 default apologyDone = False #josephine's apology
 default bulliesDone = False #bullies!
 default deliveryRunDone = False #desmond's delivery run
