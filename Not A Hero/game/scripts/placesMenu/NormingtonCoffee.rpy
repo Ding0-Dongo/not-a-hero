@@ -65,7 +65,10 @@ label CoffeeMenu:
             sc "Anyways..."
             jump CoffeeMenu
         "That is all":
-            jump testStart
+            stop music
+            play music MainMusic
+            hide screen StatUI
+            jump mapScreen
 
 
                 

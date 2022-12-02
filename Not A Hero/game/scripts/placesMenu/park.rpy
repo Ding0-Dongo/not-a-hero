@@ -16,6 +16,8 @@ label choicesPark:
             "Help Kids":
                 call helpKids
                 jump mapScreen
+            "Nevermind":
+                jump mapScreen
     else:
         menu:
             "Josephine's Hangout Request":
@@ -26,5 +28,7 @@ label choicesPark:
                 jump mapScreen
             "Take a Walk":
                 call takeWalk
+                jump mapScreen
+            "Nevermind":
                 jump mapScreen
         jump mapScreen

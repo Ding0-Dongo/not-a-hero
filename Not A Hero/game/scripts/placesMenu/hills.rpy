@@ -7,7 +7,12 @@ label hill:
 
 label choicesHill:
     if day<2:
-        call rest
+        menu:
+            "Rest":
+                call rest
+                jump mapScreen
+            "Nevermind":
+                jump mapScreen
         jump mapScreen
     else:
         menu:
@@ -17,5 +22,7 @@ label choicesHill:
                 call volunteeringSC
             "Rest":
                 call rest
+            "Nevermind":
+                jump mapScreen
         jump mapScreen
     jump mapScreen
