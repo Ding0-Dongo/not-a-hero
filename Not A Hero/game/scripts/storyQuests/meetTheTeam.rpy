@@ -18,6 +18,10 @@ label meetTheTeam:
 
     e "... do we have to? I don't really like introductions, or icebreakers, or that kind of thing..."
 
+    hide deltaNeutral
+    show deltaClosed at delta_std:
+        xalign 0.8
+
     menu:
         "C'mon. You'll be fine.":
             D "C'mon. You'll be fine. Besides, you'll have to get used to these kinds of things, now that you're in a TEAM."
@@ -28,6 +32,9 @@ label meetTheTeam:
     hide ellisNeutral
     show ellisSad at ellis_std:
         xalign 0.3
+    hide deltaClosed
+    show deltaNeutral at delta_std:
+        xalign 0.8
 
     e "I know, but still..."
     D "(He seems pretty anxious.)"
@@ -73,7 +80,7 @@ label meetTheTeam:
     e "... *starts laughing*"
 
     hide deltaInquire
-    show deltaNeutral at delta_std:
+    show deltaHappy at delta_std:
         xalign 0.3
 
     D "..."
@@ -88,7 +95,7 @@ label meetTheTeam:
     show ellisShy at ellis_std:
         linear 0.3 xalign 1.1
 
-    show deltaNeutral at delta_std:
+    show deltaHappy at delta_std:
         linear 0.3 xalign 0.7
 
     show alphaNeutral at alpha_std:
@@ -114,7 +121,7 @@ label meetTheTeam:
 
     menu:
         "Subtly step in":
-            hide deltaNeutral
+            hide deltaHappy
             show deltaInquire at delta_std:
                 xalign 0.7
             D "Knock it off, PHI."
@@ -123,7 +130,7 @@ label meetTheTeam:
             jump meetTheTeamPartTwo
 
 label meetTheTeamPartTwo:
-    hide deltaInquire
+    hide deltaHappy
     show deltaNeutral at delta_std:
         xalign 0.7
 

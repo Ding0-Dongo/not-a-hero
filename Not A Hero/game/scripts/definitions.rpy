@@ -98,6 +98,7 @@ image joFrown = "images/Josephine/josephine_frown.png"
 image joFrown2 = "images/Josephine/josephine_sad_frown.png"
 image joClosed = "images/Josephine/josephine_eyes_closed.png"
 image joNervous = "images/Josephine/josephine_nervous.png"
+image joStress = "images/Josephine/josephine_distressed.png"
 
 ##### DELTA
 image deltaNeutral = "images/Delta/delta neutral.png"
@@ -115,6 +116,11 @@ image deltaTeasing = "images/Delta/Delta.Tease.png"
 
 ##### PHI
 image phiNeutral = "images/Phi/phi neutral.png"
+image phiExclaim = "images/Phi/phi_exclaim.png"
+image phiHappy = "images/Phi/phi_happy.png"
+image phiOverjoyed = "images/Phi/phi_overjoyed.png"
+image phiSheepish = "images/Phi/phi_sheepish.png"
+image phiFrown = "images/Phi/phi_frowning_exclaim.png"
 
 ##### ALPHA
 image alphaNeutral = "images/Alpha/alpha neutral.png"
