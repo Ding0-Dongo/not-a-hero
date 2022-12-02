@@ -8,6 +8,7 @@ label mapScreen:
             show screen NormingtonCityMap
             show screen continueNextDay
             "Go now, spread those wings of yours, and become the Ellis the other Ellis could never even hope of becoming!"
+            "*** DEVELOPERS' NOTE: don't continue the text on the map (ex: pressing enter), it'll advance the day. Click on the map instead to make the text disappear safely without skipping to the next day."
         else:
             show screen NormingtonCityMap
             show screen continueNextDay
