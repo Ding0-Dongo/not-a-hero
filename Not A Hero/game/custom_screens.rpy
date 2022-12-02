@@ -588,7 +588,6 @@ transform shifty_std:
     xalign 0.6
     yalign 0.2
 
-
 transform delta_std:
     zoom 0.45
     yalign -1.0
