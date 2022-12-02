@@ -93,6 +93,8 @@ label start:
             jump jshrStart
         "Test 'Josephine's Hangout Request'":
             jump jhrStart
+        "josephine's apology":
+            jump apology
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
