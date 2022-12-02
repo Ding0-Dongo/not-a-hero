@@ -111,6 +111,7 @@ label endTutorial:
     $ strength = 1
     $ stamina = 1
     $ speed = 1
+    $ energy = 10
     $ energyMax = 10
     $ social = 0
     $ socialLevel = 1
