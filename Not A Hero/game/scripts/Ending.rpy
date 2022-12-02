@@ -19,8 +19,11 @@ label theEnding:
     #to play after 'The Ending' story quest is completed.
     scene blackScreen
 
+    stop music
+
     "LATER"
     "*beep-beep-beep* *beep-beep-beep*"
+    play music endingAudio
     D "PHI?"
     P "DELTA, are you still in maintenance?"
     D "Got out just a half hour ago. Why?"
