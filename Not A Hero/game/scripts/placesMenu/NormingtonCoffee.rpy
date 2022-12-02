@@ -1,4 +1,14 @@
 label NormingtonCoffee:
+<<<<<<< Updated upstream
+=======
+    image deltaNeutral = "images/Delta/delta neutral.png"
+    image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
+    image ellisHappy = "images/Ellis/Up.Confident.png"
+    image phiNeutral = "images/Phi/phi neutral.png"
+
+    hide screen NormingtonCityMap
+    hide screen continueNextDay
+>>>>>>> Stashed changes
     scene coffeeshop_inside
 
     show screen StatUI
@@ -20,6 +30,12 @@ label CoffeeMenu:
     menu:
         #add josephine second hangout request here
         #add coffee with friends here
+<<<<<<< Updated upstream
+=======
+        "Get Coffee with Friends" if (day >= 3):
+            call coffeeWithFriends
+            jump mapScreen
+>>>>>>> Stashed changes
         "One Coffee":
             if coffeeamount < 2:
                 sc "Very good! That will be $15 please."
@@ -48,16 +64,7 @@ label CoffeeMenu:
             sc "Normington Coffee sells premiere high-end LUXURY beverages like our famous 'Normington Coffee' to our esteemed guests."
             sc "Anyways, feel free to look around."
             jump CoffeeMenu
-        "Steal money from the cash register (please delete this before demo)":
-            hide shifty
-            "(You t-posed in front of barista, intimidating them.)"
-            show shifty
-            sc "P-please, I don't want any trouble, here take my money."
-            $ money += 15
-            play sound ChaChingAudio
-            "15 dollars added to your funds!"
-            sc "Anyways..."
-            jump CoffeeMenu
+        #"Josephine's Second Hangout Request" if (day == 3)
         "That is all":
             jump testStart
 

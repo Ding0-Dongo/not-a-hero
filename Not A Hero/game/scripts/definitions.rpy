@@ -26,6 +26,9 @@ define ultraMobBoss = Character("Ultra-Crime-Boss-Godfather")
 
 
 
+#coffee with friends check
+define coffeewithfriends_firstime = True
+
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image normingtonAcademy = "images/normingtonAcademy.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
@@ -36,6 +39,59 @@ image city = "images/normingtonMap.png"
 image blackScreen = "#000000"
 image alleyway = "images/alleyway.jpg"
 image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
+<<<<<<< Updated upstream
+=======
+image plaza = "images/places/plaza.png"
+image park = "images/places/park.png"
+image hospitalInterior = "images/places/hospital interior.png"
+image hospitalExterior = "images/places/hospital exterior.png"
+image hospitalRoom = "images/places/hospital room.png"
+
+##### MAP STUFF
+
+image cityMap = "images/map.jpg"
+image mapIcon = "images/mapIcon.png"
+image mapIcon2 = "images/mapIcon2.png"
+image nextDayButton = "images/nextDayButton.png"
+
+##### ELLIS
+image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
+image ellisAnnoyed = "images/Ellis/Norm.Pensive.png"
+image ellisAnnoyed2 = "images/Ellis/Scraf.Spite.png"
+image ellisThinking = "images/Ellis/tilt.thinking.png"
+image ellisThinking2 = "images/Ellis/Scraf.Concentrating.png"
+image ellisThinking3 = "images/Ellis/Norm.Thinking.png"
+image ellisNervous = "images/Ellis/Scarf.Nervy.png"
+image ellisSad = "images/Ellis/Norm.Unsure.png"
+image ellisSad2 = "images/Ellis/Scraf.Regrert.png"
+image ellisSurprised = "images/Ellis/Surprised.png"
+image ellisAsk = "images/Ellis/Tilt.ask.png"
+image ellisCry = "images/Ellis/Tilt.Cry2.png"
+image ellisCry2 = "images/Ellis/Tilt.Cry.png"
+image ellisWince = "images/Ellis/Norm.Wince.png"
+image ellisShy = "images/Ellis/Untitled_Artwork.png"
+image ellisObjection = "images/Ellis/Up.Assertive.png"
+image ellisHappy = "images/Ellis/Up.Confident.png"
+image ellisCringe = "images/Ellis/Up.Cringe.png"
+
+##### DESMOND
+image desNeutral = "images/Desmond/Des.Norm.png"
+image desChuckle = "images/Desmond/Des.Chuckle.png"
+image desDrowsy = "images/Desmond/Des.Drowse.png"
+
+##### JOSEPHINE
+image joNeutral = "images/Josephine/josephine neutral.png"
+
+##### DELTA
+image deltaNeutral = "images/Delta/delta neutral.png"
+image deltaNeutral = Transform("images/Delta/delta neutral.png", zoom=.4)
+
+##### PHI
+image phiNeutral = "images/Phi/phi neutral.png"
+
+##### ALPHA
+image alphaNeutral = "images/Alpha/alpha neutral.png"
+>>>>>>> Stashed changes
 
 ##### SPECIAL CHARACTER SPRITES #####
 image ellis Neutral = "Ellis/ellisNeutral.png"
@@ -69,4 +125,64 @@ define GaspAudio = "audio/gasp.mp3"
 define ChaChingAudio = "audio/chaching.mp3"
 define CoffeeShopMusic = "audio/coffeeshop.mp3"
 define PourDrinkAudio = "audio/drinkpour.mp3"
+<<<<<<< Updated upstream
 define CafeChatterAudio = "audio/cafechatter.mp3"
+=======
+define CafeChatterAudio = "audio/cafechatter.mp3"
+define audio.ShopBellRingAudio = "audio/shopdoorbell.mp3"
+define audio.ShopBackgroundMusic = "audio/shiftybackground.mp3"
+define ParkMusic = "audio/parkmusic.mp3"
+
+##### INACTIVE SPRITES #####
+image eNeutral_mask = AlphaMask("blackScreen", "Ellis/ellisNeutral.png")
+image e inactive = Composite(
+    (1000,1000),
+    (0,0), "Ellis/ellisNeutral.png",
+    (0,0), "eNeutral_mask"
+)
+
+image jNeutral_mask = AlphaMask("blackScreen", "Josephine/josephineNeutral.png")
+image j inactive = Composite(
+    (1000,1000),
+    (0,0), "Josephine/josephineNeutral.png",
+    (0,0), "eNeutral_mask"
+)
+
+image dNeutral_mask = AlphaMask("blackScreen", "Desmond/desmondNeutral.png")
+image d inactive = Composite(
+    (1000,1000),
+    (0,0), "Desmond/desmondNeutral.png",
+    (0,0), "dNeutral_mask"
+)
+
+image DNeutral_mask = AlphaMask("blackScreen", "Delta/deltaNeutral.png")
+image D inactive = Composite(
+    (1000,1000),
+    (0,0), "Delta/deltaNeutral.png",
+    (0,0), "DNeutral_mask"
+)
+
+image PNeutral_mask = AlphaMask("blackScreen", "Phi/phiNeutral.png")
+image P inactive = Composite(
+    (1000,1000),
+    (0,0), "Phi/phiNeutral.png",
+    (0,0), "PNeutral_mask"
+)
+
+image ANeutral_mask = AlphaMask("blackScreen", "Alpha/alphaNeutral.png")
+image A inactive = Composite(
+    (1000,1000),
+    (0,0), "Alpha/alphaNeutral.png",
+    (0,0), "ANeutral_mask"
+)
+
+image sNeutral_mask = AlphaMask("blackScreen", "Shifty/shiftyNeutral.png")
+image s inactive = Composite(
+    (1000,1000),
+    (0,0), "Shifty/shiftyNeutral.png",
+    (0,0), "sNeutral_mask"
+)
+
+##### Title Screen (shown once) #####
+image titleScreen = "images/titlescreen.png"
+>>>>>>> Stashed changes

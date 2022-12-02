@@ -55,6 +55,67 @@ label start:
 
         "Actually start The Game":
             jump dayZero
+<<<<<<< Updated upstream
+=======
+
+        "Go to Day 7":
+            jump daySeven
+
+        "Go make an Accident":
+            jump theAccident
+        "Tests Your Quests Here":
+            menu:
+                "Test 'Talk Things Out'":
+                    jump talkThingsOut
+                "Test 'Bullies'":
+                    jump bullies
+                "Test 'Petty Thievery'":
+                    jump ptStart
+                "Test 'Josephine's Second...'":
+                    jump jshrStart
+                "Test 'Josephine's Hangout Request'":
+                    jump jhrStart
+                "Test 'Pursenapper'":
+                    jump Pursenapper
+        "Test Your Maps Here":
+            menu:
+                "MapUI0":
+                    $ day = 0
+                    show cityMap
+                    jump call_mapUI
+                "Map UI1":
+                    show cityMap
+                    $ day = 1
+                    jump call_mapUI
+                "Map UI2":
+                    show cityMap
+                    $ day = 2
+                    jump call_mapUI
+                "Map UI3":
+                    show cityMap
+                    $ day = 3
+                    jump call_mapUI
+                "Map UI4":
+                    show cityMap
+                    $ day = 4
+                    jump call_mapUI
+                "Map UI5":
+                    show cityMap
+                    $ day = 5
+                    jump call_mapUI
+                "Map UI6":
+                    show cityMap
+                    $ day = 6
+                    jump call_mapUI
+        "Test Your Places Here":
+            menu:
+                "Visit Shifty":
+                    jump shiftyShop
+                "Park":
+                    $ day = 3
+                    jump park
+
+>>>>>>> Stashed changes
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
