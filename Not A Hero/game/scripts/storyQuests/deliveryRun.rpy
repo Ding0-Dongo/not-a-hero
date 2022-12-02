@@ -10,10 +10,13 @@ label deliveryRun:
 
         "(Ellis is walking around the downtown area of Normington City when he happens upon a familiar person.)"
         
+        show ellisNeutral at ellis_std:
+            linear 0.8 xalign 0.1
+        pause(0.8)
         hide ellisNeutral
         show ellisAsk at ellis_std:
             xalign 0.1
-        show desNeutral at ellis_std:
+        show desNeutral at ellis_std with moveinright:
             xalign 0.8
 
         e "... Desmond?"
@@ -73,30 +76,45 @@ label deliveryRun:
 
         e "Uh... I think so."
         d "Any questions, then?"
+
+        hide ellisAsk
+        show ellisObjection at ellis_std:
+            xalign 0.1
+
         e "Are there any... specific rules for TEAM commissions? Are only some commissions TEAM?"
+        
+        hide ellisObjection
+        show ellisNeutral at ellis_std:
+            xalign 0.1
+
         d "Yeah. I mean, you can't just tag along with someone who's doing a simple thing."
         e "Guess that makes sense..."
         d "If you're not busy, do you feel like helping me out with a few deliveries? It's one of the easier TEAM commissions."
 
         if stamina < 3:
-            hide ellisAsk
+            hide ellisNeutral
             show ellisNervous at ellis_std:
                 xalign 0.1
             e "... um, sorry, I don't think I'm ready for that yet."
             d "Oh? That's a shame. Another day, maybe?"
-            e "Sure... I'll see you later, Desmond?"
             
             hide ellisNervous
-            show ellisChuckle at ellis_std:
+            show ellisNeutral at ellis_std:
+                xalign 0.1
+
+            e "Sure... I'll see you later, Desmond?"
+
+            hide desNeutral
+            show desChuckle at ellis_std:
                 xalign 0.8
-            
+
             d "Yup. Seeya."
 
             show blackScreen with fade
 
             "(This story quest requires 3 stamina! Train up and try again!)"
         else:
-            hide ellisAsk
+            hide ellisNeutral
             show ellisHappy at ellis_std:
                 xalign 0.1
 
