@@ -67,21 +67,6 @@ label start:
             jump talkThingsOut
         "Test 'Bullies'":
             jump bullies
-        "Test 'Desmond's Delivery Run'":
-            "increase stamina?"
-            menu: 
-                "yeah":
-                    $ stamina = 4
-                "nah":
-                    $ stamina = 0
-            
-            jump deliveryRun
-        "Relax - rest":
-            jump rest
-        "Relax - read a book":
-            jump readBook
-        "Relax - take a walk":
-            jump takeWalk
         "Test 'Petty Thievery'":
             jump ptStart
         "Test 'Josephine's Second...'":

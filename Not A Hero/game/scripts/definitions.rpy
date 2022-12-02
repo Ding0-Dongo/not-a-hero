@@ -41,6 +41,7 @@ define customer = Character("Impatient Customer", color="#bd3675")
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image schoolExterior = "images/places/school exterior.png"
 image schoolInterior = "images/places/school interior.png."
+image classroom = "images/places/classroom interior.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
 image city = "images/normingtonCity.png"
 image hq = "images/places/hq interior.png"
@@ -52,6 +53,7 @@ image plaza = "images/places/plaza.png"
 image park = "images/places/park.png"
 image hospitalInterior = "images/places/hospital interior.png"
 image hospitalExterior = "images/places/hospital exterior.png"
+image hospitalRoom = "images/places/hospital room.png"
 
 ##### MAP STUFF
 
@@ -66,6 +68,7 @@ image ellisAnnoyed = "images/Ellis/Norm.Pensive.png"
 image ellisAnnoyed2 = "images/Ellis/Scraf.Spite.png"
 image ellisThinking = "images/Ellis/tilt.thinking.png"
 image ellisThinking2 = "images/Ellis/Scraf.Concentrating.png"
+image ellisThinking3 = "images/Ellis/Norm.Thinking.png"
 image ellisNervous = "images/Ellis/Scarf.Nervy.png"
 image ellisSad = "images/Ellis/Norm.Unsure.png"
 image ellisSad2 = "images/Ellis/Scraf.Regrert.png"
@@ -74,6 +77,7 @@ image ellisAsk = "images/Ellis/Tilt.ask.png"
 image ellisCry = "images/Ellis/Tilt.Cry2.png"
 image ellisCry2 = "images/Ellis/Tilt.Cry.png"
 image ellisWince = "images/Ellis/Norm.Wince.png"
+image ellisShy = "images/Ellis/Untitled_Artwork.png"
 image ellisObjection = "images/Ellis/Up.Assertive.png"
 image ellisHappy = "images/Ellis/Up.Confident.png"
 image ellisCringe = "images/Ellis/Up.Cringe.png"
@@ -85,6 +89,9 @@ image desDrowsy = "images/Desmond/Des.Drowse.png"
 
 ##### JOSEPHINE
 image joNeutral = "images/Josephine/josephine neutral.png"
+
+##### DELTA
+image deltaNeutral = "images/Delta/delta neutral.png"
 
 ##### PHI
 image phiNeutral = "images/Phi/phi neutral.png"
