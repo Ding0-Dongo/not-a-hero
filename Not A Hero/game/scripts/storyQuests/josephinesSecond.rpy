@@ -10,9 +10,14 @@ label jshrStart:
 
     #show ellis
     show ellisThinking2 at ellis_std with dissolve:
-        xalign 0.75
+        xalign 1.1
 
     #move josephine and desmond in from left
+    show desNeutral at ellis_std with moveinleft:
+        xalign -0.05
+
+    show joNeutral at jo_std with moveinleft:
+        xalign 0.55
 
     "Josephine and Desmond walk in."
 
@@ -21,25 +26,35 @@ label jshrStart:
     hide ellisThinking2
 
     show ellisSurprised at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "*looks up* Huh?"
 
     hide ellisSurprised
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "Oh, Josephine. Um... hi."
+
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign -0.05
 
     d "We were thinking on going to a cafe. Come with?"
 
     hide ellisNeutral
 
     show ellisNervous at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "I'm... but I'm not done with my work for today..."
+
+    hide desChuckle
+
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     j "Aw, don't worry, we won't be long!"
 
@@ -67,23 +82,28 @@ label jshrCont:
     hide ellisNervous
 
     show ellisAsk at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "Where are we going?"
+
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign -0.05
 
     d "Normington Coffee. It's a little shop just two blocks down. Have you been there before?"
 
     hide ellisAsk
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "No, but I think I've heard of it."
 
     hide ellisNeutral
 
     show ellisNervous at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     j "You've never been there? Oh my gosh, we have to go now. Their ice cream is so good!"
 
@@ -97,23 +117,36 @@ label jshrCont:
     scene plaza with dissolve
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
+
+    hide desChuckle
+
+    show desNeutral at ellis_std:
+        xalign -0.05
+
+    show joNeutral at jo_std:
+        xalign 0.55
 
     d "So how have your commisions been going? Going well, I hope?"
 
     hide ellisNeutral
 
     show ellisNervous at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "Um... I think they're fine. Not so bad so far, anyways..."
 
     hide ellisNervous
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     j "*rolls eyes* The two of you really want to talk about HERO work on break?"
+
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign -0.05
 
     d "*laughs* Then what do you want to talk about, Josephine?"
 
@@ -122,6 +155,11 @@ label jshrCont:
     j "Literally anything else, Desmond. You're such a square!"
 
     "The trio pauses at the intersection. Desmond presses the button for the walk signal."
+
+    hide desChuckle
+
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     if josephineHangoutDone == True:
         jump jhrYes2
@@ -140,53 +178,83 @@ label jshrCont2:
     hide ellisNeutral
 
     show ellisThinking at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "Haha, well... uh... what do you want to know?"
 
     j "Anything! Things like... where were you born? Do you have any pets? Why did you become a HERO?"
 
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign -0.05
+
     d "You sound like you're asking him for his three security questions, Josephine."
 
     j "Oh, hush!"
+
+    hide desChuckle
+
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     "The light turns and they begin crossing the street."
 
     hide ellisThinking
 
     show ellisThinking2 at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "Well, I was born here actually, in Normington City. I've... um, pretty much lived here my whole life. It used to be called Borington, actually, up until about a decade ago-- I think."
 
     hide ellisThinking2
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     j "'Boring Town'? That's such a weird Name. No wonder they changed it!"
+
+    hide desNeutral
+
+    show desDrowsy at ellis_std:
+        xalign -0.05
 
     d "*nods* Apparently the city used to be a mining town, until the mines dried up. These days the mines are just tourist spots now."
 
     j "Oh that's right, Desmond, you grew up in Normington too, didn't you?"
+
+    hide desDrowsy
+
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     d "Yeah. Moved out for a few years, but came back later."
 
     hide ellisNeutral
 
     show ellisAsk at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "Really? Why? Normington isn't exactly the... the 'dream city'."
+
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign -0.05
 
     d "Eh, I guess I've always liked smaller towns better. You can get to know people more closely, and make some real friends."
 
     hide ellisAsk
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     j "*teasing* You're secretly a {i}hopeless romantic{/i}, aren't you, Desmond?"
+
+    hide desChuckle
+
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     "Desmond coughs."
 
@@ -195,14 +263,14 @@ label jshrCont2:
     hide ellisNeutral
 
     show ellisHappy at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "*stifles a laugh* Um... so Josephine, did you grow up in Normington, too?"
 
     hide ellisHappy
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     j "Oh no, I just moved here recently! Just about half a year ago."
 
@@ -211,21 +279,21 @@ label jshrCont2:
     hide ellisNeutral
 
     show ellisThinking2 at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "Oh, that's um... cool?"
 
     hide ellisThinking2
 
     show ellisThinking at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     e "So, then, is there anything you miss from your old home?"
 
     hide ellisThinking
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
 
     j "Probably the beach... there used to be a big rocky beach with this lighthouse just thirty minutes from my house."
 
@@ -242,7 +310,13 @@ label jshrCont2:
     play sound CafeChatterAudio volume 0.4
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.1
+
+    show joNeutral at jo_std:
+        xalign 0.55
+    
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     "They arrive at the cafe, and let themselves in. It's quite busy at this time of the day, the cafe filled with the warm smells of coffee and the sound of indistinct chatter. Fans spinning above keep the cafe cool."
 
@@ -250,7 +324,22 @@ label jshrCont2:
 
     j "Sure, I'll find us a good spot! Desmond, can you get me my usual?"
 
+    #move josephine off screen
+    show joNeutral at jo_std:
+        linear 1.5 xalign -1.8
+
+        pause(1.2)
+    
+    # better center ellis and desmond
+    show ellisNeutral at ellis_std:
+        linear 0.8 xalign 0.75
+
+    show desNeutral at ellis_std:
+        linear 0.8 xalign 0.1
+
     "Desmond nods and Josephine waves at them. She then wanders off to find a free table."
+
+    hide joNeutral
 
     hide ellisNeutral
 
@@ -258,6 +347,11 @@ label jshrCont2:
         xalign 0.75
 
     e "Her usual? You guys go out to get coffee a lot then, I take it?"
+
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign 0.1
 
     d "Eh, not that often. Maybe every two weeks. She values her alone time too."
 
@@ -267,6 +361,11 @@ label jshrCont2:
         xalign 0.75
 
     e "Really?"
+
+    hide desChuckle
+
+    show desNeutral at ellis_std:
+        xalign 0.1
 
     d "I mean, who doesn't? Heh, but I guess Josephine doesn't seem like your standard introvert."
 
@@ -291,6 +390,11 @@ label jshrCont2:
 
     e "Oh, that... that makes a lot of sense, actually."
 
+    hide desNeutral
+
+    show desDrowsy at ellis_std:
+        xalign 0.1
+
     d "You didn't notice?"
 
     hide ellisThinking
@@ -306,6 +410,11 @@ label jshrCont2:
         xalign 0.75
 
     barista "Next guest! Hi, may I take your order?"
+
+    hide desDrowsy
+
+    show desNeutral at ellis_std:
+        xalign 0.1
 
     d "*steps up to the counter* Hi. I'll get a pistachio affogato, a slice of raspberry cake, amd a medium espresso."
 
@@ -384,6 +493,11 @@ label jshrCont2:
 label jshrStandUp:
     hide ellisSurprised
 
+    hide desNeutral
+
+    show desDrowsy at ellis_std:
+        xalign 0.1
+
     show ellisObjection at ellis_std:
         xalign 0.75
 
@@ -395,10 +509,17 @@ label jshrStandUp:
 
     hide ellisObjection
 
+    hide desDrowsy
+
     jump jshrCont3
 
 label jshrDontStand:
     hide ellisSurprised
+
+    hide ellisNeutral
+
+    show desDrowsy at ellis_std:
+        xalign 0.1
 
     show ellisAnnoyed at ellis_std:
         xalign 0.75
@@ -413,11 +534,16 @@ label jshrDontStand:
 
     hide ellisAnnoyed
 
+    hide desDrowsy
+
     jump jshrCont3
 
 label jshrCont3:
     show ellisNeutral at ellis_std:
         xalign 0.75
+    
+    show desNeutral at ellis_std:
+        xalign 0.1
 
     "The businessman stares at Ellis, then grumbles and nods, going quiet."
 
@@ -466,14 +592,38 @@ label jshrCont3:
 
     play sound CafeChatterAudio volume 0.4
 
+    show joNeutral at jo_std with dissolve:
+        xalign 0.5
+
+    show desNeutral at ellis_std:
+        xalign 3.0
+
+    show desNeutral at ellis_std:
+        linear 1.5 xalign -0.05
+
     show ellisSad at ellis_std:
-        xalign 0.75
+        xalign 3.0
+
+    show ellisSad at ellis_std:
+        linear 1.5 xalign 1.05
+
+    pause(1.3)
 
     "It doesn't take long for the two of them to find Josephine at a table near the windows. The sunlight is slanting in over the floorboards, and the area is warm. Josephine has a look of concern on her face."
 
     j "I saw what happened, are you guys alright?"
 
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign -0.05
+
     d "Nothing we couldn't handle."
+
+    hide desChuckle
+
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     "Ellis bobs his head in affirmation. He still feels overwhelmed."
 
@@ -482,7 +632,7 @@ label jshrCont3:
     hide ellisSad
 
     show ellisCry2 at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     "Ellis turns red and puts his head in his arms on the table. He shakes his head."
 
@@ -491,16 +641,26 @@ label jshrCont3:
     hide ellisCry2
 
     show ellisSad at ellis_std:
-        xalign 0.75
+        xalign 1.05
+
+    hide desNeutral
+
+    show desDrowsy at ellis_std:
+        xalign -0.05
 
     d "*playing with a sugar packet in his hands* Help him out how?"
+
+    hide desDrowsy
+
+    show desNeutral at ellis_std with vpunch:
+        xalign -0.05
 
     j "*swats him* Desmond! Some people have anxiety!"
 
     hide ellisSad
 
     show ellisCringe at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     e "*looks up* I- I don't have anxiety... (Well, not medically diagnosed, anyways...)"
 
@@ -509,7 +669,12 @@ label jshrCont3:
     hide ellisCringe
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.05
+
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign -0.05
 
     d "What? You make me sound like a bad guy."
 
@@ -520,13 +685,23 @@ label jshrCont3:
     hide ellisNeutral
 
     show ellisSad2 at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     e "(I feel like I'm bringing them down... why did I agree to come here?)"
+
+    hide desChuckle
+
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     "Desmond's name is called. The food is ready."
 
     d "*gets up from his seat* I'll go get it."
+
+    show desNeutral at ellis_std:
+        linear 1.2 xalign 2.0
+
+    pause(0.8)
 
     j "*calls after him* Don't forget to grab some napkins!"
 
@@ -537,7 +712,7 @@ label jshrCont3:
     hide ellisSad2
 
     show ellisNervous at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     e "... Y-yeah..."
 
@@ -546,14 +721,14 @@ label jshrCont3:
     hide ellisNervous
 
     show ellisHappy at ellis_std:
-        xalign 0.75
+        xalign 1.05
     
     e "No, it's- it's fine. Really. *manages a smile*"
 
     hide ellisHappy
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     j "Really? If you're not comfortable, you shouldn't push yourself too far."
 
@@ -564,20 +739,33 @@ label jshrCont3:
     j "Really, though. If you need any help, I'm always available."
 
     show ellisHappy at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     e "... Thanks, Josephine."
 
     "Desmond return with the food."
 
+    show desNeutral at ellis_std:
+        linear 1.0 xalign -0.05
+
     hide ellisHappy
 
     show ellisNeutral at ellis_std:
-        xalign 0.75
+        xalign 1.05
+
+    pause(0.6)
 
     d "*sets down the food in front of Josephine* Pistachio affogato and raspberry cake..."
 
+    show desChuckle at ellis_std:
+        xalign -0.05
+
     d "*sets down the food in front of Ellis* Matcha latte and lemon pound cake."
+
+    hide desChuckle
+
+    show desDrowsy at ellis_std:
+        xalign -0.05
 
     d "And... espresso."
 
@@ -591,9 +779,19 @@ label jshrCont3:
 
     d "*nods* Me too."
 
+    hide desDrowsy
+
+    show desNeutral at ellis_std:
+        xalign -0.05
+
     d "But I was thinking on running a TEAM commission, if you two are free?"
 
     j "Oh? Which one?"
+
+    hide desNeutral
+
+    show desChuckle at ellis_std:
+        xalign -0.05
 
     d "I'm trying to fill my TEAM commission quota. If I can hit my quota by the end of this month, I'll be a full-fledged hero."
 
@@ -604,29 +802,39 @@ label jshrCont3:
     hide ellisNeutral
 
     show ellisNervous at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     "Ellis fidgets nervously at the idea of such a strenuous social event. His stomach turns."
 
     e "Um... I'm not sure if I'm... uh..."
+
+    hide desChuckle
+
+    show desDrowsy at ellis_std:
+        xalign -0.05
 
     d "It'll mostly be a lot of volunteer work: set-up, clean-up, helping out at stands, that kind of thing."
 
     hide ellisNervous
 
     show ellisAnnoyed2 at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     d "I know some other TEAMs have already signed up, but there's only so many volunteers they can take..."
 
     j "Then defintely sign us up! We can't let them get to it before us!"
+
+    hide desDrowsy
+
+    show desNeutral at ellis_std:
+        xalign -0.05
 
     "Ellis stands up so quickly his chair scoots back and nearly falls over."
 
     hide ellisAnnoyed2
 
     show ellisCringe at ellis_std with hpunch:
-        xalign 0.75
+        xalign 1.05
 
     e "I- I have to go."
 
@@ -637,7 +845,7 @@ label jshrCont3:
     hide ellisCringe
 
     show ellisNervous at ellis_std:
-        xalign 0.75
+        xalign 1.05
 
     e "I'll see you two later!"
 
@@ -653,6 +861,11 @@ label jshrCont3:
     hide ellisNervous
 
     j "Puts a hand to her mouth* I have to go talk to him."
+
+    show joNeutral at jo_std:
+        linear 1.5 xalign 2.1
+    
+    pause(0.8)
 
     stop sound
 
@@ -670,9 +883,7 @@ label jshrCont3:
 
     return
 
-### I need more coffee...
-
-### The new Desmond model looks sick tho I'll put that in here later today
+### If you're reading this, I need more coffee...
     
 
 
