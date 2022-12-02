@@ -90,8 +90,6 @@ label trainingScreen:
 
         "End Training":
             pass
-    
-    return
 
     
 label endTutorial:
