@@ -6,7 +6,7 @@ label shiftyShop:
     play sound ShopBellRingAudio
     play music ShopBackgroundMusic volume 0.5
 
-    scene shopRoom
+    scene alleyway
 
     show screen StatUI
 
