@@ -46,15 +46,15 @@ label jshrStart:
     j "Even heroes need to take breaks sometimes!"
 
     if josephineHangoutDone == True:
-        jump jhrYes
+        jump jshrYes
     else:
-        jump jhrNo
+        jump jshrNo
 
-label jhrYes:
+label jshrYes:
     j "It'll just be like last time! Maybe just an hour or two. And if you're tight on time, we can always give you a hand!"
     jump jshrCont
 
-label jhrNo:
+label jshrNo:
     j "You didn't go with us last time, c'mon! Have you had brunch?"
     show screen StatUI with hpunch
     $ stress += 1
@@ -460,7 +460,11 @@ label jshrCont3:
 
     show blackScreen with fade
 
+    stop sound
+
     scene coffeeshop_inside with fade
+
+    play sound CafeChatterAudio volume 0.4
 
     show ellisSad at ellis_std:
         xalign 0.75

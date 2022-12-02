@@ -117,5 +117,6 @@ label endTutorial:
     $ socialLevel = 1
     $ tempSocialLevel = 0
     $ socialMax = 10
+    $ stress = 0
 
     jump meetTheTeam

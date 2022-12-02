@@ -86,6 +86,8 @@ label start:
             jump ptStart
         "Test 'Josephine's Second...'":
             jump jshrStart
+        "Test 'Josephine's Hangout Request'":
+            jump jhrStart
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
