@@ -5,15 +5,26 @@ label association:
         menu:
             "Socialize":
                 call socialize
+                jump mapScreen
             "Nevermind":
                 jump mapScreen
         jump mapScreen
     else:
-        menu:
-            "Talk Things Out":
-                call talkThingsOut
-            "Socialize":
-                call socialize
-            "Nevermind":
-                jump mapScreen
+        if talkThingsOutDone == False:
+            menu:
+                "Talk Things Out":
+                    call talkThingsOut
+                    jump mapScreen
+                "Socialize":
+                    call socialize
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Socialize":
+                    call socialize
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
         jump mapScreen
