@@ -59,7 +59,7 @@ label start:
         "Go to Day 7":
             jump daySeven
         "Go make an Accident":
-            "anything else?"
+            "criteria?"
             menu:
                 "succeed 1st check":
                     $ stamina = 7
@@ -71,6 +71,20 @@ label start:
                     $ speed = 7
                     $ strength = 7
             jump theAccident
+        "Test ending":
+            "criteria?"
+            menu:
+                "fulfill standing":
+                    $ standing = 4
+                "fulfill social":
+                    $ social = 4
+                "fulfill both":
+                    $ standing = 4
+                    $ social = 4
+                "neither":
+                    $ standing = 1
+                    $ social = 1
+            jump theEnding
         "Visit Shifty":
             jump shiftyShop
         "Test 'Petty Thievery'":

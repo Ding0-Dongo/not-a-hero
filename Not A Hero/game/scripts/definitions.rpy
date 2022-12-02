@@ -51,7 +51,7 @@ image alleyway = "images/places/dark shady alley.png"
 image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
 image plaza = "images/places/plaza.png"
 image park = "images/places/park.png"
-image hospitalInterior = "images/places/hospital interior.png"
+image hospitalInterior = "images/places/hospital.png"
 image hospitalExterior = "images/places/hospital exterior.png"
 image hospitalRoom = "images/places/hospital room.png"
 
@@ -94,6 +94,7 @@ image joNeutral = "images/Josephine/josephine neutral.png"
 
 ##### DELTA
 image deltaNeutral = "images/Delta/delta neutral.png"
+image deltaNeutral2 = "images/Delta/Delta.Down.Default.png"
 image deltaAnnoyed = "images/Delta/Delta.Annoyed.png"
 image deltaInquire = "images/Delta/Delta.Inquire.png"
 image deltaWisdom = "images/Delta/Delta.Wisdom.png"
