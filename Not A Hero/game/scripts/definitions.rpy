@@ -64,6 +64,7 @@ image nextDayButton = "images/nextDayButton.png"
 
 ##### ELLIS
 image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
+image ellisScarfNeutral = "images/Ellis/Scraf.Neutral.png"
 image ellisAnnoyed = "images/Ellis/Norm.Pensive.png"
 image ellisAnnoyed2 = "images/Ellis/Scraf.Spite.png"
 image ellisThinking = "images/Ellis/tilt.thinking.png"

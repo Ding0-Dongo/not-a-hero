@@ -63,8 +63,6 @@ label start:
             jump theAccident
         "Visit Shifty":
             jump shiftyShop
-        "Test 'Talk Things Out'":
-            jump talkThingsOut
         "Test 'Petty Thievery'":
             jump ptStart
         "Test 'Josephine's Second...'":
