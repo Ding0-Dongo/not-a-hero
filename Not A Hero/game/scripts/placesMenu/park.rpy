@@ -1,7 +1,7 @@
 label park:
     hide screen NormingtonCityMap
     hide screen continueNextDay
-    scene normingtonPark
+    scene park
     stop music
     play music ParkMusic
     "The cool spring breeze blows over Ellis as the leaves rustle and grass whistles."

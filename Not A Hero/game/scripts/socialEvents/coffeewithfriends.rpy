@@ -96,6 +96,14 @@ label coffeeWithFriends:
 
         $ coffeewithfriends_firstime = False
 
+        show blackScreen with fade
+
+        "Ellis recieves +1 stress and +1 social."
+
+        $ stress += 1
+        $ tempSocialLevel += 1
+        $ energy -= 1
+
         jump NormingtonCoffee
 
     else:
@@ -103,8 +111,9 @@ label coffeeWithFriends:
         "(Ellis and his friends have a nice chat over coffee.)"
         "(Though he's still a bit anxious, he manages to enjoy himself.)"
         $ stress += 1
-        $ social += 1
-        "Stress increased. Social Increased."
+        $ tempSocialLevel += 1
+        $ energy -= 1
+        "+1 stress, +1 social"
 
 
         jump NormingtonCoffee

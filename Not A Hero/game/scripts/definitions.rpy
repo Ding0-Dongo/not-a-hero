@@ -58,6 +58,7 @@ image hospitalInterior = "images/places/hospital.png"
 image hospitalExterior = "images/places/hospital exterior.png"
 image hospitalRoom = "images/places/hospital room.png"
 image apartments = "images/places/apartment hall.png"
+image library = "images/places/library interior.png"
 
 ##### MAP STUFF
 

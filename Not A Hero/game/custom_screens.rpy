@@ -15,7 +15,6 @@ screen NormingtonCityMap:
 # If you want to navigate using the map, it's prefered to use "call".
 # When in skip mode (tab key on keyboard), this prevents the game to be skipped.
 label call_mapUI:
-    show screen StatUI
     if day==0:
         call screen MapUI0
     elif day==1:
@@ -30,6 +29,8 @@ label call_mapUI:
         call screen MapUI5
     elif day==6:
         call screen MapUI6
+    call screen StatUI
+
 
 screen MapUI0:
     # add "images/normingtonMap.png"
@@ -473,6 +474,7 @@ screen StatUI:
     text "SPD: [speed]" size 28 xalign 0.025 yalign 0.18
     text "Social Level [socialLevel]: [social]/[socialMax]" size 28 xalign 0.1 yalign 0.18
     text "$[money]" size 65 xalign 0.98 yalign 0.025 color "#23b84d"
+    text "Day [day]" size 65 xalign 0.98 yalign 0.1 color "#ffffff"
 
 # helo ethan you seem to be good at making these so Imma just plop down my "continue to next day" button here
 screen continueNextDay:

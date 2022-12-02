@@ -108,10 +108,10 @@ label volunteerLibrary:
         "(Though they have to help out some patrons once or twice, it's mostly independent work.) (+1 stress, +1 social)"
 
         D "(I think I see why he liked volunteering at the library so much.)"
-
+        $ libraryVolunteerDone = True
 
     else:
-        scene plaza with fade
+        scene library with fade
 
         show ellisHappy at ellis_std with dissolve:
             xalign 0.8
@@ -125,4 +125,5 @@ label volunteerLibrary:
     show blackScreen with fade
 
     $ stress += 1
-    $ social += 1
+    $ tempSocialLevel += 1
+    $ energy -= 1
