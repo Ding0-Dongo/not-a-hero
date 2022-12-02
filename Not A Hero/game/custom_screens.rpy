@@ -490,8 +490,10 @@ screen continueNextDay:
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
 # This label is called whenever someone chooses to increase their strength
 label TrainStrength:
-    if energy - 2 < 0:
+    if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif energy - 2 < 0:
+        "Ellis is too tired to do that right now."
     elif strength == 10:
         show blackScreen with fade
         "Wow! Your strength cannot be trained further!"
@@ -505,12 +507,17 @@ label TrainStrength:
         $ strength += 1 + (speed - 1)
         $ energy -= 2
         hide blackScreen with fade
-    jump trainingScreen
+    if day == 0:
+        jump trainingScreen
+    else:
+        jump gym
 
 # This label is called whenever someone chooses to increase their stamina
 label TrainStamina:
-    if energy - 2 < 0:
+    if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif energy - 2 < 0:
+        "Ellis is too tired to do that right now."
     elif stamina == 10:
         show blackScreen with fade
         "Wow! Your stamina cannot be trained further!"
@@ -525,12 +532,17 @@ label TrainStamina:
         $ energy -= 2
         $ energyMax += stamina
         hide blackScreen with fade
-    jump trainingScreen
+    if day == 0:
+        jump trainingScreen
+    else:
+        jump gym
 
 # This label is called whenever someone chooses to increase their speed
 label TrainSpeed:
-    if energy - 4 < 0:
+    if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif energy - 2 < 0:
+        "Ellis is too tired to do that right now."
     elif speed == 10:
         show blackScreen with fade
         "Wow! Your stamina cannot be trained further!"
@@ -542,9 +554,12 @@ label TrainSpeed:
         "*Pant, pant*"
         "SPEED UP"
         $ speed += 1
-        $ energy -= 4
+        $ energy -= 2
         hide blackScreen with fade
-    jump trainingScreen
+    if day == 0:
+        jump trainingScreen
+    else:
+        jump gym
 
 ### Adding a label that should be called when the player reaches the max value of the stress bar
 ### This should have it displayed that the player is too stressed and return them to the 'default' area, wherever it gets decided that is.

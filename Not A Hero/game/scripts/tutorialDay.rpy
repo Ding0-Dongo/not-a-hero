@@ -78,19 +78,20 @@ label tutorial:
 
 
 label trainingScreen:
+    menu:
+        "Train Strength":
+            jump TrainStrength
 
-menu:
-    "Train Strength":
-        jump TrainStrength
+        "Train Stamina":
+            jump TrainStamina
 
-    "Train Stamina":
-        jump TrainStamina
+        "Train Speed":
+            jump TrainSpeed
 
-    "Train Speed":
-        jump TrainSpeed
-
-    "End Training":
-        pass
+        "End Training":
+            pass
+    
+    return
 
     
 label endTutorial:
