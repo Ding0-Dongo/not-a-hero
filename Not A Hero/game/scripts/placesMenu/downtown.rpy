@@ -29,6 +29,9 @@ label choicesDowntown:
     elif day==4:
         if deliveryRunDone == False:
             menu:
+                "Shifty's Shop":
+                    call shiftyShop
+                    jump mapScreen
                 "Desmond's Delivery Run":
                     call desmondDeliveryRun
                     jump mapScreen
@@ -42,6 +45,9 @@ label choicesDowntown:
                     jump mapScreen
         else:
             menu:
+                "Shifty's Shop":
+                    call shiftyShop
+                    jump mapScreen
                 "Delivery":
                     call deliveryRun
                     jump mapScreen
@@ -55,6 +61,9 @@ label choicesDowntown:
             menu:
                 "Desmond's Delivery Run":
                     call desmondDeliveryRun
+                    jump mapScreen
+                "Shifty's Shop":
+                    call shiftyShop
                     jump mapScreen
                 "Delivery":
                     call deliveryRun
@@ -75,6 +84,9 @@ label choicesDowntown:
                     jump mapScreen
         elif deliveryRunDone == True && pursenapperDone == False:
             menu:
+                "Shifty's Shop":
+                    call shiftyShop
+                    jump mapScreen
                 "Delivery":
                     call deliveryRun
                     jump mapScreen
@@ -97,6 +109,9 @@ label choicesDowntown:
                 "Desmond's Delivery Run":
                     call desmondDeliveryRun
                     jump mapScreen
+                "Shifty's Shop":
+                    call shiftyShop
+                    jump mapScreen
                 "Delivery":
                     call deliveryRun
                     jump mapScreen
@@ -113,6 +128,9 @@ label choicesDowntown:
                     jump mapScreen
         else:
             menu:
+                "Shifty's Shop":
+                    call shiftyShop
+                    jump mapScreen
                 "Delivery":
                     call deliveryRun
                     jump mapScreen
