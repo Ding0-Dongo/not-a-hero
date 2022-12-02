@@ -78,6 +78,20 @@ image ellisObjection = "images/Ellis/Up.Assertive.png"
 image ellisHappy = "images/Ellis/Up.Confident.png"
 image ellisCringe = "images/Ellis/Up.Cringe.png"
 
+##### DESMOND
+image desNeutral = "images/Desmond/Des.Norm.png"
+image desChuckle = "images/Desmond/Des.Chuckle.png"
+image desDrowsy = "images/Desmond/Des.Drowse.png"
+
+##### JOSEPHINE
+image joNeutral = "images/Josephine/josephine neutral.png"
+
+##### PHI
+image phiNeutral = "images/Phi/phi neutral.png"
+
+##### ALPHA
+image alphaNeutral = "images/Alpha/alpha neutral.png"
+
 ##### SPECIAL CHARACTER SPRITES #####
 # you mean test character sprites, right....? RIGHT??? -ruth
 ### the potato is important to the plot...

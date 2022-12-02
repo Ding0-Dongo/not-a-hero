@@ -14,5 +14,7 @@ label choicesClinic:
                 call josephineApology
             "Delivery":
                 call deliveryClinic
+            "Nevermind":
+                jump mapScreen
         jump mapScreen
     jump mapScreen

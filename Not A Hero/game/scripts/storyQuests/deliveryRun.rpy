@@ -4,7 +4,13 @@ label deliveryRun:
     else:
         show plaza
         "Downtown Normington"
+        
+        show ellisNeutral at ellis_std_center with fade
+
         "(Ellis is walking around the downtown area of Normington City when he happens upon a familiar person.)"
+        
+        show ellisNeutral with moveinleft
+
         e "... Desmond?"
         d "... huh?"
         d "Oh, Ellis, is that you? Didn't recognize you for a second there, sorry. I'm on a commission right now, so I'm busy."
@@ -42,7 +48,7 @@ label deliveryRun:
             d "Wait, not that one-!"
             e "(!!!)"
 
-            show ellisWince with hpunch
+            show ellisWince at ellis_std_center with hpunch
             show blackScreen with fade
 
             "(Ellis and Desmond spend a good while delivering packages. It's tiring, but rewarding work.)"

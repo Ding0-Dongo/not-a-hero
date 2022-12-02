@@ -16,6 +16,8 @@ label choicesDowntown:
             "Delivery":
                 call deliveryRun
                 jump mapScreen
+            "Nevermind":
+                jump mapScreen
     elif day==4:
         menu:
             "Desmond's Delivery Run":
@@ -26,6 +28,8 @@ label choicesDowntown:
                 jump mapScreen
             "Volunteer":
                 call volunteerShelter
+                jump mapScreen
+            "Nevermind":
                 jump mapScreen
     else:
         menu:
@@ -46,4 +50,6 @@ label choicesDowntown:
                 jump mapScreen
             "Thiefstopper":
                 call thiefStopper
+                jump mapScreen
+            "Nevermind":
                 jump mapScreen
