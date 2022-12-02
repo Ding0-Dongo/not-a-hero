@@ -89,9 +89,15 @@ image ellisStunned = "images/Ellis/Norm.Stunned.png"
 image desNeutral = "images/Desmond/Des.Norm.png"
 image desChuckle = "images/Desmond/Des.Chuckle.png"
 image desDrowsy = "images/Desmond/Des.Drowse.png"
+image desFrown = "images/Desmond/Des.Frown.png"
 
 ##### JOSEPHINE
 image joNeutral = "images/Josephine/josephine neutral.png"
+image joExclaim = "images/Josephine/josephine_exclaim.png"
+image joFrown = "images/Josephine/josephine_frown.png"
+image joFrown2 = "images/Josephine/josephine_sad_frown.png"
+image joClosed = "images/Josephine/josephine_eyes_closed.png"
+image joNervous = "images/Josephine/josephine_nervous.png"
 
 ##### DELTA
 image deltaNeutral = "images/Delta/delta neutral.png"
