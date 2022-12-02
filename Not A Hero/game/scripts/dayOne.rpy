@@ -94,6 +94,16 @@ label start:
         "Test 'Josephine's Hangout Request'":
             jump jhrStart
         "help some kids":
+            "pass stat checks?"
+            menu:
+                "yea":
+                    $ strength = 10
+                    $ speed = 10
+                    $ stamina = 10
+                "nah":
+                    $ strength = 1
+                    $ speed = 1
+                    $ stamina = 1
             jump helpKids
     
     ### Added label testStart to jump to at the end of the tutorial. 
