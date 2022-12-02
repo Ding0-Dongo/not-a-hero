@@ -1,7 +1,7 @@
 label plaza:
     hide screen NormingtonCityMap
     hide screen continueNextDay
-    scene normingtonPlaza
+    scene plaza
     "Ellis sees some cool boards."
     jump choicesPlaza
 
