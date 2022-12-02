@@ -16,16 +16,27 @@ label choicesPlaza:
             "Nevermind":
                 jump mapScreen
     else:
-        menu:
-            "Fundraising":
-                call fundraising
-                jump mapScreen
-            "Josephine's First Aid Lesson":
-                call josephineFirstAid
-                jump mapScreen
-            "PSA":
-                call psaTeam
-                jump mapScreen
-            "Nevermind":
-                jump mapScreen
+        if josephineFirstAidDone == False:
+            menu:
+                "Fundraising":
+                    call fundraising
+                    jump mapScreen
+                "Josephine's First Aid Lesson":
+                    call josephineFirstAid
+                    jump mapScreen
+                "PSA":
+                    call psaTeam
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Fundraising":
+                    call fundraising
+                    jump mapScreen
+                "PSA":
+                    call psaTeam
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
         jump mapScreen

@@ -9,26 +9,45 @@ label choicesPark:
     if day<2:
         jump mapScreen
     elif day<5:
-        menu:
-            "Josephine's Hangout Request":
-                call josephineHangoutReq
-                jump mapScreen
-            "Help Kids":
-                call helpKids
-                jump mapScreen
-            "Nevermind":
-                jump mapScreen
+        if josephineHangoutDone == False:
+            menu:
+                "Josephine's Hangout Request":
+                    call josephineHangoutReq
+                    jump mapScreen
+                "Help Kids":
+                    call helpKids
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Help Kids":
+                    call helpKids
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
     else:
-        menu:
-            "Josephine's Hangout Request":
-                call josephineHangoutReq
-                jump mapScreen
-            "Help Kids":
-                call helpKids
-                jump mapScreen
-            "Take a Walk":
-                call takeWalk
-                jump mapScreen
-            "Nevermind":
-                jump mapScreen
+        if josephineHangoutDone == False:
+            menu:
+                "Josephine's Hangout Request":
+                    call josephineHangoutReq
+                    jump mapScreen
+                "Help Kids":
+                    call helpKids
+                    jump mapScreen
+                "Take a Walk":
+                    call takeWalk
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Help Kids":
+                    call helpKids
+                    jump mapScreen
+                "Take a Walk":
+                    call takeWalk
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
         jump mapScreen

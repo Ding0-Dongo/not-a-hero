@@ -9,47 +9,121 @@ label choicesDowntown:
     if day<3:
         jump mapScreen
     elif day==3:
-        menu:
-            "Desmond's Delivery Run":
-                call desmondDeliveryRun
-                jump mapScreen
-            "Delivery":
-                call deliveryRun
-                jump mapScreen
-            "Nevermind":
-                jump mapScreen
+        if deliveryRunDone == False:
+            menu:
+                "Desmond's Delivery Run":
+                    call desmondDeliveryRun
+                    jump mapScreen
+                "Delivery":
+                    call deliveryRun
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Delivery":
+                    call deliveryRun
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
     elif day==4:
-        menu:
-            "Desmond's Delivery Run":
-                call desmondDeliveryRun
-                jump mapScreen
-            "Delivery":
-                call deliveryRun
-                jump mapScreen
-            "Volunteer":
-                call volunteerShelter
-                jump mapScreen
-            "Nevermind":
-                jump mapScreen
+        if deliveryRunDone == False:
+            menu:
+                "Desmond's Delivery Run":
+                    call desmondDeliveryRun
+                    jump mapScreen
+                "Delivery":
+                    call deliveryRun
+                    jump mapScreen
+                "Volunteer":
+                    call volunteerShelter
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Delivery":
+                    call deliveryRun
+                    jump mapScreen
+                "Volunteer":
+                    call volunteerShelter
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
     else:
-        menu:
-            "Desmond's Delivery Run":
-                call desmondDeliveryRun
-                jump mapScreen
-            "Delivery":
-                call deliveryRun
-                jump mapScreen
-            "Volunteer":
-                call volunteerShelter
-                jump mapScreen
-            "Pursenapper":
-                call Pursenapper
-                jump mapScreen
-            "Graffi-No":
-                call graffiNo
-                jump mapScreen
-            "Thiefstopper":
-                call thiefStopper
-                jump mapScreen
-            "Nevermind":
-                jump mapScreen
+        if deliveryRunDone == False && pursenapperDone == False:
+            menu:
+                "Desmond's Delivery Run":
+                    call desmondDeliveryRun
+                    jump mapScreen
+                "Delivery":
+                    call deliveryRun
+                    jump mapScreen
+                "Volunteer":
+                    call volunteerShelter
+                    jump mapScreen
+                "Pursenapper":
+                    call Pursenapper
+                    jump mapScreen
+                "Graffi-No":
+                    call graffiNo
+                    jump mapScreen
+                "Thiefstopper":
+                    call thiefStopper
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        elif deliveryRunDone == True && pursenapperDone == False:
+            menu:
+                "Delivery":
+                    call deliveryRun
+                    jump mapScreen
+                "Volunteer":
+                    call volunteerShelter
+                    jump mapScreen
+                "Pursenapper":
+                    call Pursenapper
+                    jump mapScreen
+                "Graffi-No":
+                    call graffiNo
+                    jump mapScreen
+                "Thiefstopper":
+                    call thiefStopper
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        elif deliveryRunDone == False && pursenapperDone == True:
+            menu:
+                "Desmond's Delivery Run":
+                    call desmondDeliveryRun
+                    jump mapScreen
+                "Delivery":
+                    call deliveryRun
+                    jump mapScreen
+                "Volunteer":
+                    call volunteerShelter
+                    jump mapScreen
+                "Graffi-No":
+                    call graffiNo
+                    jump mapScreen
+                "Thiefstopper":
+                    call thiefStopper
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Delivery":
+                    call deliveryRun
+                    jump mapScreen
+                "Volunteer":
+                    call volunteerShelter
+                    jump mapScreen
+                "Graffi-No":
+                    call graffiNo
+                    jump mapScreen
+                "Thiefstopper":
+                    call thiefStopper
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
