@@ -6,6 +6,7 @@ label Pursenapper:
     hide city
     hide blackScreen
     show alleyway
+    show screen StatUI
     "Downtown Normington"
     "(Ellis is in the middle of a stroll in Downtown Normington.)"
     play sound ScreamAudio

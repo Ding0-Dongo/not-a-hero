@@ -49,13 +49,10 @@ label start:
 
         "Go to tutorial.":
             jump tutorial
-
         "Skip tutorial":
             jump meetTheTeamStart
-
         "Actually start The Game":
             jump dayZero
-
         "Go to Day 7":
             jump daySeven
         "Go make an Accident":
@@ -85,26 +82,69 @@ label start:
                     $ standing = 1
                     $ social = 1
             jump theEnding
-        "Visit Shifty":
-            jump shiftyShop
-        "Test 'Petty Thievery'":
-            jump ptStart
-        "Test 'Josephine's Second...'":
-            jump jshrStart
-        "Test 'Josephine's Hangout Request'":
-            jump jhrStart
-        "help some kids":
-            "pass stat checks?"
+        "Tests Your Quests Here":
             menu:
-                "yea":
-                    $ strength = 10
-                    $ speed = 10
-                    $ stamina = 10
-                "nah":
-                    $ strength = 1
-                    $ speed = 1
-                    $ stamina = 1
-            jump helpKids
+                "Test 'Talk Things Out'":
+                    jump talkThingsOut
+                "Test 'Bullies'":
+                    jump bullies
+                "Test 'Petty Thievery'":
+                    jump ptStart
+                "Test 'Josephine's Second...'":
+                    jump jshrStart
+                "Test 'Josephine's Hangout Request'":
+                    jump jhrStart
+                "Test 'Pursenapper'":
+                    jump Pursenapper
+                "help some kids":
+                    "pass stat checks?"
+                    menu:
+                        "yea":
+                            $ strength = 10
+                            $ speed = 10
+                            $ stamina = 10
+                        "nah":
+                            $ strength = 1
+                            $ speed = 1
+                            $ stamina = 1
+                    jump helpKids
+        "Test Your Maps Here":
+            menu:
+                "MapUI0":
+                    $ day = 0
+                    show cityMap
+                    jump call_mapUI
+                "Map UI1":
+                    show cityMap
+                    $ day = 1
+                    jump call_mapUI
+                "Map UI2":
+                    show cityMap
+                    $ day = 2
+                    jump call_mapUI
+                "Map UI3":
+                    show cityMap
+                    $ day = 3
+                    jump call_mapUI
+                "Map UI4":
+                    show cityMap
+                    $ day = 4
+                    jump call_mapUI
+                "Map UI5":
+                    show cityMap
+                    $ day = 5
+                    jump call_mapUI
+                "Map UI6":
+                    show cityMap
+                    $ day = 6
+                    jump call_mapUI
+        "Test Your Places Here":
+            menu:
+                "Visit Shifty":
+                    jump shiftyShop
+                "Park":
+                    $ day = 3
+                    jump park
     
     ### Added label testStart to jump to at the end of the tutorial. 
 

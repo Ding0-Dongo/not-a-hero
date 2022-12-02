@@ -38,6 +38,9 @@ define woman = Character("Woman", color="#b85858")
 define barista = Character("Barista", color="#379752")
 define customer = Character("Impatient Customer", color="#bd3675")
 
+#coffee with friends check
+define coffeewithfriends_firstime = True
+
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
 image schoolExterior = "images/places/school exterior.png"
 image schoolInterior = "images/places/school interior.png."
@@ -101,6 +104,7 @@ image joNervous = "images/Josephine/josephine_nervous.png"
 
 ##### DELTA
 image deltaNeutral = "images/Delta/delta neutral.png"
+image deltaNeutral = Transform("images/Delta/delta neutral.png", zoom=.4)
 image deltaNeutral2 = "images/Delta/Delta.Down.Default.png"
 image deltaAnnoyed = "images/Delta/Delta.Annoyed.png"
 image deltaInquire = "images/Delta/Delta.Inquire.png"
@@ -156,6 +160,7 @@ define PourDrinkAudio = "audio/drinkpour.mp3"
 define CafeChatterAudio = "audio/cafechatter.mp3"
 define audio.ShopBellRingAudio = "audio/shopdoorbell.mp3"
 define audio.ShopBackgroundMusic = "audio/shiftybackground.mp3"
+define ParkMusic = "audio/parkmusic.mp3"
 define endingAudio = "audio/Not A Hero - Theme (slowed down).mp3"
 define panicAudio = "audio/Not A Hero - The Accident (Intense Panic).mp3"
 
