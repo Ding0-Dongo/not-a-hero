@@ -9,12 +9,20 @@ label choicesClinic:
     if day<6:
         jump mapScreen
     else:
-        menu:
-            "Josephine's Apology":
-                call josephineApology
-            "Delivery":
-                call deliveryClinic
-            "Nevermind":
-                jump mapScreen
-        jump mapScreen
+        if josephineApologyDone == False:
+            menu:
+                "Josephine's Apology":
+                    call josephineApology
+                "Delivery":
+                    call deliveryClinic
+                "Nevermind":
+                    jump mapScreen
+            jump mapScreen
+        else:
+            menu:
+                "Delivery":
+                    call deliveryClinic
+                "Nevermind":
+                    jump mapScreen
+            jump mapScreen
     jump mapScreen

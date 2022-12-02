@@ -36,6 +36,11 @@ default deliveryRunDone = False #desmond's delivery run
 
 default josephineHangoutDone = False #josephine's hangout request
 
+default josephineApologyDone = False
+default josephineFirstAidDone = False
+default pursenapperDone = False
+default talkThingsOutDone = False
+
 default story1Done = False
 default story2Done = False
 default story3Done = False

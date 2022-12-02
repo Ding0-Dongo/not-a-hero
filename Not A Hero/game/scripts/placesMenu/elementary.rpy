@@ -9,10 +9,21 @@ label choicesElementary:
     if day<5:
         jump mapScreen
     else:
-        menu:
-            "Mediation":
-                call mediation
-                jump mapScreen
-            "Nevermind":
-                jump mapScreen
+        if bulliesDone == False:
+            menu:
+                "Bullies!":
+                    call bullies
+                    jump mapScreen
+                "Mediation":
+                    call mediation
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
+        else:
+            menu:
+                "Mediation":
+                    call mediation
+                    jump mapScreen
+                "Nevermind":
+                    jump mapScreen
         jump mapScreen
