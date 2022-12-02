@@ -92,6 +92,9 @@ image joNeutral = "images/Josephine/josephine neutral.png"
 
 ##### DELTA
 image deltaNeutral = "images/Delta/delta neutral.png"
+image deltaAnnoyed = "images/Delta/Delta.Annoyed.png"
+image deltaInquire = "images/Delta/Delta.Inquire.png"
+image deltaSerious = "images/Delta/Delta.Serious.png"
 
 ##### PHI
 image phiNeutral = "images/Phi/phi neutral.png"
@@ -188,4 +191,4 @@ image s inactive = Composite(
 )
 
 ##### Title Screen (shown once) #####
-image titleScreen = "images/titlescreen.png"
+image titleScreen = "images/NOTAHERO.png"

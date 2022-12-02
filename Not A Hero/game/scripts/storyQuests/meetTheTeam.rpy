@@ -2,24 +2,19 @@
 # mandatory to be completed first!
 
 label meetTheTeam:
-    # need to replace these scenes with the official bgs when we have them
-
-    scene Normington City with fade
-
+    show plaza with fade
     show screen StatUI
 
     "{i}NORMINGTON ASSOCIATION OF HEROES (OUTSIDE)\n 09:00 AM{/i}"
 
     # show DELTA at left
-    show test1 with moveinleft:
+    show deltaNeutral at delta_std with moveinleft:
         xalign 0.8
-        yalign 1.0
 
     D "We're here. Are you ready?"
 
-    show ellis Neutral with moveinleft:
+    show ellisNeutral at ellis_std with moveinleft:
         xalign 0.3
-        yalign 1.3
 
     e "... do we have to? I don't really like introductions, or icebreakers, or that kind of thing..."
 
@@ -27,21 +22,26 @@ label meetTheTeam:
         "C'mon. You'll be fine.":
             D "C'mon. You'll be fine. Besides, you'll have to get used to these kinds of things, now that you're in a TEAM."
         "We can keep it short.":
-            D "We can keep it short. They'll understand. But it would be good to know who you're working with."
+            D "We can keep it short. They'll understand."
+            D "But it would be good for you to know who you're working with."
 
+    hide ellisNeutral
+    show ellisSad at ellis_std:
+        xalign 0.3
     e "I know, but still..."
 
     D "(He seems pretty anxious.)"
 
-    scene Normington Association of Heroes Headquarters with fade
+    scene hq with fade
 
     "{i}NORMINGTON ASSOCIATION OF HEROES (INSIDE)\n 09:00 AM{/i}"
 
-    show ellis Neutral at right with moveinleft:
-        yalign 1.3
+    show ellisNeutral at ellis_std with moveinleft:
+        xalign 0.8
 
     # show DELTA at right
-    show test1 at left with moveinleft
+    show deltaNeutral at delta_std with moveinleft:
+        xalign 0.3
 
     e "*looks up at the sign* So... um... the Normington Association of Heroes, huh?"
 
@@ -51,54 +51,80 @@ label meetTheTeam:
 
     D "Pardon?"
 
+    hide ellisNeutral
+    show ellisAsk at ellis_std:
+        xalign 0.8
+    
     e "Is that the abbreviation?"
 
-    hide test1
-
-    show test2 at left
+    hide deltaNeutral
+    show deltaAnnoyed at delta_std:
+        xalign 0.3
 
     D "..."
 
     D "We don't call it that."
 
-    hide test2
-
-    show test1 at left
+    hide ellisAsk
+    show ellisHappy at ellis_std:
+        xalign 0.8
 
     e "... *starts laughing*"
 
+    hide deltaAnnoyed
+    show deltaNeutral at delta_std:
+        xalign 0.3
+
+    D "..."
     A "DELTA, you're finally here."
 
+    hide ellisHappy
+    show ellisShy at ellis_std:
+        xalign 0.8
     "(Ellis immediately stops laughing.)"
 
-    show ellis Neutral:
-        linear 0.3 xpos 0.4
-        yalign 1.3
+    show ellisShy at ellis_std:
+        linear 0.3 xalign 1.1
 
-    # show ALPHA at right
+    show deltaNeutral at delta_std:
+        linear 0.3 xalign 0.7
 
-    show test3 with moveinright:
-        xalign 0.6
-        yalign 1.0
+    show alphaNeutral at alpha_std:
+        xalign -0.5
 
-    show test4 with moveinright:
-        xalign 0.8
-        yalign 1.0
+    show alphaNeutral at alpha_std:
+        linear 0.3 xalign 0.0
+
+    show phiNeutral at phi_std:
+        xalign -0.5
+
+    show phiNeutral at phi_std:
+        linear 0.3 xalign 0.3
 
     D "(That's ALPHA and PHI, my coworkers, of sorts. Together we mentor a TEAM of HEROs.)"
 
     P "*smiles warmly* DELTA, you didn't tell us your new HERO was adorable! I'm so jealous!"
 
+    hide ellisShy
+    show ellisNervous at ellis_std:
+        xalign 1.1
+
     e "*flustered* U-um..."
 
     menu:
         "Subtly step in":
+            hide deltaNeutral
+            show deltaSerious at delta_std:
+                xalign 0.7
             D "Knock it off, PHI."
             jump meetTheTeamPartTwo
         "Let Ellis deal with it himself":
             jump meetTheTeamPartTwo
 
 label meetTheTeamPartTwo:
+    hide deltaSerious
+    show deltaNeutral at delta_std:
+        xalign 0.7
 
     D "Never mind. Where are your HEROs anyways?"
 
@@ -116,23 +142,31 @@ label meetTheTeamPartTwo:
 
     A "It's a pleasure to have you as our... replacement in the TEAM."
 
+    hide ellisNervous
+    show ellisShy at ellis_std:
+        xalign 1.1
+    
     "(Ellis's face drops.)"
 
     e "Re... replacement?"
 
-    hide test3
-
-    show test3 with hpunch:
-        xalign 0.6
-        yalign 1.0
+    show alphaNeutral with hpunch
 
     "(PHI jabs ALPHA in the ribs.)"
-
+    
+    hide ellisShy
+    show ellisAnnoyed2 at ellis_std:
+        xalign 1.1
+    
     P "ALPHA, don't say it like that! Don't pay him any mind, Elly."
 
     P "(She gives me an apologetic smile.)"
 
     D "It's fine."
+
+    hide ellisAnnoyed2
+    show ellisNeutral at ellis_std:
+        xalign 1.1
 
     e "(Ellis gives me a curious look.)"
 
@@ -142,21 +176,19 @@ label meetTheTeamPartTwo:
 
     P "Do you mind if I call you Elly, by the way? Or do you prefer Ellis?"
 
+    hide ellisNeutral
+    show ellisShy at ellis_std:
+        xalign 1.1
+
     e "*shrugs awkwardly*"
 
-    D "(He's rather non-confrontational. I'll have to talk to ALPHA and PHI about this later.)"
+    D "(... He's rather non-confrontational. I'll have to talk to ALPHA and PHI about this later.)"
 
     "(A man and woman descend the steps into the lobby. They see the four of us and make their way over.)"
 
     ### this is going to get messy with just test sprites lol
 
-    show potato with moveinright:
-        xalign 0.98
-        yalign 1.0
     
-    show test2 with moveinright:
-        xalign 0.46
-        yalign 1.0
 
     P "You two sure took your time! Join us, join us!"
 

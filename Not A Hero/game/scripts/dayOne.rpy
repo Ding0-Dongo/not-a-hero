@@ -65,8 +65,6 @@ label start:
             jump shiftyShop
         "Test 'Talk Things Out'":
             jump talkThingsOut
-        "Test 'Bullies'":
-            jump bullies
         "Test 'Petty Thievery'":
             jump ptStart
         "Test 'Josephine's Second...'":

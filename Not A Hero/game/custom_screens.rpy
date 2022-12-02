@@ -576,6 +576,17 @@ transform ellis_std:
     zoom 0.45
     yalign -1.5
 
+transform delta_std:
+    zoom 0.45
+    yalign -1.0
+
+transform alpha_std:
+    zoom 0.45
+
+transform phi_std:
+    zoom 0.45
+    yalign -0.8
+
 label splashscreen:
     scene blackScreen
     with Pause(1)
