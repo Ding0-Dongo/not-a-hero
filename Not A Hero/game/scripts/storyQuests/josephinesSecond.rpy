@@ -71,8 +71,6 @@ label jshrYes:
 
 label jshrNo:
     j "You didn't go with us last time, c'mon! Have you had brunch?"
-    show screen StatUI with hpunch
-    $ stress += 1
     jump jshrCont
 
 label jshrCont:
@@ -458,7 +456,7 @@ label jshrCont2:
 
     "She leans closer and lowers her voice."
 
-    barista "ALso, it's really easy for me to make."
+    barista "Also, it's really easy for me to make."
 
     hide ellisNeutral
 
@@ -678,7 +676,7 @@ label jshrCont3:
 
     d "What? You make me sound like a bad guy."
 
-    j "*laughing* My point is that you're good with people!"
+    j "*laughing* My point is that you're better with people!"
 
     "Josephine and Desmond continue to talk as they wait for their food. Ellis stays mostly quiet."
 
@@ -879,7 +877,8 @@ label jshrCont3:
 
     pause(1.2)
 
-    "(Ellis was stressed out by the encounter)"
+    "(Ellis was stressed out by the encounter.) (+1 stress)"
+    $ stress += 1
 
     return
 

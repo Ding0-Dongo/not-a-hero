@@ -74,10 +74,6 @@ label ptStart:
 
     e "Oh. Hello there."
 
-    #increment stress?
-    show screen StatUI with vpunch
-    $ stress += 1
-
     hide ellisNeutral
 
     show ellisSurprised at ellis_std:
@@ -131,39 +127,17 @@ label ptStart:
     woman "I'm sure I could fix you a glass of iced tea or something. Won't you come inside?"
 
     hide ellisNeutral
-
-    show ellisCry2 at ellis_std:
+    show ellisSad at ellis_std:
         xalign 0.5
 
     e "Oh, ah, sorry... I'm on work."
-
-    hide ellisCry2
-
-    #INCREMENT STRESS YES
-    show ellisCry2 at ellis_std with hpunch:
-        xalign 0.5
-    
-    $ stress += 1
-
-    #show ellis nervous
-
-    pause(1.0)
-
-    show ellisCry at ellis_std:
-        xalign 0.5
-
     e "Thanks- thank you for the offer, though!"
-
-    hide ellisCry
-
-    show ellisCringe at ellis_std:
-        xalign 0.5
-
     woman "That's unfortunate. Swing by any time, then!"
-
     "The woman goes back into her house."
-
     e "..."
+
+    show ellisSad at ellis_std:
+        xalign 0.5
 
     hide screen StatUI
 

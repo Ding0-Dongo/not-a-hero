@@ -41,9 +41,14 @@ label shiftyTransition:
         "Look at Shifty's goods":
             s "Take a look at what I got..."
             jump shopMenu 
-
-
-
+        "Leave":
+            s "Come back soon, kid!"
+            stop music
+            play music MainMusic
+            hide screen StatUI
+            show screen NormingtonCityMap
+            jump call_mapUI
+            
 label shopMenu:
     
     $ boughtItemPhrase = renpy.random.choice(boughtLines)
@@ -85,9 +90,13 @@ label shopMenu:
             elif money < 15:
                 s "Hey, hey! Hands off what you can't afford, pal!"
                 jump shopMenu
+        "Nevermind":
+            s "Bah, don't waste my time."
+            jump shiftyTransition
         "I've gotta go!": 
             s "Come back soon!"
             stop music
             play music MainMusic
             hide screen StatUI
-            jump mapScreen
+            show screen NormingtonCityMap
+            jump call_mapUI
