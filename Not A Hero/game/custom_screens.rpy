@@ -572,9 +572,15 @@ label SocialLevelUp:
     return
 
 #Putting a transform here for a standardized ellis position
+#Desmond can use this too
 transform ellis_std:
     zoom 0.45
     yalign -1.5
+
+#Transform for josephine
+transform jo_std:
+    zoom 0.45
+    yalign 0.2
 
 label splashscreen:
     scene blackScreen

@@ -6,6 +6,9 @@
 label jhrStart:
     scene plaza with fade
 
+    show ellisNeutral at ellis_std with dissolve:
+        xalign 0.82
+
     "NORMINGTON ASSOCIATION OF HEROES HEADQUARTERS (Outside)"
 
     d "You wanted to meet up, Josephine?"
