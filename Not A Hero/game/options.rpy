@@ -150,7 +150,7 @@ define config.save_directory = "NotAHero-1666833464"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "images/shiftyThumbnail3.png"
 
 
 ## Build configuration #########################################################
