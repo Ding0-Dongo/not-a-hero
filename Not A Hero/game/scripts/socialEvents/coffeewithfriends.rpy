@@ -6,10 +6,10 @@
 label coffeeWithFriends:
     if (coffeewithfriends_firstime == True):
         stop sound
-        image deltaNeutral = Transform("images/Delta/delta neutral.png", zoom=.4)
-        image ellisNeutral = Transform("images/Ellis/Tilt.Neutral.png", zoom=.4)
-        image ellisHappy = Transform("images/Ellis/Up.Confident.png", zoom=.4)
-        image phiNeutral = Transform("images/Phi/phi neutral.png", zoom=.4)
+        # image deltaNeutral = Transform("images/Delta/delta neutral.png", zoom=.4)
+        # image ellisNeutral = Transform("images/Ellis/Tilt.Neutral.png", zoom=.4)
+        # image ellisHappy = Transform("images/Ellis/Up.Confident.png", zoom=.4)
+        # image phiNeutral = Transform("images/Phi/phi neutral.png", zoom=.4)
         #hide screen
         stop music
         play music MainMusic

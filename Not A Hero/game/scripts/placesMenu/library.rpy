@@ -20,8 +20,13 @@ label choicesLib:
                 call volunteeringLib
                 jump mapScreen
             "Read a book":
-                call readBook
-                jump mapScreen
+                if readToday == False:
+                    $ readToday = True
+                    call readBook
+                    jump mapScreen
+                else:
+                    "Ellis has already read a book today."
+                    jump mapScreen
             "Nevermind":
                 jump mapScreen
         jump mapScreen

@@ -57,6 +57,7 @@ image park = "images/places/park.png"
 image hospitalInterior = "images/places/hospital.png"
 image hospitalExterior = "images/places/hospital exterior.png"
 image hospitalRoom = "images/places/hospital room.png"
+image apartments = "images/places/apartment hall.png"
 
 ##### MAP STUFF
 
@@ -73,6 +74,7 @@ image ellisAnnoyed2 = "images/Ellis/Scraf.Spite.png"
 image ellisThinking = "images/Ellis/tilt.thinking.png"
 image ellisThinking2 = "images/Ellis/Scraf.Concentrating.png"
 image ellisThinking3 = "images/Ellis/Norm.Thinking.png"
+image ellisHesitant = "images/Ellis/Norm.Hesitant.png"
 image ellisNervous = "images/Ellis/Scarf.Nervy.png"
 image ellisSad = "images/Ellis/Norm.Unsure.png"
 image ellisSad2 = "images/Ellis/Scraf.Regrert.png"
@@ -105,7 +107,6 @@ image joStress = "images/Josephine/josephine_distressed.png"
 
 ##### DELTA
 image deltaNeutral = "images/Delta/delta neutral.png"
-image deltaNeutral = Transform("images/Delta/delta neutral.png", zoom=.4)
 image deltaNeutral2 = "images/Delta/Delta.Down.Default.png"
 image deltaAnnoyed = "images/Delta/Delta.Annoyed.png"
 image deltaInquire = "images/Delta/Delta.Inquire.png"

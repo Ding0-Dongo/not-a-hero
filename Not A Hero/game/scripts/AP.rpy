@@ -22,6 +22,12 @@ default energyDrinkMax = 5
 default coffee = 2
 default coffeeamount = 0
 
+# resting, reading, and walking can only 
+# be done once/day to relieve stress.
+default restedToday = False
+default readToday = False
+default walkedToday = False
+
 default commission1Done = False #delivery (clinic)
 default commission2Done = False #delivery (TEAM)
 default commission3Done = False #graffi-no

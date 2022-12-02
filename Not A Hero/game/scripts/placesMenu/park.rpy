@@ -44,10 +44,15 @@ label choicesPark:
                     call helpKids
                     jump mapScreen
                 "Take a Walk":
-                    call takeWalk
-                    stop music
-                    play music MainMusic
-                    jump mapScreen
+                    if walkedToday == False:
+                        $ walkedToday = True
+                        call takeWalk
+                        stop music
+                        play music MainMusic
+                        jump mapScreen
+                    else:
+                        "Ellis already took a walk today."
+                        jump mapScreen
                 "Nevermind":
                     stop music
                     play music MainMusic
@@ -58,8 +63,15 @@ label choicesPark:
                     call helpKids
                     jump mapScreen
                 "Take a Walk":
-                    call takeWalk
-                    jump mapScreen
+                    if walkedToday == False:
+                        $ walkedToday = True
+                        call takeWalk
+                        stop music
+                        play music MainMusic
+                        jump mapScreen
+                    else:
+                        "Ellis already took a walk today."
+                        jump mapScreen
                 "Nevermind":
                     stop music
                     play music MainMusic

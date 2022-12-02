@@ -1,16 +1,21 @@
 label hill:
     hide screen NormingtonCityMap
     hide screen continueNextDay
-    scene normingtonHills
-    "The hills call out to Ellis in a warm, soothing breeze; the singular tree atop the hill fluttering and flowing like the undulating waves of a fresh, misty lake."
+    scene apartments
+    "Ellis returns home to his apartment."
     jump choicesHill
 
 label choicesHill:
     if day<2:
         menu:
             "Rest":
-                call rest
-                jump mapScreen
+                if restedToday == False:
+                    $ restedToday = True
+                    call rest
+                    jump mapScreen
+                else:
+                    "Ellis has already rested today."
+                    jump mapScreen
             "Nevermind":
                 jump mapScreen
         jump mapScreen
@@ -21,7 +26,13 @@ label choicesHill:
             "Volunteer at the Senior Center":
                 call volunteeringSC
             "Rest":
-                call rest
+                if restedToday == False:
+                    $ restedToday = True
+                    call rest
+                    jump mapScreen
+                else:
+                    "Ellis has already rested today."
+                    jump mapScreen
             "Nevermind":
                 jump mapScreen
         jump mapScreen

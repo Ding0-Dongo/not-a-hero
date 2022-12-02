@@ -11,5 +11,5 @@ label gym:
         "Train Speed":
             jump TrainSpeed
 
-        "End Training":
+        "End Training (Leave)":
             jump mapScreen
