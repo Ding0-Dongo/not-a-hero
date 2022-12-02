@@ -528,6 +528,12 @@ transform ellis_std:
     zoom 0.45
     yalign -1.5
 
+transform ellis_std_center:
+    zoom 0.45
+    xalign 0.5
+    yalign -1.5
+
+
 label splashscreen:
     scene blackScreen
     with Pause(1)
