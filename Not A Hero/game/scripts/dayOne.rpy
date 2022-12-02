@@ -58,7 +58,6 @@ label start:
 
         "Go to Day 7":
             jump daySeven
-
         "Go make an Accident":
             jump theAccident
         "Visit Shifty":
