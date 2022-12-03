@@ -44,6 +44,8 @@ label start:
 
 
     # Just putting this here because I am dumb and want to test a tutorial.
+    jump dayZero
+    return
 
     menu:
 
