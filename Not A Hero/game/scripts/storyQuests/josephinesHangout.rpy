@@ -500,6 +500,8 @@ label jhrCont3:
 
     show blackScreen with fade
 
+    $ josephineHangoutDone = True
+
     ### end of quest
 
         
