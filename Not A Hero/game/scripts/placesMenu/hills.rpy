@@ -24,7 +24,7 @@ label choicesHill:
             "Help Old Lady":
                 call helpGranny
             "Volunteer at the Senior Center":
-                call volunteeringSC
+                call volunteerSenior
             "Rest":
                 if restedToday == False:
                     $ restedToday = True

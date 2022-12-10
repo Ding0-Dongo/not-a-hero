@@ -47,7 +47,7 @@ label jhrStart:
     show desChuckle at ellis_std:
         xalign -0.05
 
-    d "*shrugs* Free enough, I get."
+    d "*shrugs* Free enough, I guess."
 
     hide ellisNeutral
 
@@ -91,7 +91,7 @@ label jhrStart:
     show joClosed at jo_std:
         xalign 1.1
     
-    j "Great weather for a walk, isn't it."
+    j "Great weather for a walk, isn't it?"
 
     hide desNeutral
 
@@ -148,7 +148,7 @@ label jhrMakeUp:
     show joClosed at jo_std:
         xalign 1.1
 
-    j "Oooh- haha! Wouldn't have expected that from you, Ellis"
+    j "Oooh- haha! Wouldn't have expected that from you, Ellis~"
 
     hide ellisCringe
 
@@ -180,6 +180,23 @@ label jhrMakeUp:
     hide desFrown
     hide joNeutral
 
+    show desNeutral at ellis_std:
+        xalign -0.05
+    show ellisNeutral at ellis_std:
+        xalign 0.55
+    show joNeutral at jo_std:
+        xalign 1.1
+    
+    d "You know, Ellis, not everyone stays a HERO."
+    d "Some people quit after a few weeks."
+
+    hide ellisNeutral
+    show ellisAsk at ellis_std:
+        xalign 0.55
+    
+    e "O-oh... really?"
+    j "Oh, yes! It's not uncommon, though it's always a shame to see new faces go. Sometimes it's just a little too much for some people."
+
     jump jhrCont
 
 label jhrTellTruth:
@@ -207,7 +224,7 @@ label jhrTellTruth:
     show joNeutral at jo_std:
         xalign 1.1
 
-    j "*eyes widen* For real? Ellis, you've either seen everything, or nothing fazes you."
+    j "*eyes widen* For real? Ellis, you've either seen everything, or nothing fazes you. How is that {i}not{/i} interesting?"
 
     hide ellisNervous
 
@@ -220,15 +237,11 @@ label jhrTellTruth:
     show desNeutral at ellis_std:
         xalign -0.05
 
-    d "Why did you take the job then?"
+    d "So why did you take the job then?"
 
     hide ellisHappy
     hide desNeutral
     hide joNeutral
-
-    jump jhrCont
-
-label jhrCont:
 
     show ellisAnnoyed at ellis_std:
         xalign 0.55
@@ -239,7 +252,7 @@ label jhrCont:
     show joNeutral at jo_std:
         xalign 1.1
 
-    e "*helplessly* I don't know."
+    e "*helplessly* Honestly, I... I don't know."
 
     e "DELTA seemed really surprised too, and he asked me to give him a week while the association figured something out."
 
@@ -255,12 +268,17 @@ label jhrCont:
         xalign -0.05
 
     d "That's pretty generous of you."
+    d "So if you weren't the one signing up for the job in the first place, I mean..."
 
     hide desDrowsy
+
+    jump jhrCont
+
+label jhrCont:
     show desNeutral at ellis_std:
         xalign -0.05
 
-    d "Are you going to stay being a HERO then? Of you weren't the one signing up for the job in the first place, I mean..."
+    d "Are you going to stay being a HERO?"
 
     menu:
         "Yeah":
@@ -269,6 +287,7 @@ label jhrCont:
             jump jhrNo
 
 label jhrYes:
+    hide ellisAsk
     hide ellisThinking2
 
     show ellisNervous at ellis_std:
@@ -298,6 +317,7 @@ label jhrYes:
     jump jhrCont2
 
 label jhrNo:
+    hide ellisAsk
     hide ellisThinking2
 
     show ellisThinking at ellis_std:

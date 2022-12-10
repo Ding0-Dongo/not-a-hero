@@ -16,7 +16,7 @@ label choicesPark:
         if josephineHangoutDone == False:
             menu:
                 "Josephine's Hangout Request":
-                    call josephineHangoutReq
+                    call jhrStart
                     jump mapScreen
                 "Help Kids":
                     call helpKids
@@ -38,7 +38,7 @@ label choicesPark:
         if josephineHangoutDone == False:
             menu:
                 "Josephine's Hangout Request":
-                    call josephineHangoutReq
+                    call jhrStart
                     jump mapScreen
                 "Help Kids":
                     call helpKids

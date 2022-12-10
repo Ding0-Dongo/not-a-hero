@@ -22,7 +22,13 @@ label continueToTheNextDay:
     if day<6:
         $ day+= 1;
         $ stress = 0;
-        $ energy = 10;
+        $ energy = energyMax;
+
+        $ restedToday = False
+        $ readToday = False
+        $ walkedToday = False
+
+        $ coffeeamount = 0
         if day==4:
             hide screen NormingtonCityMap
             hide screen continueNextDay
