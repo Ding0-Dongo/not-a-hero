@@ -42,11 +42,10 @@ default seniorVolunteerDone = False
 default apologyDone = False #josephine's apology
 default bulliesDone = False #bullies!
 default deliveryRunDone = False #desmond's delivery run
-
-default josephineHangoutDone = False #josephine's hangout request
-
+default firstAidDone = False #josephine's first-aid lesson
 default josephineApologyDone = False
 default josephineFirstAidDone = False
+default josephineHangoutDone = False #josephine's hangout request
 default pursenapperDone = False
 default talkThingsOutDone = False
 

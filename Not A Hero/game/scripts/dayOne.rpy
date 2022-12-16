@@ -96,20 +96,14 @@ label start:
                     jump jshrStart
                 "Test 'Pursenapper'":
                     jump Pursenapper
-                "help an old lady":
-                    "done it before?"
+                "first aid":
+                    "did DDR?"
                     menu:
-                        "yeah":
-                            $ commission5Done = True
+                        "yea":
+                            $ deliveryRunDone = True
                         "nah":
-                            $ commission5Done = False
-                            "too stronk?"
-                            menu:
-                                "yeah":
-                                    $ strength = 10
-                                "nah":
-                                    $ strength = 0
-                    jump helpGranny
+                            $ deliverRunDone = False
+                    jump firstAidLesson
         "Test Your Maps Here":
             menu:
                 "MapUI0":

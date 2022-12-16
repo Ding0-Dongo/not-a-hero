@@ -198,4 +198,6 @@ label comm5BadEnd:
         xalign 0.8
     
     e "Next time?!"
+
+    $ energy -= 1
     return
