@@ -4,137 +4,141 @@
 #scene = city
 
 label jhrStart:
-    scene plaza with fade
+    if energy < 2:
+        "Ellis is too tired to do that right now."
+        return
+    else:
+        scene plaza with fade
 
-    show screen StatUI
+        show screen StatUI
 
-    "NORMINGTON ASSOCIATION OF HEROES HEADQUARTERS (Outside)"
+        "NORMINGTON ASSOCIATION OF HEROES HEADQUARTERS (Outside)"
 
-    show ellisNeutral at ellis_std with dissolve:
-        xalign 0.55
+        show ellisNeutral at ellis_std with dissolve:
+            xalign 0.55
 
-    show joNeutral at jo_std with dissolve:
-        xalign 1.1
+        show joNeutral at jo_std with dissolve:
+            xalign 1.1
 
-    pause(0.8)
+        pause(0.8)
 
-    show desNeutral at ellis_std with moveinleft:
-        xalign -0.05
+        show desNeutral at ellis_std with moveinleft:
+            xalign -0.05
 
-    d "You wanted to meet up, Josephine?"
+        d "You wanted to meet up, Josephine?"
 
-    hide joNeutral
-    show joExclaim at jo_std:
-        xalign 1.1
+        hide joNeutral
+        show joExclaim at jo_std:
+            xalign 1.1
 
-    j "Yeah!"
+        j "Yeah!"
 
-    hide desNeutral
+        hide desNeutral
 
-    show desDrowsy at ellis_std:
-        xalign -0.05
+        show desDrowsy at ellis_std:
+            xalign -0.05
 
-    d "*gestures at Ellis* Well, we're both here, so..."
+        d "*gestures at Ellis* Well, we're both here, so..."
 
-    hide joExclaim
-    show joFrown at jo_std:
-        xalign 1.1
+        hide joExclaim
+        show joFrown at jo_std:
+            xalign 1.1
 
-    j "I was just thinking... since Ellis is new, and we haven't been able to properly get to know him... we could go for a walk in the park! You two are free, right?"
+        j "I was just thinking... since Ellis is new, and we haven't been able to properly get to know him... we could go for a walk in the park! You two are free, right?"
 
-    hide desDrowsy
+        hide desDrowsy
 
-    show desChuckle at ellis_std:
-        xalign -0.05
+        show desChuckle at ellis_std:
+            xalign -0.05
 
-    d "*shrugs* Free enough, I guess."
+        d "*shrugs* Free enough, I guess."
 
-    hide ellisNeutral
+        hide ellisNeutral
 
-    show ellisNervous at ellis_std:
-        xalign 0.55
+        show ellisNervous at ellis_std:
+            xalign 0.55
 
-    e "U-um... yeah, I... I'm free."
+        e "U-um... yeah, I... I'm free."
 
-    hide joFrown
-    show joExclaim at jo_std:
-        xalign 1.1
+        hide joFrown
+        show joExclaim at jo_std:
+            xalign 1.1
 
-    j "*beams* Great! C'mon, let's go!"
+        j "*beams* Great! C'mon, let's go!"
 
-    show blackScreen with fade
+        show blackScreen with fade
 
-    "10 minutes later"
+        "10 minutes later"
 
-    pause (0.8)
+        pause (0.8)
 
-    scene park with dissolve
+        scene park with dissolve
 
-    show screen StatUI
+        show screen StatUI
 
-    "NORMINGTON PARK"
+        "NORMINGTON PARK"
 
-    "Normington Park is picturesque at this time of day, the sun shining down over it like a blessing. A fountain pours endlessly in the center of a long curved pathway of crushed gravel that winds through the park."
+        "Normington Park is picturesque at this time of day, the sun shining down over it like a blessing. A fountain pours endlessly in the center of a long curved pathway of crushed gravel that winds through the park."
 
-    "Flowering trees provide some welcome shade overhead, and a light breeze sends leaves and petals fluttering down. Some children with a kite run past the trio as they step onto the path."
+        "Flowering trees provide some welcome shade overhead, and a light breeze sends leaves and petals fluttering down. Some children with a kite run past the trio as they step onto the path."
 
-    show ellisNeutral at ellis_std with moveinright:
-        xalign 0.55
+        show ellisNeutral at ellis_std with moveinright:
+            xalign 0.55
 
-    show joNeutral at jo_std with moveinright:
-        xalign 1.1
-    
-    show desNeutral at ellis_std with moveinright:
-        xalign -0.05
+        show joNeutral at jo_std with moveinright:
+            xalign 1.1
+        
+        show desNeutral at ellis_std with moveinright:
+            xalign -0.05
 
-    hide joNeutral
-    show joClosed at jo_std:
-        xalign 1.1
-    
-    j "Great weather for a walk, isn't it?"
+        hide joNeutral
+        show joClosed at jo_std:
+            xalign 1.1
+        
+        j "Great weather for a walk, isn't it?"
 
-    hide desNeutral
+        hide desNeutral
 
-    show desChuckle at ellis_std:
-        xalign -0.05
+        show desChuckle at ellis_std:
+            xalign -0.05
 
-    d "Eh, we got lucky. Forecast said it was going to rain today."
+        d "Eh, we got lucky. Forecast said it was going to rain today."
 
-    hide desChuckle
+        hide desChuckle
 
-    show desNeutral at ellis_std:
-        xalign -0.05
+        show desNeutral at ellis_std:
+            xalign -0.05
 
-    hide joClosed
-    show joFrown2 at jo_std:
-        xalign 1.1
+        hide joClosed
+        show joFrown2 at jo_std:
+            xalign 1.1
 
-    j "I was wondering why you brought an umbrella to HQ this morning..."
+        j "I was wondering why you brought an umbrella to HQ this morning..."
 
-    hide joFrown2
-    show joClosed at jo_std:
-        xalign 1.1
+        hide joFrown2
+        show joClosed at jo_std:
+            xalign 1.1
 
-    j "*clasps her hands together* So! Ellis, what made you want to be a HERO?"
+        j "*clasps her hands together* So! Ellis, what made you want to be a HERO?"
 
-    hide ellisNeutral
+        hide ellisNeutral
 
-    show ellisNervous at ellis_std:
-        xalign 0.55
+        show ellisNervous at ellis_std:
+            xalign 0.55
 
-    e "Um... well..."
+        e "Um... well..."
 
-    hide joClosed
-    show joExclaim at jo_std:
-        xalign 1.1
+        hide joClosed
+        show joExclaim at jo_std:
+            xalign 1.1
 
-    j "Was it the prestige? The sense of helping your community? The pretty and friendly android mentors?"
+        j "Was it the prestige? The sense of helping your community? The pretty and friendly android mentors?"
 
-    menu:
-        "Make something up":
-            jump jhrMakeUp
-        "Tell the truth":
-            jump jhrTellTruth
+        menu:
+            "Make something up":
+                jump jhrMakeUp
+            "Tell the truth":
+                jump jhrTellTruth
 
 label jhrMakeUp:
     hide ellisNervous
@@ -171,7 +175,7 @@ label jhrMakeUp:
 
     hide ellisNervous
 
-    show ellisSurprised at ellis_std:
+    show ellisSurprised at ellis_std with hpunch:
         xalign 0.55
 
     e "(D-date?!)"
@@ -329,7 +333,7 @@ label jhrNo:
     show desChuckle at ellis_std:
         xalign -0.05
 
-    d " That's fair. Not everyone stays. Usually most people decide whether or not they want to keep doing this after a week or two."
+    d "That's fair. Not everyone stays. Usually most people decide whether or not they want to keep doing this after a week or two."
 
     hide joExclaim
     show joClosed at jo_std:

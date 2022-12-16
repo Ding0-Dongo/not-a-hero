@@ -188,15 +188,16 @@ label graffiNo:
                         xalign 0.2
                     
                     "The thug starts relaying his entire life story up until this point."
-                
-                    show blackScreen with fade
-                    pause(0.1)
-                    hide blackScreen with fade
                     
-                    hide ellisNeutral
+                    show blackScreen with fade
+                    pause(0.1)                    
+                    scene alleyway
+
+                    show deltaAnnoyed at delta_std:
+                        xalign 0.2
                     show ellisCringe at ellis_std:
                         xalign 0.8
-                    
+
                     "Every single hardship, trauma, disappointment, failure, embarrassment. By the end of his monologue, Ellis understands the thug more than anyone else he had up until this point."
                     "Enlightening, really."
                     gangster "...and then I got rejected from art school and that's how I got to where I am now."                

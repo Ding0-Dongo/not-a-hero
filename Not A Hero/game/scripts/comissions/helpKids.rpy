@@ -31,7 +31,7 @@ label helpKids:
             "Normington Park, random time afternoon"
             show joExclaim at jo_std with dissolve:
                 xalign 0.8
-            show phiNeutral at phi_std with dissolve:
+            show phiSheepish at phi_std with dissolve:
                 xalign 1.1 
             
             show ellisAsk at ellis_std:
@@ -39,7 +39,7 @@ label helpKids:
             show deltaNeutral at delta_std:
                 linear 0.3 xalign 0.4
 
-            j "aaaaAAH! I'm so glad you guys could make it on such short notice!"
+            j "Aaaaaah! I'm so glad you guys could make it on such short notice!"
             D "What seems to be the issue, HERO Josephine?"
             
             hide joExclaim
@@ -54,9 +54,24 @@ label helpKids:
                 xalign 0.4
             
             D "... (Not my area of expertise.)"
+
+            hide phiSheepish
+            show phiExclaim at phi_std:
+                xalign 1.1
+            
             P "The kids proposed some ideas but..."
+
+            hide phiExclaim
+            show phiNeutral at phi_std:
+                xalign 1.1
+            
             j "Their ideas are more suited towards you, Ellis!"
             e "Huh? What did they want to do?"
+
+            hide phiNeutral
+            show phiSheepish at phi_std:
+                xalign 1.1
+            
             kid1 "Hi, I'm Johnnathaeign and I wanna fight!"
             kid2 "What's up, I'm Joughseph and I want you to be a tree! For science! Science rules!"
             kid3 "My name is Rose and I wish to race."
@@ -76,6 +91,11 @@ label helpKids:
                     "Johnnathaeign Fortnight dances."
                     kid1 "Ok! Ellis, Josephine! You guys are the good guys!"
                     kid2 "DELTA and PHI can be the bad guys!"
+
+                    hide phiSheepish
+                    show phiHappy at phi_std:
+                        xalign 1.1
+                    
                     P "Fitting~"
                     kid3 "Let the fight commence."
                     D "(What is up with these kids?)"
@@ -86,7 +106,7 @@ label helpKids:
                         linear 0.3 xalign 1.1
                     show deltaAnnoyed at delta_std:
                         linear 0.3 xalign 0.8
-                    show phiNeutral at phi_std:
+                    show phiHappy at phi_std:
                         linear 0.3 xalign 0.3
                     hide ellisThinking2
                     show ellisSurprised at ellis_std:
@@ -100,6 +120,11 @@ label helpKids:
 
                     D "Ah, we should've done something else for the day..."
                     "(PHI and Ellis square off together.)"
+
+                    hide phiHappy
+                    show phiExclaim at phi_std:
+                        xalign 0.3
+                    
                     P "Fuhahahaha! Think you can defeat me?!"
                     
                     hide ellisSurprised
@@ -108,6 +133,7 @@ label helpKids:
                     
                     e "U-uh, not really?!"
                     P "Come at me with all you've got!"
+
                     if strength < 2:
                         hide ellisCry
                         show ellisCringe at ellis_std:
@@ -116,6 +142,11 @@ label helpKids:
                         call hitPhi
                         
                         "Ellis feebly punches PHI's palm. PHI seems not to notice."
+
+                        hide phiExclaim
+                        show phiFrown at phi_std:
+                            xalign 0.3
+                        
                         P "Psst, Ellis c'mon, gimme a good hard smack! It's got to be believable! Don't worry, it won't hurt me anyways!"
                         e "I-"
                         P "What's wrong, Ellis?"
@@ -140,19 +171,24 @@ label helpKids:
                         
                         call hitPhi
                         "Ellis gives PHI's palm a good hard smack."
+
+                        hide phiExclaim
+                        show phiFrown at phi_std:
+                            xalign 0.3
+                        
                         P "UWAAAAAAAUGH...!"
                         P "Y-You..."
                         P "Got me."
                         "(PHI dramatically sinks to her knees.)"
 
-                        hide phiNeutral with dissolve
+                        hide phiFrown with dissolve
 
                         e "... ah? (I didn't actually hurt her, did I?)"
                         jump comm4GoodEnd
                 "Go with Joughseph's suggestion and pretend to be a tree.":
                     kid2 "Yayyyyyy!"
                     
-                    show phiNeutral at phi_std:
+                    show phiSheepish at phi_std:
                         linear 0.6 xalign 1.8
                     show joNeutral at jo_std:
                         linear 0.6 xalign 1.8
@@ -205,7 +241,7 @@ label helpKids:
                 "Go with Rose's suggestion and have a race":
                     kid3 "Let us have an honorable competition."
 
-                    show phiNeutral at phi_std:
+                    show phiSheepish at phi_std:
                         linear 0.6 xalign 1.0
                     show deltaAnnoyed at delta_std:
                         linear 0.6 xalign 1.8
@@ -223,12 +259,20 @@ label helpKids:
                         xalign -0.8
                     
                     e "A-Alright! Be warned: I won't go easy on you!"
+
+                    hide phiSheepish
+                    show phiHappy at phi_std:
+                        xalign 1.0
+                    
                     P "aaaaand the race is afoot!"
 
                     show ellisSad2 at ellis_std:
                         linear 0.3 xalign -0.8
 
                     if speed >= 2:
+                        hide phiHappy
+                        show phiExclaim at phi_std:
+                            xalign 1.0
                         P "Rose starts off strong with a huge lead off Ellis!"
                         
                         show joExclaim at jo_std:
@@ -254,11 +298,19 @@ label helpKids:
                         e "A-Alrighty! I've still got some fight in me, just give me a moment...!"
                         jump comm4GoodEnd
                     if speed < 2:
+                        hide phiHappy
+                        show phiExclaim at phi_std:
+                            xalign 1.0
+                        
                         P "Rose starts off strong with a huge lead off Ellis!"
                         
                         show joNervous at jo_std:
                             linear 0.6 xalign 0.5
                         j "Ellis seems to be uhhh... lagging behind... quite a bit..."
+
+                        hide phiExclaim
+                        show phiSheepish at phi_std:
+                            xalign 1.0
                         P "Oh dear, Ellis is not doing too hot-"
                         
                         show blackScreen with fade
@@ -346,7 +398,7 @@ label comm4BadEnd:
         linear 0.6 xalign 0.0
     pause(0.6)
 
-    "(The situation appears to have resolved itself, as the ducks have flown off.)"
+    "(After Ellis returns, the situation appears to have resolved itself, as the ducks have flown off.)"
     e "O-Oh I guess uh the whole thing's over with..."
     
     hide deltaAnnoyed

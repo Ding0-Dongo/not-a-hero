@@ -44,8 +44,8 @@ label start:
 
 
     # Just putting this here because I am dumb and want to test a tutorial.
-    jump dayZero
-    return
+    # jump dayZero
+    # return
 
     menu:
 
@@ -94,22 +94,22 @@ label start:
                     jump ptStart
                 "Test 'Josephine's Second...'":
                     jump jshrStart
-                "Test 'Josephine's Hangout Request'":
-                    jump jhrStart
                 "Test 'Pursenapper'":
                     jump Pursenapper
-                "help some kids":
-                    "pass stat checks?"
+                "help an old lady":
+                    "done it before?"
                     menu:
-                        "yea":
-                            $ strength = 10
-                            $ speed = 10
-                            $ stamina = 10
+                        "yeah":
+                            $ commission5Done = True
                         "nah":
-                            $ strength = 1
-                            $ speed = 1
-                            $ stamina = 1
-                    jump helpKids
+                            $ commission5Done = False
+                            "too stronk?"
+                            menu:
+                                "yeah":
+                                    $ strength = 10
+                                "nah":
+                                    $ strength = 0
+                    jump helpGranny
         "Test Your Maps Here":
             menu:
                 "MapUI0":

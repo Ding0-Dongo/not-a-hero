@@ -42,26 +42,25 @@ define customer = Character("Impatient Customer", color="#bd3675")
 define coffeewithfriends_firstime = True
 
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
+image alleyway = "images/places/dark shady alley.png"
+image apartments = "images/places/apartment hall.png"
+image blackScreen = "#000000"
+image city = "images/normingtonCity.png"
+image city = "images/normingtonMap.png" # city map (????)
+image classroom = "images/places/classroom interior.png"
+image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
+image hospitalExterior = "images/places/hospital exterior.png"
+image hospitalInterior = "images/places/hospital.png"
+image hospitalRoom = "images/places/hospital room.png"
+image hq = "images/places/hq interior.png"
+image library = "images/places/library interior.png"
+image park = "images/places/park.png"
+image plaza = "images/places/plaza.png"
 image schoolExterior = "images/places/school exterior.png"
 image schoolInterior = "images/places/school interior.png."
-image classroom = "images/places/classroom interior.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
-image city = "images/normingtonCity.png"
-image hq = "images/places/hq interior.png"
-image city = "images/normingtonMap.png"
-image blackScreen = "#000000"
-image alleyway = "images/places/dark shady alley.png"
-image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
-image plaza = "images/places/plaza.png"
-image park = "images/places/park.png"
-image hospitalInterior = "images/places/hospital.png"
-image hospitalExterior = "images/places/hospital exterior.png"
-image hospitalRoom = "images/places/hospital room.png"
-image apartments = "images/places/apartment hall.png"
-image library = "images/places/library interior.png"
 
 ##### MAP STUFF
-
 image cityMap = "images/map.jpg"
 image mapIcon = "images/mapIcon.png"
 image mapIcon2 = "images/mapIcon2.png"
