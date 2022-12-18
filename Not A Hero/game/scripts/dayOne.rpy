@@ -96,14 +96,8 @@ label start:
                     jump jshrStart
                 "Test 'Pursenapper'":
                     jump Pursenapper
-                "first aid":
-                    "did DDR?"
-                    menu:
-                        "yea":
-                            $ deliveryRunDone = True
-                        "nah":
-                            $ deliverRunDone = False
-                    jump firstAidLesson
+                "clinic delivery":
+                    jump clinicDelivery
         "Test Your Maps Here":
             menu:
                 "MapUI0":

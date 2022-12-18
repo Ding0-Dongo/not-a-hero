@@ -8,8 +8,19 @@ label Pursenapper:
     show alleyway
     show screen StatUI
     "Downtown Normington"
+
+    show ellisNeutral at ellis_std:
+        xalign -1.5
+    show ellisNeutral at ellis_std:
+        linear 0.5 xalign 0.5
+
     "(Ellis is in the middle of a stroll in Downtown Normington.)"
     play sound ScreamAudio
+
+    hide ellisNeutral
+    show ellisSurprised at ellis_std with hpunch:
+        xalign 0.5
+    
     "Help, thief!"
     play sound "<from 15 to 21>audio/runconcrete.mp3"
     "(A man wearing a ski mask and comically-oversized prison pinstripes runs past Ellis.)"
@@ -31,15 +42,18 @@ label Purse_options:
 label OhWell_Option:
     "(Before Ellis realizes what's happening, the thief's already disappeared around the street corner.)"
     play sound SirenAudio
+
+    hide ellisSurprised
+    show ellisSad2 at ellis_std:
+        xalign 0.5
+
     "(He hears sirens wail in the distance, and nervously crosses the street, continuing on his walk.)"
     stop sound
     stop music
-    show blackScreen
-    with  dissolve
-    "" #fade to black
+    show blackScreen with fade
+    pause(0.3)
     "(He wishes he'd done something to help, but it's too late now.)"
-    hide blackScreen
-    show city
+    scene city with fade
     play music MainMusic
     jump testingMap
 
@@ -49,15 +63,33 @@ label TackleHim_Option:
             jump Purse_options
         else:
             play sound TackleAudio
+
+            hide ellisSurprised
+            show ellisAnnoyed at ellis_std with hpunch:
+                xalign 0.5
+            
             "(Without thinking, Ellis jumps at the man and tackles him to the ground.)"
-            "(Carefully, of course. He makes sure the perpretrator's head doesn't hit the sidewalk.)"
+            
+            hide ellisAnnoyed
+            show ellisNeutral at ellis_std:
+                xalign 0.5
+            
+            "(Carefully, of course. He makes sure the perpetrator's head doesn't hit the sidewalk.)"
             "(The robber seems surprised.) What the ... get offa me!"
             "(Ellis doesn't notice the man, instead looking up at the slowly-forming crowd.)"
-            show ellis Neutral
+            
+            hide ellisNeutral
+            show ellisThinking at ellis_std:
+                xalign 0.5
+            
             e "Um... could someone call the police?"
-            hide ellis Neutral
             "(The person who was almost robbed runs up to him.) Oh, thank you so much!"
             play sound PhoneAudio
+
+            hide ellisThinking
+            show ellisNeutral at ellis_std:
+                xalign 0.5
+            
             "(They take the bag, pull a phone out of it, and quickly make the call.)"
             stop sound
             play sound SirenAudio
@@ -66,11 +98,16 @@ label TackleHim_Option:
             play music AwardMusic 
             play sound Cheer
             "(The crowd claps.)"
+
+            hide ellisNeutral
+            show ellisShy at ellis_std:
+                xalign 0.5
+            
             "(Ellis smiles and waves nervously, and quickly ducks out of the crowd, resuming his stroll.)"
             stop sound 
             show blackScreen
             with  dissolve
-            "" #fade to black
+            pause(0.3)
             play sound ChaChingAudio
             "The association awards Ellis $10 for his deeds."
             stop sound
@@ -93,7 +130,17 @@ label ChaseHim_Option:
         else:
             stop sound
             play sound "<from 15 to 21>audio/runconcrete.mp3"
+
+            hide ellisSurprised
+            show ellisAnnoyed at ellis_std:
+                xalign 0.5
+            
             "(Ellis quickly bolts after the man.)"
+            
+            hide ellisAnnoyed
+            show ellisNeutral at ellis_std:
+                xalign 0.5
+            
             "(They run down a few blocks - thanks to Ellis's training, he's only slightly winded.)"
             stop sound
             play sound GaspAudio
@@ -101,27 +148,39 @@ label ChaseHim_Option:
             "(Ellis takes the bag from the burglar and begins heading back to the waiting owner.)"
             "(The burglar calls after him.) Hey! Kid, that's not yours!"
             "(Ellis turns around.)"
-            show ellis Neutral
+            
+            hide ellisNeutral
+            show ellisObjection at ellis_std:
+                xalign 0.5
+            
             e "It's not yours either."
-            hide ellis Neutral
+            
+            hide ellisObjection
+            show ellisNeutral at ellis_std:
+                xalign 0.5
+            
             "(Ellis walks back to the scene of the crime.)"
-            show ellis Neutral
+
+            show blackScreen with fade
+            pause(0.3)
+            hide blackScreen with fade
+        
             e "I think this is yours... sorry it took so long."
-            hide ellis Neutral
             "(The owner looks at him, starry-eyed) Wow, you're like a hero..."
-            "(Ellis gets flustered)"
-            show ellis Neutral
+            
+            hide ellisNeutral
+            show ellisShy at ellis_std:
+                xalign 0.5
+            
+            "(Ellis gets flustered.)"
             e "What-? No, I'm... well, not yet. I'm still in... in training..."
-            hide ellis Neutral
             "(The owner hugs their bag closer to themselves, eyes almost shining.) Thank you!"
-            show ellis Neutral
             e "You're... you're welcome..."
-            hide ellis Neutral
+
             stop music
             play music AwardMusic 
-            show blackScreen
-            with  dissolve
-            "" #fade to black
+            show blackScreen with dissolve
+            pause(0.3)
             play sound ChaChingAudio
             "The association awards Ellis $10 for his deeds"
             stop sound
