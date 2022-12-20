@@ -183,7 +183,7 @@ label meetTheTeamPartTwo:
     hide phiNeutral
     show phiSheepish at phi_std:
         xalign 0.3
-    show alphaNeutral with hpunch
+    show alphaIndignant at alpha_std with hpunch
 
     "(PHI jabs ALPHA in the ribs.)"
     
@@ -194,6 +194,9 @@ label meetTheTeamPartTwo:
     P "ALPHA, don't say it like that! Don't pay him any mind, Elly."
     P "(She gives me an apologetic smile.)"
     D "It's fine."
+
+    hide alphaIndignant
+    show alphaNeutral at alpha_std
 
     hide ellisAnnoyed2
     show ellisNeutral at ellis_std:
@@ -315,7 +318,7 @@ label meetTheTeamPartTwo:
     
     show alphaNeutral at alpha_std:
         xalign 1.5
-    show alphaNeutral at alpha_std:
+    show alphaAnnoyed at alpha_std:
         linear 0.3 xalign 0.0
 
     A "Not so fast. You two haven't gotten your commissions for the week yet."
@@ -368,6 +371,11 @@ label meetTheTeamPartTwo:
         xalign 1.1
 
     e "*in disbelief* That.... that's what it stands for?"
+
+    hide alphaAnnoyed
+    show alphaNeutral at alpha_std
+
+
     A "The association is well-known for making rather... inventive acronyms."
     P "You'll get used to it, don't worry. It has basically the same meaning as 'team', anyways."
 
@@ -401,9 +409,6 @@ label meetTheTeamPartTwo:
     
     show phiNeutral at phi_std:
         linear 0.3 xalign 0.5
-    
-    show alphaNeutral at alpha_std:
-        linear 0.3 xalign 0.0
 
     "(Ellis leaves.)"
     A "*raises an eyebrow* Something wrong, DELTA?"
@@ -454,6 +459,9 @@ label meetTheTeamPartTwo:
     show deltaNeutral at delta_std:
         xalign 1.0
 
+    hide alphaNeutral
+    show alphaShySmile at alpha_std
+
     P "Got it. Can do, DELTA!"
     D "(She gives me a mock salute. They're looking at me like a pair of proud parents.)"
 
@@ -473,6 +481,10 @@ label meetTheTeamPartTwo:
 
     P "It's just... it's good to see you back with us, DELTA."
     P "*almost apologetic* After your last HERO and all..."
+
+    hide alphaShySmile
+    show alphaAnnoyed at alpha_std
+
     A "PHI, we don't need to talk about that right now."
     P "*sighs* You're right, ALPHA. But DELTA, really, we're not just coworkers. We're friends, you know. You can talk to us if you need to."
     
@@ -481,7 +493,15 @@ label meetTheTeamPartTwo:
         xalign 0.5
     
     "(She gives ALPHA a hard stare, like she's expecting him to say something.)"
+
+    hide alphaAnnoyed
+    show alphaShySmile at alpha_std
+
     A "... yes, we'll be here for you."
+
+    hide alphaShySmile
+    show alphaNeutral at alpha_std
+
     A "But you should go get started with Ellis. There's a lot of things to get acquainted with."
 
     hide deltaNeutral

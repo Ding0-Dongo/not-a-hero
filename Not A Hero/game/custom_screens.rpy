@@ -15,6 +15,7 @@ screen NormingtonCityMap:
 # If you want to navigate using the map, it's prefered to use "call".
 # When in skip mode (tab key on keyboard), this prevents the game to be skipped.
 label call_mapUI:
+    show screen StatUI
     if day==0:
         call screen MapUI0
     elif day==1:
@@ -29,7 +30,6 @@ label call_mapUI:
         call screen MapUI5
     elif day==6:
         call screen MapUI6
-    call screen StatUI
 
 
 screen MapUI0:
@@ -450,7 +450,7 @@ image main_menu_animated:
 
 
 # This is for displaying all the stats and bars.
-screen StatUI:
+screen StatUI():
     bar:
         value energy
         range energyMax

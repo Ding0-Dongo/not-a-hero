@@ -129,6 +129,10 @@ image phiFrown = "images/Phi/phi_frowning_exclaim.png"
 
 ##### ALPHA
 image alphaNeutral = "images/Alpha/alpha neutral.png"
+image alphaIndignant = "images/Alpha/alpha indignant.png"
+image alphaAnnoyed = "images/Alpha/alpha annoyed.png"
+image alphaAngryQuiet = "images/Alpha/alpha angry quiet.png"
+image alphaShySmile = "images/Alpha/alpha shy smile.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
 # you mean test character sprites, right....? RIGHT??? -ruth

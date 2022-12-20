@@ -34,10 +34,10 @@ label dayZero:
     
     pause (1.0)
 
-    "(shuffling is heard) "
+    "(shuffling is heard)"
     D "(...)"
     D "(He sure is taking a while in there.)"
-    "(Door opens)"
+    "(The door opens with a hesitant creak)"
 
     show deltaNeutral at delta_std:
         linear 0.3 xalign 0.2

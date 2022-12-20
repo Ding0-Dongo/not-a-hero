@@ -128,5 +128,5 @@ label volunteerLibrary:
         show blackScreen with fade
 
         $ stress += 1
-        $ tempSocialLevel += 1
+        $ social += 1
         $ energy -= 1

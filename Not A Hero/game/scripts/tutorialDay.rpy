@@ -4,7 +4,7 @@
 
 label tutorial:
 
-    scene whiteRoom
+    scene whiteRoom with fade
 
     show dummy Neutral
 
@@ -55,9 +55,9 @@ label tutorial:
 
     show screen StatUI with hpunch
 
-    "Now become stressed."
-
     show dummy Sad
+
+    "Now become stressed."
 
     "Okay: let's max out the stress bar"
 
