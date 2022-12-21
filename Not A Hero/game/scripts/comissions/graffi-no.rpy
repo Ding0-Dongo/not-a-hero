@@ -24,6 +24,7 @@ label graffiNo:
 
             $ money += 10
             $ energy -= 2
+            $ social += 1
             return
         else:
             "Downtown Normington, random time afternoon"
@@ -211,5 +212,6 @@ label graffiNo:
             "For their efforts, they recieve $10 from the association."
             $ money += 10
             $ energy -= 2
+            $ social += 1
             $ commission3Done = True
             return

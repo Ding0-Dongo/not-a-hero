@@ -19,6 +19,7 @@ label clinicDelivery:
 
             $ energy -= 3
             $ money += 15
+            $ social += 1
 
             return
         else:
@@ -87,5 +88,6 @@ label clinicDelivery:
 
             $ energy -= 3
             $ money += 15
+            $ social += 1
 
             return

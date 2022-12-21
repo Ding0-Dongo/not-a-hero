@@ -17,6 +17,7 @@ label helpGranny:
             e "Haa..."
             $ money += 5
             $ energy -= 1
+            $ social += 1
             return
         else:
             "Normington Hills, 08:00 AM"
@@ -172,6 +173,7 @@ label comm5GoodEnd:
     e "...how did you notice the difference??"
     $ money += 5
     $ energy -= 1
+    $ social += 1
     $ commission5Done = True
     return
 

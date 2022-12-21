@@ -105,7 +105,7 @@ label coffeeWithFriends:
             "Ellis recieves +1 stress and +1 social."
 
             $ stress += 1
-            $ tempSocialLevel += 1
+            $ social += 1
             $ energy -= 1
 
             jump NormingtonCoffee
@@ -115,7 +115,7 @@ label coffeeWithFriends:
             "(Ellis and his friends have a nice chat over coffee.)"
             "(Though he's still a bit anxious, he manages to enjoy himself.)"
             $ stress += 1
-            $ tempSocialLevel += 1
+            $ social += 1
             $ energy -= 1
             "+1 stress, +1 social"
 

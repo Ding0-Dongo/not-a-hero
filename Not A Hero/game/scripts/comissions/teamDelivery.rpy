@@ -16,4 +16,5 @@ label teamDeliveryComm:
 
         $ money += 10
         $ energy -= 2
+        $ social += 1
         return

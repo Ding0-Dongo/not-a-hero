@@ -375,6 +375,7 @@ label comm4GoodEnd:
     "For their... efforts, Ellis and Josephine each receive $5."
 
     $ money += 5
+    $ social += 1
     $ commission4Done = True
     return
 
