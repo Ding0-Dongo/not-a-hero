@@ -100,6 +100,10 @@ label start:
                     jump clinicDelivery
                 "PSA":
                     jump psa
+                "coffee w/ friends":
+                    jump coffeeWithFriends
+                "fundraising":
+                    jump fundraising
         "Test Your Maps Here":
             menu:
                 "MapUI0":

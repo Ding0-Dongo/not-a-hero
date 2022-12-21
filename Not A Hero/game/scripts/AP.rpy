@@ -38,6 +38,7 @@ default commission7Done = False #Thiefstopper
 
 default libraryVolunteerDone = False
 default seniorVolunteerDone = False
+default fundraisingDone = False
 
 default apologyDone = False #josephine's apology
 default bulliesDone = False #bullies!
