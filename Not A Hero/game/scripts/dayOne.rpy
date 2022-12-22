@@ -104,6 +104,8 @@ label start:
                     jump coffeeWithFriends
                 "fundraising":
                     jump fundraising
+                "shelter volunteering":
+                    jump volunteerShelter
         "Test Your Maps Here":
             menu:
                 "MapUI0":
