@@ -106,6 +106,8 @@ label start:
                     jump fundraising
                 "shelter volunteering":
                     jump volunteerShelter
+                "clinic volunteering":
+                    jump volunteerClinic
         "Test Your Maps Here":
             menu:
                 "MapUI0":

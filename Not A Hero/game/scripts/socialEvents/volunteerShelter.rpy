@@ -1,6 +1,6 @@
 label volunteerShelter:
     if energy < 2:
-        "Ellis is too tired to do this right now."
+        "Ellis is too tired to do that right now."
         return
     else:
         if shelterVolunteerDone == True:
