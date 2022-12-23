@@ -98,6 +98,16 @@ label start:
                     jump Pursenapper
                 "clinic delivery":
                     jump clinicDelivery
+                "PSA":
+                    jump psa
+                "coffee w/ friends":
+                    jump coffeeWithFriends
+                "fundraising":
+                    jump fundraising
+                "shelter volunteering":
+                    jump volunteerShelter
+                "clinic volunteering":
+                    jump volunteerClinic
         "Test Your Maps Here":
             menu:
                 "MapUI0":
