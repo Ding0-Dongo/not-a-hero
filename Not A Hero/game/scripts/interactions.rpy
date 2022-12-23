@@ -1,5 +1,61 @@
 #interactions for all the days
 
+label socializeFirst:
+    "(DELTA and Ellis are in the headquarters. Ellis is waiting for DELTA to finish up some work before they go out to do some commissions.)"
+    e "Hey, DELTA?"
+    D "*shuffling through files* Mm?"
+    e "*looking at the crowd* I didn't know there were so many... people working for the association."
+    D "Yeah, we weren't always so popular. Association's been growing as of late, though."
+    D "They're thinking on making another branch in the northern part of the city soon. *staples some papers together*"
+    e "Oh, that's... good?"
+    D "*smiles slightly* You know, if you're bored, you can go talk to one of your fellow HEROs."
+
+    e "Ah- no, no! I... I'm okay just waiting, really!"
+    D "Consider it a challenge while you wait, then. C'mon, don't be a silent protagonist."
+    "Silent protag-? *sighs* DELTA, it's just, I... I don't know these people..."
+    menu:
+        "(Be serious)":
+            D "You didn't know me a day before either."
+            e "*uncertain* I'm still not sure... DELTA... what if they don't like me?"
+            e "I know I'm pretty awkward sometimes... well, all the time, really..."
+            jump socializeFirstCont
+        "(Make a joke)":
+            D "You can always run back here if they're out to get you."
+            e "Will they be out to get me?"
+            jump jokeReply
+
+label jokeReply:
+    menu:
+        "Yes.":
+            D "Yes."
+            "(ALPHA happens to pass by and overhear them. He knocks a few knuckles on DELTA's head, without a word.)"
+            D "Ow. Ok, but honestly..."
+            jump socializeFirstCont
+        "No.":
+            D "No. I was joking."
+            D "Sorry. It was a bad joke."
+            jump socializeFirstCont
+
+label socializeFirstCont:
+    D "Ellis, you're all HEROs here. No one's going to hurt you, and, well, if someone does... literally everyone else here has your back."
+
+    D "Think of it like your physical training, alright?"
+    D "You'll get better at being around people with time."
+    e "...."
+    D ".... either way, you don't have anything better to do while you wait."
+    "(Ellis protests, but eventually gets up and wanders off into the crowd.)"
+    "(Around the time DELTA finishes with his work, Ellis returns, looking a little stressed out.)"
+    D "Back so soon?"
+    e "Can we... can we go somewhere quiet for a bit?"
+    D "Sure. Just let me... *puts a folder back on a shelf* Now we can go."
+    #(fade to black)
+    # +stress
+
+label socializeNotFirst:
+    "(Ellis strikes up a conversation with some fellow HEROs while DELTA is busy.)"
+    "(It's nerve-wracking work, but he takes it like a champ.)"
+    #+stress
+
 label interactionsDayOne:
     "Who do you want to talk to today?":
         menu:
