@@ -1,7 +1,7 @@
 label downtown:
     hide screen NormingtonCityMap
     hide screen continueNextDay
-    scene normingtonDowntown
+    scene plaza
     "The hustle and bustle of the busy roads and the crowded sidewalks frightens Ellis. Not bueno."
     jump choicesDowntown
 

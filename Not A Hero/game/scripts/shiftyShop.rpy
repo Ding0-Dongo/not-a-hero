@@ -41,52 +41,62 @@ label shiftyTransition:
         "Look at Shifty's goods":
             s "Take a look at what I got..."
             jump shopMenu 
-
-
-
+        "Leave":
+            s "Come back soon, kid!"
+            stop music
+            play music MainMusic
+            hide screen StatUI
+            show screen NormingtonCityMap
+            jump call_mapUI
+            
 label shopMenu:
     
     $ boughtItemPhrase = renpy.random.choice(boughtLines)
 
+
     menu: 
         "1 Energy Drink - $5":
-            if energy < 10 and dollars >= 5:
+            if energy < 10 and money >= 5:
                 $ energy += energyDrink
-                $ dollars -= 5
+                $ money -= 5
                 s "[boughtItemPhrase]"
                 jump shopMenu
             elif energy == 10:
                 s "Don't go biting more than you can chew bud."
                 jump shopMenu 
-            elif dollars < 5:
+            elif money < 5:
                 s "Hey, hey! Hands off what you can't afford, pal!"
                 jump shopMenu
         "1 Energy Drink Plus - $10":
-            if energy < 8 and dollars >= 10: 
+            if energy < 8 and money >= 10: 
                 s "[boughtItemPhrase]"
                 $ energy += energyDrinkPlus
-                $ dollars -= 10
+                $ money -= 10
                 jump shopMenu
             elif energy >=8:
                 s "Don't go biting more than you can chew bud."
                 jump shopMenu
-            elif dollars < 10:
+            elif money < 10:
                 s "Hey, hey! Hands off what you can't afford, pal!"
                 jump shopMenu
         "1 Energy Drink Max - $15":
-            if energy < 6 and dollars >= 15:
+            if energy < 6 and money >= 15:
                 s "[boughtItemPhrase]"
                 $ energy += energyDrinkMax
                 jump shopMenu
             elif energy >= 6:
                 s "Don't go biting more than you can chew bud."
                 jump shopMenu
-            elif dollars < 15:
+            elif money < 15:
                 s "Hey, hey! Hands off what you can't afford, pal!"
                 jump shopMenu
+        "Nevermind":
+            s "Bah, don't waste my time."
+            jump shiftyTransition
         "I've gotta go!": 
             s "Come back soon!"
             stop music
             play music MainMusic
             hide screen StatUI
-            jump mapScreen
+            show screen NormingtonCityMap
+            jump call_mapUI

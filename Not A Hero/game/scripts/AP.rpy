@@ -22,6 +22,12 @@ default energyDrinkMax = 5
 default coffee = 2
 default coffeeamount = 0
 
+# resting, reading, and walking can only 
+# be done once/day to relieve stress.
+default restedToday = False
+default readToday = False
+default walkedToday = False
+
 default commission1Done = False #delivery (clinic)
 default commission2Done = False #delivery (TEAM)
 default commission3Done = False #graffi-no
@@ -30,14 +36,19 @@ default commission5Done = False #help Granny
 default commission6Done = False #PSA (TEAM)
 default commission7Done = False #Thiefstopper
 
+default libraryVolunteerDone = False
+default seniorVolunteerDone = False
+default shelterVolunteerDone = False
+default clinicVolunteerDone = False
+default fundraisingDone = False
+
 default apologyDone = False #josephine's apology
 default bulliesDone = False #bullies!
 default deliveryRunDone = False #desmond's delivery run
-
-default josephineHangoutDone = False #josephine's hangout request
-
+default firstAidDone = False #josephine's first-aid lesson
 default josephineApologyDone = False
 default josephineFirstAidDone = False
+default josephineHangoutDone = False #josephine's hangout request
 default pursenapperDone = False
 default talkThingsOutDone = False
 

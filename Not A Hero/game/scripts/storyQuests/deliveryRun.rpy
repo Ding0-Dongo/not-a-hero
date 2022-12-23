@@ -1,5 +1,5 @@
 label deliveryRun:
-    if energy < 2:
+    if energy < 1:
         "(Ellis doesn't have enough energy to do this story quest right now.)"
     else:
         show plaza

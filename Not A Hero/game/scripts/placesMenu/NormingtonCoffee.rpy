@@ -23,7 +23,7 @@ label CoffeeMenu:
         #add josephine second hangout request here
             #no cuz like we're gonna force the player to do that first
         #add coffee with friends here
-        "Get Coffee with Friends":
+        "Get Coffee with Friends" if (day >= 3):
             call coffeeWithFriends
             jump mapScreen
         "One Coffee":
@@ -54,16 +54,7 @@ label CoffeeMenu:
             sc "Normington Coffee sells premiere high-end LUXURY beverages like our famous 'Normington Coffee' to our esteemed guests."
             sc "Anyways, feel free to look around."
             jump CoffeeMenu
-        "Steal money from the cash register (please delete this before demo)":
-            hide shifty
-            "(You t-posed in front of barista, intimidating them.)"
-            show shifty
-            sc "P-please, I don't want any trouble, here take my money."
-            $ money += 15
-            play sound ChaChingAudio
-            "15 dollars added to your funds!"
-            sc "Anyways..."
-            jump CoffeeMenu
+        #"Josephine's Second Hangout Request" if (day == 3)
         "That is all":
             stop music
             play music MainMusic

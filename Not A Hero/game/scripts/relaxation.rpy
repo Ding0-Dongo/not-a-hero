@@ -11,6 +11,8 @@ label rest:
     "([restEndLine] -1 stress.)"
 
     $ stress -= 1
+    if stress < 0:
+        $ stress = 0
     return
 
 label readBook:
@@ -28,6 +30,8 @@ label readBook:
     "([restEndLine] -2 stress.)"
 
     $ stress -= 2
+    if stress < 0:
+        $ stress = 0
     return
 
 label takeWalk:
@@ -38,4 +42,6 @@ label takeWalk:
     "([restEndLine] -3 stress.)"
 
     $ stress -= 3
+    if stress < 0:
+        $ stress = 0
     return

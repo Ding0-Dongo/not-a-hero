@@ -3,13 +3,13 @@ label gym:
     hide screen continueNextDay
     menu:
         "Train Strength":
-            jump TrainStrength
+            call TrainStrength
 
         "Train Stamina":
-            jump TrainStamina
+            call TrainStamina
 
         "Train Speed":
-            jump TrainSpeed
+            call TrainSpeed
 
-        "End Training":
+        "End Training (Leave)":
             jump mapScreen

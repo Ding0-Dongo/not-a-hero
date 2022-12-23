@@ -4,7 +4,7 @@
 
 label tutorial:
 
-    scene whiteRoom
+    scene whiteRoom with fade
 
     show dummy Neutral
 
@@ -55,9 +55,9 @@ label tutorial:
 
     show screen StatUI with hpunch
 
-    "Now become stressed."
-
     show dummy Sad
+
+    "Now become stressed."
 
     "Okay: let's max out the stress bar"
 
@@ -78,19 +78,18 @@ label tutorial:
 
 
 label trainingScreen:
+    menu:
+        "Train Strength":
+            jump TrainStrength
 
-menu:
-    "Train Strength":
-        jump TrainStrength
+        "Train Stamina":
+            jump TrainStamina
 
-    "Train Stamina":
-        jump TrainStamina
+        "Train Speed":
+            jump TrainSpeed
 
-    "Train Speed":
-        jump TrainSpeed
-
-    "End Training":
-        pass
+        "End Training":
+            pass
 
     
 label endTutorial:
@@ -112,6 +111,7 @@ label endTutorial:
     $ strength = 1
     $ stamina = 1
     $ speed = 1
+    $ energy = 10
     $ energyMax = 10
     $ social = 0
     $ socialLevel = 1

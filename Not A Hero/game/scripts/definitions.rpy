@@ -38,25 +38,29 @@ define woman = Character("Woman", color="#b85858")
 define barista = Character("Barista", color="#379752")
 define customer = Character("Impatient Customer", color="#bd3675")
 
+#coffee with friends check
+define coffeewithfriends_firstime = True
+
 ##### LOCATIONS (make sure they are all 1920 x 1080) #####
+image alleyway = "images/places/dark shady alley.png"
+image apartments = "images/places/apartment hall.png"
+image blackScreen = "#000000"
+image city = "images/normingtonCity.png"
+image city = "images/normingtonMap.png" # city map (????)
+image classroom = "images/places/classroom interior.png"
+image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
+image hospitalExterior = "images/places/hospital exterior.png"
+image hospitalInterior = "images/places/hospital.png"
+image hospitalRoom = "images/places/hospital room.png"
+image hq = "images/places/hq interior.png"
+image library = "images/places/library interior.png"
+image park = "images/places/park.png"
+image plaza = "images/places/plaza.png"
 image schoolExterior = "images/places/school exterior.png"
 image schoolInterior = "images/places/school interior.png."
-image classroom = "images/places/classroom interior.png"
 image whiteRoom = "images/iputellisintoawhiteroomcuzhewasbeingabadboy.jpg"
-image city = "images/normingtonCity.png"
-image hq = "images/places/hq interior.png"
-image city = "images/normingtonMap.png"
-image blackScreen = "#000000"
-image alleyway = "images/places/dark shady alley.png"
-image coffeeshop_inside = "images/places/NormingtonCityCoffee_Inside.jpg"
-image plaza = "images/places/plaza.png"
-image park = "images/places/park.png"
-image hospitalInterior = "images/places/hospital interior.png"
-image hospitalExterior = "images/places/hospital exterior.png"
-image hospitalRoom = "images/places/hospital room.png"
 
 ##### MAP STUFF
-
 image cityMap = "images/map.jpg"
 image mapIcon = "images/mapIcon.png"
 image mapIcon2 = "images/mapIcon2.png"
@@ -64,11 +68,13 @@ image nextDayButton = "images/nextDayButton.png"
 
 ##### ELLIS
 image ellisNeutral = "images/Ellis/Tilt.Neutral.png"
+image ellisScarfNeutral = "images/Ellis/Scraf.Neutral.png"
 image ellisAnnoyed = "images/Ellis/Norm.Pensive.png"
 image ellisAnnoyed2 = "images/Ellis/Scraf.Spite.png"
 image ellisThinking = "images/Ellis/tilt.thinking.png"
 image ellisThinking2 = "images/Ellis/Scraf.Concentrating.png"
 image ellisThinking3 = "images/Ellis/Norm.Thinking.png"
+image ellisHesitant = "images/Ellis/Norm.Hesitant.png"
 image ellisNervous = "images/Ellis/Scarf.Nervy.png"
 image ellisSad = "images/Ellis/Norm.Unsure.png"
 image ellisSad2 = "images/Ellis/Scraf.Regrert.png"
@@ -81,23 +87,52 @@ image ellisShy = "images/Ellis/Untitled_Artwork.png"
 image ellisObjection = "images/Ellis/Up.Assertive.png"
 image ellisHappy = "images/Ellis/Up.Confident.png"
 image ellisCringe = "images/Ellis/Up.Cringe.png"
+image ellisCringe2 = "images/Ellis/Up.Cringe2.png"
+image ellisStunned = "images/Ellis/Norm.Stunned.png"
 
 ##### DESMOND
 image desNeutral = "images/Desmond/Des.Norm.png"
 image desChuckle = "images/Desmond/Des.Chuckle.png"
 image desDrowsy = "images/Desmond/Des.Drowse.png"
+image desFrown = "images/Desmond/Des.Frown.png"
 
 ##### JOSEPHINE
 image joNeutral = "images/Josephine/josephine neutral.png"
+image joExclaim = "images/Josephine/josephine_exclaim.png"
+image joFrown = "images/Josephine/josephine_frown.png"
+image joFrown2 = "images/Josephine/josephine_sad_frown.png"
+image joClosed = "images/Josephine/josephine_eyes_closed.png"
+image joNervous = "images/Josephine/josephine_nervous.png"
+image joStress = "images/Josephine/josephine_distressed.png"
 
 ##### DELTA
 image deltaNeutral = "images/Delta/delta neutral.png"
+image deltaNeutral2 = "images/Delta/Delta.Down.Default.png"
+image deltaAnnoyed = "images/Delta/Delta.Annoyed.png"
+image deltaInquire = "images/Delta/Delta.Inquire.png"
+image deltaWisdom = "images/Delta/Delta.Wisdom.png"
+image deltaSerious = "images/Delta/Delta.Serious.png"
+image deltaClosed = "images/Delta/Delta.Down.Close.png"
+image deltaSad = "images/Delta/Delta.Down.Sad.png"
+image deltaSad2 = "images/Delta/Delta.Down.Shame.png"
+image deltaThinking = "images/Delta/Delta.Down.Thinking.png"
+image deltaHappy = "images/Delta/Delta.Happy.png"
+image deltaTeasing = "images/Delta/Delta.Tease.png"
 
 ##### PHI
 image phiNeutral = "images/Phi/phi neutral.png"
+image phiExclaim = "images/Phi/phi_exclaim.png"
+image phiHappy = "images/Phi/phi_happy.png"
+image phiOverjoyed = "images/Phi/phi_overjoyed.png"
+image phiSheepish = "images/Phi/phi_sheepish.png"
+image phiFrown = "images/Phi/phi_frowning_exclaim.png"
 
 ##### ALPHA
 image alphaNeutral = "images/Alpha/alpha neutral.png"
+image alphaIndignant = "images/Alpha/alpha indignant.png"
+image alphaAnnoyed = "images/Alpha/alpha annoyed.png"
+image alphaAngryQuiet = "images/Alpha/alpha angry quiet.png"
+image alphaShySmile = "images/Alpha/alpha shy smile.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
 # you mean test character sprites, right....? RIGHT??? -ruth
@@ -136,6 +171,9 @@ define PourDrinkAudio = "audio/drinkpour.mp3"
 define CafeChatterAudio = "audio/cafechatter.mp3"
 define audio.ShopBellRingAudio = "audio/shopdoorbell.mp3"
 define audio.ShopBackgroundMusic = "audio/shiftybackground.mp3"
+define ParkMusic = "audio/parkmusic.mp3"
+define endingAudio = "audio/Not A Hero - Theme (slowed down).mp3"
+define panicAudio = "audio/Not A Hero - The Accident (Intense Panic).mp3"
 
 ##### INACTIVE SPRITES #####
 image eNeutral_mask = AlphaMask("blackScreen", "Ellis/ellisNeutral.png")
@@ -188,4 +226,4 @@ image s inactive = Composite(
 )
 
 ##### Title Screen (shown once) #####
-image titleScreen = "images/titlescreen.png"
+image titleScreen = "images/NOTAHERO.png"

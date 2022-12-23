@@ -31,6 +31,7 @@ label call_mapUI:
     elif day==6:
         call screen MapUI6
 
+
 screen MapUI0:
     # add "images/normingtonMap.png"
 
@@ -449,7 +450,7 @@ image main_menu_animated:
 
 
 # This is for displaying all the stats and bars.
-screen StatUI:
+screen StatUI():
     bar:
         value energy
         range energyMax
@@ -473,6 +474,7 @@ screen StatUI:
     text "SPD: [speed]" size 28 xalign 0.025 yalign 0.18
     text "Social Level [socialLevel]: [social]/[socialMax]" size 28 xalign 0.1 yalign 0.18
     text "$[money]" size 65 xalign 0.98 yalign 0.025 color "#23b84d"
+    text "Day [day]" size 65 xalign 0.98 yalign 0.1 color "#ffffff"
 
 # helo ethan you seem to be good at making these so Imma just plop down my "continue to next day" button here
 screen continueNextDay:
@@ -488,8 +490,10 @@ screen continueNextDay:
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
 # This label is called whenever someone chooses to increase their strength
 label TrainStrength:
-    if energy - 2 < 0:
+    if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif energy - 2 < 0:
+        "Ellis is too tired to do that right now."
     elif strength == 10:
         show blackScreen with fade
         "Wow! Your strength cannot be trained further!"
@@ -503,12 +507,17 @@ label TrainStrength:
         $ strength += 1 + (speed - 1)
         $ energy -= 2
         hide blackScreen with fade
-    jump trainingScreen
+    if day == 0:
+        jump trainingScreen
+    else:
+        jump gym
 
 # This label is called whenever someone chooses to increase their stamina
 label TrainStamina:
-    if energy - 2 < 0:
+    if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif energy - 2 < 0:
+        "Ellis is too tired to do that right now."
     elif stamina == 10:
         show blackScreen with fade
         "Wow! Your stamina cannot be trained further!"
@@ -523,12 +532,17 @@ label TrainStamina:
         $ energy -= 2
         $ energyMax += stamina
         hide blackScreen with fade
-    jump trainingScreen
+    if day == 0:
+        jump trainingScreen
+    else:
+        jump gym
 
 # This label is called whenever someone chooses to increase their speed
 label TrainSpeed:
-    if energy - 4 < 0:
+    if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
+    elif energy - 2 < 0:
+        "Ellis is too tired to do that right now."
     elif speed == 10:
         show blackScreen with fade
         "Wow! Your stamina cannot be trained further!"
@@ -540,9 +554,12 @@ label TrainSpeed:
         "*Pant, pant*"
         "SPEED UP"
         $ speed += 1
-        $ energy -= 4
+        $ energy -= 2
         hide blackScreen with fade
-    jump trainingScreen
+    if day == 0:
+        jump trainingScreen
+    else:
+        jump gym
 
 ### Adding a label that should be called when the player reaches the max value of the stress bar
 ### This should have it displayed that the player is too stressed and return them to the 'default' area, wherever it gets decided that is.
@@ -588,6 +605,16 @@ transform shifty_std:
     xalign 0.6
     yalign 0.2
 
+transform delta_std:
+    zoom 0.45
+    yalign -1.0
+
+transform alpha_std:
+    zoom 0.45
+
+transform phi_std:
+    zoom 0.45
+    yalign -0.8
 
 label splashscreen:
     scene blackScreen
