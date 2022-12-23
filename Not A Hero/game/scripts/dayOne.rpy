@@ -108,6 +108,8 @@ label start:
                     jump volunteerShelter
                 "clinic volunteering":
                     jump volunteerClinic
+                "socialize":
+                    jump socializeFirst
         "Test Your Maps Here":
             menu:
                 "MapUI0":
