@@ -147,6 +147,23 @@ label start:
                 "Park":
                     $ day = 3
                     jump park
+
+        "Test your interactions":
+            menu:
+                "Day 1":
+                    jump interactionsDayOne
+                "Day 2":
+                    jump interactionsDayTwo
+                "Day 3":
+                    jump interactionsDayThree
+                "Day 4":
+                    jump interactionsDayFour
+                "Day 5":
+                    jump interactionsDayFive
+                "Day 6":
+                    jump interactionsDaySix
+                "Day 7":
+                    jump interactionsDaySeven
     
     ### Added label testStart to jump to at the end of the tutorial. 
 
