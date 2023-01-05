@@ -133,6 +133,9 @@ image alphaIndignant = "images/Alpha/alpha indignant.png"
 image alphaAnnoyed = "images/Alpha/alpha annoyed.png"
 image alphaAngryQuiet = "images/Alpha/alpha angry quiet.png"
 image alphaShySmile = "images/Alpha/alpha shy smile.png"
+image alphaJoyful = "images/Alpha/alpha joyful.png"
+image alphaExclaim = "images/Alpha/alpha exclaim.png"
+image alphaFierceHand = "images/Alpha/alpha fierce exclaim hand.png"
 
 ##### SPECIAL CHARACTER SPRITES #####
 # you mean test character sprites, right....? RIGHT??? -ruth
