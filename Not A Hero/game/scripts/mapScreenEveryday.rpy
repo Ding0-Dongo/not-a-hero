@@ -1,5 +1,7 @@
 label mapScreen:
-    if renpy.music.get_playing != MainMusic:
+    if day > 6:
+        return
+    if renpy.music.get_playing(channel = "music") != 'audio/Not_A_Hero_general_loop.mp3':
         play music MainMusic fadein 1.0
     show image "cityMap" with fade
     if (day==1 and introMapDialogue == True):
@@ -47,4 +49,4 @@ label continueToTheNextDay:
         hide screen NormingtonCityMap
         hide screen continueNextDay
         jump theAccident
-        return
+        # return

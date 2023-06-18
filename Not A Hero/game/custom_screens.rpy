@@ -30,6 +30,8 @@ label call_mapUI:
         call screen MapUI5
     elif day==6:
         call screen MapUI6
+    else:
+        return
 
 
 screen MapUI0:

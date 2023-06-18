@@ -380,4 +380,5 @@ label theEnding:
         D "It was no problem, really."
         show blackScreen with fade
 
-    return
+    stop music fadeout 2.0
+    # $ renpy.quit();
