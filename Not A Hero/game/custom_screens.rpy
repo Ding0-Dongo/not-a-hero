@@ -15,7 +15,7 @@ screen NormingtonCityMap:
 # If you want to navigate using the map, it's prefered to use "call".
 # When in skip mode (tab key on keyboard), this prevents the game to be skipped.
 label call_mapUI:
-    show screen StatUI
+    # show screen StatUI
     if day==0:
         call screen MapUI0
     elif day==1:
@@ -476,16 +476,7 @@ screen StatUI():
     text "$[money]" size 65 xalign 0.98 yalign 0.025 color "#23b84d"
     text "Day [day]" size 65 xalign 0.98 yalign 0.1 color "#ffffff"
 
-# helo ethan you seem to be good at making these so Imma just plop down my "continue to next day" button here
-screen continueNextDay:
-    imagebutton:
-        xpos 1500
-        ypos 1000
-        idle "nextDayButton"
-        hover "nextDayButton"
-        action Call("continueToTheNextDay")
-    text "Continue to next day." size 28 xalign 0.95 yalign 0.96 color "#FFFFFF"
-
+    zorder 1
 
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
 # This label is called whenever someone chooses to increase their strength
@@ -560,6 +551,16 @@ label TrainSpeed:
         jump trainingScreen
     else:
         jump gym
+
+# helo ethan you seem to be good at making these so Imma just plop down my "continue to next day" button here
+screen continueNextDay:
+    imagebutton:
+        xpos 1500
+        ypos 1000
+        idle "nextDayButton"
+        hover "nextDayButton"
+        action Call("continueToTheNextDay")
+    text "Continue to next day." size 28 xalign 0.95 yalign 0.96 color "#FFFFFF"
 
 ### Adding a label that should be called when the player reaches the max value of the stress bar
 ### This should have it displayed that the player is too stressed and return them to the 'default' area, wherever it gets decided that is.

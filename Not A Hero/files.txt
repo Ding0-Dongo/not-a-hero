@@ -1,0 +1,356 @@
+custom_screens.rpy
+custom_screens.rpyc
+gui.rpy
+gui.rpyc
+options.rpy
+options.rpyc
+screens.rpy
+screens.rpyc
+.vscode\settings.json
+audio\Not A Hero - The Accident (Intense Panic).mp3
+audio\Not A Hero - Theme (slowed down).mp3
+audio\Not_A_Hero_general_loop.mp3
+audio\achievement.mp3
+audio\awardmusic.mp3
+audio\buttonsound.mp3
+audio\cafechatter.mp3
+audio\chaching.mp3
+audio\chasemusic.mp3
+audio\coffeeshop.mp3
+audio\crowdcheer.mp3
+audio\drinkpour.mp3
+audio\gasp.mp3
+audio\hover.mp3
+audio\parkmusic.mp3
+audio\phoneringing.mp3
+audio\policesiren.mp3
+audio\runconcrete.mp3
+audio\shiftybackground.mp3
+audio\shopdoorbell.mp3
+audio\tackle.mp3
+audio\womenscream.mp3
+cache\bytecode.rpyb
+cache\py3analysis.rpyb
+cache\pyanalysis.rpyb
+cache\screens.rpyb
+cache\shaders.txt
+fonts\BryndanWriteBook-nGPM.ttf
+gui\frame.png
+gui\game_menu.png
+gui\main_menu.png
+gui\namebox.png
+gui\notify.png
+gui\nvl.png
+gui\skip.png
+gui\textbox.png
+gui\window_icon.png
+gui\bar\bottom.png
+gui\bar\left.png
+gui\bar\right.png
+gui\bar\top.png
+gui\button\check_foreground.png
+gui\button\check_selected_foreground.png
+gui\button\choice_hover_background.png
+gui\button\choice_idle_background.png
+gui\button\hover_background.png
+gui\button\idle_background.png
+gui\button\quick_hover_background.png
+gui\button\quick_idle_background.png
+gui\button\radio_foreground.png
+gui\button\radio_selected_foreground.png
+gui\button\slot_hover_background.png
+gui\button\slot_idle_background.png
+gui\overlay\confirm.png
+gui\overlay\game_menu.png
+gui\overlay\main_menu.png
+gui\phone\nvl.png
+gui\phone\textbox.png
+gui\phone\bar\bottom.png
+gui\phone\bar\left.png
+gui\phone\bar\right.png
+gui\phone\bar\top.png
+gui\phone\button\check_foreground.png
+gui\phone\button\check_selected_foreground.png
+gui\phone\button\choice_hover_background.png
+gui\phone\button\choice_idle_background.png
+gui\phone\button\hover_background.png
+gui\phone\button\idle_background.png
+gui\phone\button\radio_foreground.png
+gui\phone\button\radio_selected_foreground.png
+gui\phone\button\slot_hover_background.png
+gui\phone\button\slot_idle_background.png
+gui\phone\overlay\game_menu.png
+gui\phone\overlay\main_menu.png
+gui\phone\scrollbar\horizontal_hover_bar.png
+gui\phone\scrollbar\horizontal_hover_thumb.png
+gui\phone\scrollbar\horizontal_idle_bar.png
+gui\phone\scrollbar\horizontal_idle_thumb.png
+gui\phone\scrollbar\vertical_hover_bar.png
+gui\phone\scrollbar\vertical_hover_thumb.png
+gui\phone\scrollbar\vertical_idle_bar.png
+gui\phone\scrollbar\vertical_idle_thumb.png
+gui\phone\slider\horizontal_hover_bar.png
+gui\phone\slider\horizontal_hover_thumb.png
+gui\phone\slider\horizontal_idle_bar.png
+gui\phone\slider\horizontal_idle_thumb.png
+gui\phone\slider\vertical_hover_bar.png
+gui\phone\slider\vertical_hover_thumb.png
+gui\phone\slider\vertical_idle_bar.png
+gui\phone\slider\vertical_idle_thumb.png
+gui\scrollbar\horizontal_hover_bar.png
+gui\scrollbar\horizontal_hover_thumb.png
+gui\scrollbar\horizontal_idle_bar.png
+gui\scrollbar\horizontal_idle_thumb.png
+gui\scrollbar\vertical_hover_bar.png
+gui\scrollbar\vertical_hover_thumb.png
+gui\scrollbar\vertical_idle_bar.png
+gui\scrollbar\vertical_idle_thumb.png
+gui\slider\horizontal_hover_bar.png
+gui\slider\horizontal_hover_thumb.png
+gui\slider\horizontal_idle_bar.png
+gui\slider\horizontal_idle_thumb.png
+gui\slider\vertical_hover_bar.png
+gui\slider\vertical_hover_thumb.png
+gui\slider\vertical_idle_bar.png
+gui\slider\vertical_idle_thumb.png
+images\NOTAHERO.png
+images\Untitled_Artwork 1.png
+images\Untitled_Artwork 2.png
+images\Untitled_Artwork 3.png
+images\Untitled_Artwork 4.png
+images\Untitled_Artwork 5.png
+images\Untitled_Artwork 6.png
+images\Untitled_Artwork 7.png
+images\Untitled_Artwork.png
+images\alleyway.jpg
+images\blackscreen.png
+images\gym_PLACEHOLDER.png
+images\hospital_PLACEHOLDER.png
+images\iputellisintoawhiteroomcuzhewasbeingabadboy.jpg
+images\map.jpg
+images\mapIcon.png
+images\mapIcon2.png
+images\nextDayButton.png
+images\normingtonMap.png
+images\plaza_PLACEHOLDER.png
+images\potato.png
+images\potato1.png
+images\potato2.png
+images\shifty.png
+images\shiftyThumbnail.png
+images\shiftyThumbnail2.png
+images\shiftyThumbnail3.png
+images\titlescreen.png
+images\Alpha\alpha angry hand.png
+images\Alpha\alpha angry quiet hand.png
+images\Alpha\alpha angry quiet.png
+images\Alpha\alpha angry.png
+images\Alpha\alpha annoyed.png
+images\Alpha\alpha exclaim.png
+images\Alpha\alpha fierce exclaim hand.png
+images\Alpha\alpha fierce exclaim.png
+images\Alpha\alpha fierce hand.png
+images\Alpha\alpha fierce.png
+images\Alpha\alpha indignant.png
+images\Alpha\alpha joyful exclaim.png
+images\Alpha\alpha joyful.png
+images\Alpha\alpha neutral.png
+images\Alpha\alpha pleased.png
+images\Alpha\alpha shy smile.png
+images\Delta\Delta.Annoyed.png
+images\Delta\Delta.Down.Close.png
+images\Delta\Delta.Down.Default.png
+images\Delta\Delta.Down.Sad.png
+images\Delta\Delta.Down.Shame.png
+images\Delta\Delta.Down.Thinking.png
+images\Delta\Delta.Happy.png
+images\Delta\Delta.Inquire.png
+images\Delta\Delta.Serious.png
+images\Delta\Delta.Tease.png
+images\Delta\Delta.Wisdom.png
+images\Delta\delta neutral.png
+images\Desmond\Des.Chuckle.png
+images\Desmond\Des.Drowse.png
+images\Desmond\Des.Frown.png
+images\Desmond\Des.Norm.png
+images\Dummy\dummyAngry.png
+images\Dummy\dummyHappy.png
+images\Dummy\dummyNeutral.png
+images\Dummy\dummySad.png
+images\Ellis\Down1Neutral.png
+images\Ellis\Norm.Default.png
+images\Ellis\Norm.Hesitant.png
+images\Ellis\Norm.Pensive.png
+images\Ellis\Norm.Stunned.png
+images\Ellis\Norm.Thinking.png
+images\Ellis\Norm.Unsure.png
+images\Ellis\Norm.Wince.png
+images\Ellis\Scarf.Nervy.png
+images\Ellis\Scraf.Concentrating.png
+images\Ellis\Scraf.Neutral.png
+images\Ellis\Scraf.Regrert.png
+images\Ellis\Scraf.Spite.png
+images\Ellis\Surprised.png
+images\Ellis\Tilt.Cry.png
+images\Ellis\Tilt.Cry2.png
+images\Ellis\Tilt.Neutral.png
+images\Ellis\Tilt.ask.png
+images\Ellis\Untitled_Artwork.png
+images\Ellis\Up.Assertive.png
+images\Ellis\Up.Confident.png
+images\Ellis\Up.Cringe.png
+images\Ellis\Up.Cringe2.png
+images\Ellis\Up.Neutral.png
+images\Ellis\ellisNeutral.png
+images\Ellis\ellisTerrified.png
+images\Ellis\tilt.thinking.png
+images\Josephine\josephine neutral.png
+images\Josephine\josephine_distressed.png
+images\Josephine\josephine_exclaim.png
+images\Josephine\josephine_eyes_closed.png
+images\Josephine\josephine_frown.png
+images\Josephine\josephine_nervous.png
+images\Josephine\josephine_sad_frown.png
+images\Phi\phi neutral.png
+images\Phi\phi_exclaim.png
+images\Phi\phi_frowning_exclaim.png
+images\Phi\phi_frowning_exclaim_hand.png
+images\Phi\phi_frowning_exclaim_hand_2.png
+images\Phi\phi_happy.png
+images\Phi\phi_overjoyed.png
+images\Phi\phi_overjoyed_hand.png
+images\Phi\phi_sheepish.png
+images\places\NAHH.png
+images\places\NormingtonCityClinic.png
+images\places\NormingtonCityCoffee.png
+images\places\NormingtonCityCoffee_Inside.jpg
+images\places\NormingtonCityElementary.png
+images\places\NormingtonCityGym.png
+images\places\NormingtonCityHills.png
+images\places\NormingtonCityLibrary.png
+images\places\NormingtonCityPark.png
+images\places\NormingtonCityPlaza.png
+images\places\apartment hall.png
+images\places\classroom interior.png
+images\places\dark shady alley.png
+images\places\gym.png
+images\places\hospital exterior.png
+images\places\hospital room.png
+images\places\hospital.png
+images\places\hq interior.png
+images\places\library interior.png
+images\places\park.png
+images\places\plaza.png
+images\places\school exterior.png
+images\places\school interior.png
+saves\1-1-LT1.save
+saves\1-2-LT1.save
+saves\1-3-LT1.save
+saves\_reload-2-LT1.save
+saves\auto-1-LT1.save
+saves\auto-10-LT1.save
+saves\auto-2-LT1.save
+saves\auto-3-LT1.save
+saves\auto-4-LT1.save
+saves\auto-5-LT1.save
+saves\auto-6-LT1.save
+saves\auto-7-LT1.save
+saves\auto-8-LT1.save
+saves\auto-9-LT1.save
+saves\navigation.json
+saves\persistent
+saves\quick-1-LT1.save
+scripts\AP.rpy
+scripts\AP.rpyc
+scripts\Ending.rpy
+scripts\Ending.rpyc
+scripts\Pursenapper.rpy
+scripts\Pursenapper.rpyc
+scripts\dayOne.rpy
+scripts\dayOne.rpyc
+scripts\daySeven.rpy
+scripts\daySeven.rpyc
+scripts\dayZero.rpy
+scripts\dayZero.rpyc
+scripts\definitions.rpy
+scripts\definitions.rpyc
+scripts\mapScreenEveryday.rpy
+scripts\mapScreenEveryday.rpyc
+scripts\relaxation.rpy
+scripts\relaxation.rpyc
+scripts\shiftyShop.rpy
+scripts\shiftyShop.rpyc
+scripts\tutorialDay.rpy
+scripts\tutorialDay.rpyc
+scripts\comissions\PSA.rpy
+scripts\comissions\PSA.rpyc
+scripts\comissions\clinicDelivery.rpy
+scripts\comissions\clinicDelivery.rpyc
+scripts\comissions\graffi-no.rpy
+scripts\comissions\graffi-no.rpyc
+scripts\comissions\helpGranny.rpy
+scripts\comissions\helpGranny.rpyc
+scripts\comissions\helpKids.rpy
+scripts\comissions\helpKids.rpyc
+scripts\comissions\teamDelivery.rpy
+scripts\comissions\teamDelivery.rpyc
+scripts\comissions\volunteeringLibrary.rpyc
+scripts\placesMenu\NormingtonCoffee.rpy
+scripts\placesMenu\NormingtonCoffee.rpyc
+scripts\placesMenu\association.rpy
+scripts\placesMenu\association.rpyc
+scripts\placesMenu\clinic.rpy
+scripts\placesMenu\clinic.rpyc
+scripts\placesMenu\downtown.rpy
+scripts\placesMenu\downtown.rpyc
+scripts\placesMenu\elementary.rpy
+scripts\placesMenu\elementary.rpyc
+scripts\placesMenu\gym.rpy
+scripts\placesMenu\gym.rpyc
+scripts\placesMenu\hills.rpy
+scripts\placesMenu\hills.rpyc
+scripts\placesMenu\library.rpy
+scripts\placesMenu\library.rpyc
+scripts\placesMenu\park.rpy
+scripts\placesMenu\park.rpyc
+scripts\placesMenu\plaza.rpy
+scripts\placesMenu\plaza.rpyc
+scripts\socialEvents\coffeewithfriends.rpy
+scripts\socialEvents\coffeewithfriends.rpyc
+scripts\socialEvents\fundraising.rpy
+scripts\socialEvents\fundraising.rpyc
+scripts\socialEvents\interactions.rpy
+scripts\socialEvents\interactions.rpyc
+scripts\socialEvents\mediation.rpy
+scripts\socialEvents\mediation.rpyc
+scripts\socialEvents\socialize.rpyc
+scripts\socialEvents\volunteerClinic.rpy
+scripts\socialEvents\volunteerClinic.rpyc
+scripts\socialEvents\volunteerLibrary.rpy
+scripts\socialEvents\volunteerLibrary.rpyc
+scripts\socialEvents\volunteerSenior.rpy
+scripts\socialEvents\volunteerSenior.rpyc
+scripts\socialEvents\volunteerShelter.rpy
+scripts\socialEvents\volunteerShelter.rpyc
+scripts\storyQuests\apology.rpy
+scripts\storyQuests\apology.rpyc
+scripts\storyQuests\bullies.rpy
+scripts\storyQuests\bullies.rpyc
+scripts\storyQuests\deliveryRun.rpy
+scripts\storyQuests\deliveryRun.rpyc
+scripts\storyQuests\firstAidLesson.rpy
+scripts\storyQuests\firstAidLesson.rpyc
+scripts\storyQuests\josephinesHangout.rpy
+scripts\storyQuests\josephinesHangout.rpyc
+scripts\storyQuests\josephinesSecond.rpy
+scripts\storyQuests\josephinesSecond.rpyc
+scripts\storyQuests\meetTheTeam.rpy
+scripts\storyQuests\meetTheTeam.rpyc
+scripts\storyQuests\pettyThievery.rpy
+scripts\storyQuests\pettyThievery.rpyc
+scripts\storyQuests\talkThingsOut.rpy
+scripts\storyQuests\talkThingsOut.rpyc
+scripts\storyQuests\theAccident.rpy
+scripts\storyQuests\theAccident.rpyc
+tl\None\common.rpym
+tl\None\common.rpymc
