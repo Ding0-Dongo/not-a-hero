@@ -2,6 +2,7 @@
 
 ##### CHARACTERS #####
 define e = Character("Ellis", color="#037bfc", image="ellis")
+define unknownE = Character("???", color="#037bfc", image="ellis")
     # uh word of note, don't use the color name like 'blue' instead use its color code
 define j = Character("Josephine", color="#b1b144", image="josephine")
 define d = Character("Desmond", color="#975050", image="desmond")

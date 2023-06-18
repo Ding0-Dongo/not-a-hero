@@ -2,7 +2,7 @@ label dayZero:
 
     #Day 0 (Prologue)
 
-    "Normington City 09:00 AM"
+    "Normington City 08:00 AM"
     scene plaza with fade
     show deltaNeutral at delta_std with dissolve:
         xalign 0.5
@@ -24,7 +24,7 @@ label dayZero:
     D "(Well, no time to waste.)"
 
     scene apartments with fade
-    "Normington Hills 09:30 AM"
+    "Normington Hills 08:30 AM"
 
     show deltaNeutral at delta_std:
         xalign 0.5
@@ -44,7 +44,7 @@ label dayZero:
     show ellisNeutral at ellis_std with dissolve:
         xalign 0.8
 
-    e "... um, hello? Can- can I help you?"
+    unknownE "... um, hello? Can- can I help you?"
     D "(Huh. He's... different than what I expected.)"
     
     hide deltaNeutral
