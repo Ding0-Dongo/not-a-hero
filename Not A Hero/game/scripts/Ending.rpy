@@ -21,7 +21,9 @@ label theEnding:
 
     stop music fadeout 2.0
 
-    "LATER"
+    hide screen StatUI
+
+    "LATER..."
     "*beep-beep-beep* *beep-beep-beep*"
     play music endingAudio fadein 2.0
     D "PHI?"

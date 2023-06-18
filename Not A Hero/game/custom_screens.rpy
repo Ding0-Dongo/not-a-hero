@@ -483,6 +483,8 @@ screen StatUI():
 ### The training labels will need to be tweaked when we add a proper training area outside of the tutorial!
 # This label is called whenever someone chooses to increase their strength
 label TrainStrength:
+    if day > 6:
+        return
     if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
     elif energy - 2 < 0:
@@ -507,6 +509,8 @@ label TrainStrength:
 
 # This label is called whenever someone chooses to increase their stamina
 label TrainStamina:
+    if day > 6:
+        return
     if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
     elif energy - 2 < 0:
@@ -532,6 +536,8 @@ label TrainStamina:
 
 # This label is called whenever someone chooses to increase their speed
 label TrainSpeed:
+    if day > 6:
+        return
     if energy - 2 < 0 and day == 0:
         "WARNING: ENERGY SUPPLIES LOW. ACTION CANNOT BE PERFORMED."
     elif energy - 2 < 0:

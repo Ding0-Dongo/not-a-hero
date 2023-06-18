@@ -25,7 +25,7 @@ label theAccident:
     #Day 7
     #Scene: City
 
-    stop music
+    stop music fadeout 3.0
 
     scene schoolExterior with fade
     show ellisSurprised at ellis_std:
@@ -280,6 +280,7 @@ label theAccident:
         "(After giving Josephine a rough estimate and a few pointers, Ellis stumbles back out of the school.)"
         "(He is received by the healthcare workers outside and soon, passes out.)"
         jump theEnding
+        return
 
     hide blackScreen with dissolve
     "(Soon, they've made it to the inner halls, and it's just as Josephine said - many have obstructed hallways or blocked classrooms.)"
@@ -341,6 +342,7 @@ label theAccident:
         "(After giving Josephine a rough estimate and a few pointers, Ellis stumbles back out of the school.)"
         "(He is received by the healthcare workers outside and soon, passes out.)"
         jump theEnding
+        return
 
     "(They almost pass another room, when Ellis sees a flash of color through the window of a classroom door.)"
 
@@ -430,6 +432,7 @@ label theAccident:
 
         show blackScreen with fade
         jump theEnding
+        return
     else:
         "(Strength Check failed!)"
 
@@ -443,6 +446,7 @@ label theAccident:
 
         show blackScreen with fade
         jump theEnding
+        return
 
 label ellisRAM:
     hide ellisThinking2
