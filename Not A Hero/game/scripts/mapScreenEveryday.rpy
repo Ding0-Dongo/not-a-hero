@@ -43,6 +43,7 @@ label continueToTheNextDay:
         jump mapScreen
         return
     elif day==6:
+        $ day+= 1;
         hide screen NormingtonCityMap
         hide screen continueNextDay
         jump theAccident

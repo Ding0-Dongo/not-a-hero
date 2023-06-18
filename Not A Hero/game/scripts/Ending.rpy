@@ -19,11 +19,11 @@ label theEnding:
     #to play after 'The Ending' story quest is completed.
     scene blackScreen
 
-    stop music
+    stop music fadeout 2.0
 
     "LATER"
     "*beep-beep-beep* *beep-beep-beep*"
-    play music endingAudio
+    play music endingAudio fadein 2.0
     D "PHI?"
     P "DELTA, are you still in maintenance?"
     D "Got out just a half hour ago. Why?"
@@ -379,3 +379,5 @@ label theEnding:
 
         D "It was no problem, really."
         show blackScreen with fade
+
+    return
