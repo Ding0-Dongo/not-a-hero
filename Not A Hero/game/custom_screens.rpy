@@ -95,7 +95,7 @@ screen MapUI1:
         hover "mapIcon2"
         action Call("gym")
     text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
-    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Hills" size 35 xalign 0.9 yalign 0.72 color "#000000"
     text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
     text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
     text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
@@ -138,7 +138,7 @@ screen MapUI2:
         action Call("gym")
     text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
     text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
-    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Hills" size 35 xalign 0.9 yalign 0.72 color "#000000"
     text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
     text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
     text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
@@ -188,7 +188,7 @@ screen MapUI3:
         action Call("downtown")
     text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
     text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
-    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Hills" size 35 xalign 0.9 yalign 0.72 color "#000000"
     text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
     text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
     text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
@@ -246,7 +246,7 @@ screen MapUI4:
         action Call("plaza")
     text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
     text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
-    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Hills" size 35 xalign 0.9 yalign 0.72 color "#000000"
     text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
     text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
     text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
@@ -319,7 +319,7 @@ screen MapUI5:
         action Call("NormingtonCoffee")
     text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
     text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
-    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Hills" size 35 xalign 0.9 yalign 0.72 color "#000000"
     text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
     text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
     text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"
@@ -401,7 +401,7 @@ screen MapUI6:
         action Call("clinic")
     text "Park" size 35 xalign 0.55 yalign 0.41 color "#000000"
     text "Library" size 35 xalign 0.77 yalign 0.15 color "#000000"
-    text "Hill" size 35 xalign 0.87 yalign 0.72 color "#000000"
+    text "Normington Hills" size 35 xalign 0.9 yalign 0.72 color "#000000"
     text "Normington Association" size 35 xalign 0.73 yalign 0.65 color "#000000"
     text "of Heroes Headquarters" size 35 xalign 0.73 yalign 0.68 color "#000000"
     text "Gym" size 35 xalign 0.44 yalign 0.44 color "#000000"

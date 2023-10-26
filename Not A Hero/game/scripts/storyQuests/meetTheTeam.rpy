@@ -184,6 +184,9 @@ label meetTheTeamPartTwo:
     show phiSheepish at phi_std:
         xalign 0.3
     show alphaIndignant at alpha_std with hpunch
+    hide phiSheepish
+    show phiSheepish at phi_std:
+        xalign 0.3
 
     "(PHI jabs ALPHA in the ribs.)"
     
@@ -317,8 +320,8 @@ label meetTheTeamPartTwo:
         linear 0.3 xalign 1.0
     
     show alphaNeutral at alpha_std:
-        xalign 1.5
-    show alphaAnnoyed at alpha_std:
+        xalign -0.5
+    show alphaNeutral at alpha_std:
         linear 0.3 xalign 0.0
 
     A "Not so fast. You two haven't gotten your commissions for the week yet."

@@ -47,8 +47,9 @@ label start:
     # jump dayZero
     # return
 
-    menu:
+    jump dayZero
 
+    menu:
         "Go to tutorial.":
             jump tutorial
         "Skip tutorial":

@@ -12,7 +12,7 @@ label mapScreen:
         show screen NormingtonCityMap
         show screen continueNextDay
         show screen StatUI
-        "*** DEVELOPERS' NOTE: don't continue the text on the map (ex: pressing enter), it'll advance the day. Click on the map instead to make the text disappear safely without skipping to the next day."
+        # "*** DEVELOPERS' NOTE: don't continue the text on the map (ex: pressing enter), it'll advance the day. Click on the map instead to make the text disappear safely without skipping to the next day."
         jump call_mapUI
     elif (day < 6):
         show screen NormingtonCityMap

@@ -121,7 +121,7 @@ label dayZero:
     #hide screen titleScreenFlash
 
     menu:
-        "Begrudgingly play the Normington Association of Hero's Training Tape":
+        "Begrudgingly play the Normington Association of Hero's Training Tape (Tutorial)":
             #it'd be cool if we added like a vhs sound effect here
             jump tutorial
         "Chuck that in the trash":
